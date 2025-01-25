@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Projects/Just%20A%20Girl/website/src/sections/homePage/HeroBanner.js"],"sourcesContent":["import React from \"react\";\r\n// next\r\nimport Image from \"next/image\";\r\n// @Mui\r\nimport { Box } from \"@mui/material\";\r\n\r\n// -----------------------------------------------------------------------------\r\n\r\nfunction HeroBanner() {\r\n  return (\r\n    <Box sx={{ position: \"relative\", height: \"50vh\" }}>\r\n      <Image />\r\n    </Box>\r\n  );\r\n}\r\n\r\nexport default HeroBanner;\r\n"],"names":[],"mappings":";;;;AAAA;AACA,OAAO;AACP;AACA,OAAO;AACP;;;;;AAEA,gFAAgF;AAEhF,SAAS;IACP,qBACE,8OAAC,iLAAA,CAAA,MAAG;QAAC,IAAI;YAAE,UAAU;YAAY,QAAQ;QAAO;kBAC9C,cAAA,8OAAC,6HAAA,CAAA,UAAK;;;;;;;;;;AAGZ;uCAEe"}},
+    {"offset": {"line": 39, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 45, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Projects/Just%20A%20Girl/website/src/app/page.js"],"sourcesContent":["// sectoins\nimport HeroBanner from \"@/sections/homePage/HeroBanner\";\n\nexport default function Home() {\n  return (\n    <>\n      <HeroBanner />\n    </>\n  );\n}\n"],"names":[],"mappings":"AAAA,WAAW;;;;;AACX;;;AAEe,SAAS;IACtB,qBACE;kBACE,cAAA,8OAAC,yIAAA,CAAA,UAAU;;;;;;AAGjB"}},
+    {"offset": {"line": 62, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 73, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":""}},
+    {"offset": {"line": 73, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
