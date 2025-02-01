@@ -34,7 +34,11 @@ function ProductReview() {
                 item
                 xs={12}
                 md={4}
-                sx={{ display: "flex", justifyContent: "center" }}
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  my: { xs: 2, md: 0 },
+                }}
               >
                 <Box>
                   <Stack direction="row" gap={2} alignItems="center">
@@ -98,7 +102,7 @@ function ProductReview() {
                         }}
                       />
                     </Box>
-                    <Typography sx={{ fontWeight: "bold" }}>30</Typography>
+                    <Typography sx={{ fontWeight: "bold" }}>25</Typography>
                   </Stack>
                   <Stack direction="row" gap={2} alignItems="center">
                     <Rating value={5} readOnly max={3} sx={{ mr: 6 }} />
@@ -119,7 +123,7 @@ function ProductReview() {
                         }}
                       />
                     </Box>
-                    <Typography sx={{ fontWeight: "bold" }}>30</Typography>
+                    <Typography sx={{ fontWeight: "bold" }}>20</Typography>
                   </Stack>
                   <Stack direction="row" gap={2} alignItems="center">
                     <Rating value={5} readOnly max={2} sx={{ mr: 9 }} />
@@ -140,7 +144,7 @@ function ProductReview() {
                         }}
                       />
                     </Box>
-                    <Typography sx={{ fontWeight: "bold" }}>30</Typography>
+                    <Typography sx={{ fontWeight: "bold" }}>15</Typography>
                   </Stack>
                   <Stack direction="row" gap={2} alignItems="center">
                     <Rating value={5} readOnly max={1} sx={{ mr: 12 }} />
@@ -161,7 +165,7 @@ function ProductReview() {
                         }}
                       />
                     </Box>
-                    <Typography sx={{ fontWeight: "bold" }}>30</Typography>
+                    <Typography sx={{ fontWeight: "bold" }}>5</Typography>
                   </Stack>
                 </Box>
               </Grid>
@@ -179,7 +183,7 @@ function ProductReview() {
                   sx={{
                     bgcolor: "primary.main",
                     color: "white",
-                    fontSize: 30,
+                    fontSize: { xs: 20, md: 30 },
                     borderRadius: 10,
                   }}
                 >

@@ -9,6 +9,7 @@ import {
   Button,
   Card,
   CardContent,
+  Container,
   Grid,
   Stack,
   Typography,
@@ -40,7 +41,7 @@ function Category() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          height: "30vh",
+          height: { xs: "15vh", md: "30vh" },
           width: "100%",
         }}
       >
@@ -52,7 +53,6 @@ function Category() {
         >
           <Image src={title} alt="Title" layout="responsive" />
         </Box>
-
         <Typography
           variant="h1"
           sx={{
@@ -77,48 +77,95 @@ function Category() {
           readable content
         </Typography>
       </Box>
-      <Box sx={{ borderRadius: 10, border: 2, mx: 5, borderColor: "grey.0" }}>
-        <Grid container spacing={3} sx={{ padding: 3 }}>
+      <Container maxWidth="xl">
+        <Stack
+          direction="row"
+          justifyContent="space-between"
+          sx={{ mt: { xs: -5, md: -20 } }}
+        >
+          <Box
+            component="img"
+            src="/cloud.svg"
+            sx={{
+              width: { xs: 70, md: 300 },
+            }}
+          />
+          <Box
+            component="img"
+            src="/cloud.svg"
+            sx={{
+              width: { xs: 70, md: 300 },
+            }}
+          />
+        </Stack>
+      </Container>
+      <Container
+        maxWidth="xl"
+        sx={{ display: "flex", justifyContent: "flex-end" }}
+      >
+        <Typography
+          variant="subtitle1"
+          component="a"
+          href="https://example.com"
+          sx={{
+            textDecoration: "underline",
+            color: "primary.main",
+            fontWeight: "bold",
+          }}
+        >
+          See more
+        </Typography>
+      </Container>
+      <Container
+        maxWidth="xl"
+        sx={{ borderRadius: 10, border: 2, borderColor: "grey.0" }}
+      >
+        <Grid container spacing={3} sx={{ paddingY: 3 }}>
           <Grid item xs={12} md={3}>
             <CategoryCard
               img={skincare}
               title="Skincare"
               items="20"
-              height={50}
+              height={isMdOrLarger ? 36 : 10}
             />
           </Grid>
           <Grid item xs={12} md={3}>
-            <CategoryCard img={makeup} title="Makeup" items="30" height={50} />
+            <CategoryCard
+              img={makeup}
+              title="Makeup"
+              items="30"
+              height={isMdOrLarger ? 36 : 10}
+            />
           </Grid>
           <Grid item xs={12} md={3}>
             <Stack gap={3}>
-              <CategoryCard img={body} title="Body" items="10" height={17} />
+              <CategoryCard img={body} title="Body" items="10" height={10} />
               <CategoryCard
                 img={sunscreen}
                 title="Sunscreen"
                 items="15"
-                height={17}
+                height={10}
               />
             </Stack>
           </Grid>
           <Grid item xs={12} md={3}>
             <Stack gap={3}>
-              <CategoryCard img={hair} title="Hair" items="3" height={17} />
+              <CategoryCard img={hair} title="Hair" items="3" height={10} />
               <CategoryCard
                 img={accessories}
                 title="Accessories"
                 items="8"
-                height={17}
+                height={10}
               />
             </Stack>
           </Grid>
         </Grid>
-      </Box>
-      <Box
+      </Container>
+      <Container
+        maxWidth="xl"
         sx={{
           borderRadius: 10,
           border: 2,
-          mx: 5,
           borderColor: "grey.0",
           mt: 3,
           p: 3,
@@ -129,10 +176,11 @@ function Category() {
             backgroundImage: `url(${offerBg.src})`,
             backgroundSize: "cover",
             borderRadius: 4,
-            height: "60vh",
+            height: { xs: "30vh", md: "60vh" },
             display: "flex",
             justifyContent: isMdOrLarger ? "flex-end" : "center",
             alignItems: "center",
+            borderRadius: 6,
           }}
         >
           <CardContent>
@@ -185,7 +233,7 @@ function Category() {
               <Box
                 sx={{
                   bgcolor: "rgba(0, 0, 0, 0.6)",
-                  borderRadius: 10,
+                  borderRadius: 5,
                   padding: 5,
                 }}
               >
@@ -230,7 +278,7 @@ function Category() {
             )}
           </CardContent>
         </Card>
-      </Box>
+      </Container>
     </Box>
   );
 }

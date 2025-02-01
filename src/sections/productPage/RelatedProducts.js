@@ -52,7 +52,7 @@ function RelatedProducts() {
     },
   ];
   return (
-    <Box sx={{ pt: 10 }}>
+    <Box sx={{ py: 10 }}>
       <Container maxWidth="xl">
         <Typography variant="h1" sx={{ mb: 4 }}>
           Related Products

@@ -1,18 +1,22 @@
+"use client";
 // sectoins
 import Category from "@/sections/homePage/Category";
 import HeroBanner from "@/sections/homePage/HeroBanner";
 import Services from "@/sections/homePage/Services";
+import HeroBannerMobile from "@/sections/homePage/HeroBannerMobile";
 // mui
-import { Box } from "@mui/material";
+import { Box, useMediaQuery, useTheme } from "@mui/material";
 // assets
 import bg from "../../public/bg.png";
 
 // ---------------------------------------------------------------------------------------
 
 export default function Home() {
+  const theme = useTheme();
+  const isMdOrLarger = useMediaQuery(theme.breakpoints.up("md"));
   return (
     <>
-      <HeroBanner />
+      {isMdOrLarger ? <HeroBanner /> : <HeroBannerMobile />}
       <Services />
       <Box
         sx={{

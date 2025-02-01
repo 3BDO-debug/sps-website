@@ -29,7 +29,7 @@ import cloud from "../../assets/cloud.png";
 
 const ReviewCard = ({ review, avatar, name }) => {
   return (
-    <Box sx={{ px: 5, py: 3 }}>
+    <Box sx={{ px: 2, py: 3 }}>
       <Paper
         sx={{
           px: 3,
@@ -80,7 +80,12 @@ const ReviewCard = ({ review, avatar, name }) => {
           </Grid>
           {/* Personal Info */}
           <Grid item xs={12}>
-            <Stack direction="row" gap={2} alignItems="center" sx={{ pl: 7 }}>
+            <Stack
+              direction={{ xs: "column", md: "row" }}
+              gap={2}
+              alignItems="center"
+              sx={{ pl: { md: 5 } }}
+            >
               <Avatar src={avatar} sx={{ width: 60, height: 60 }} />
               <Stack>
                 <Typography variant="h6" sx={{ fontWeight: "bold" }}>
@@ -157,7 +162,7 @@ function Feedback() {
   ];
 
   return (
-    <Container maxWidth="xl">
+    <Container maxWidth="xl" sx={{ mt: { xs: 10, md: 0 } }}>
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Stack

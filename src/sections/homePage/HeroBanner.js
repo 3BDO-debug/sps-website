@@ -7,7 +7,7 @@ import { Box, Button, Stack, Typography } from "@mui/material";
 // framer-motion
 import { motion } from "framer-motion";
 // assets
-import heroBg from "@/assets/hero-bg.png";
+import heroBg from "@/assets/heroBg.png";
 
 // -----------------------------------------------------------------------------
 
@@ -18,7 +18,6 @@ function HeroBanner() {
         position: "relative",
         height: "70vh",
         overflow: "hidden",
-        mt: { md: 8, xs: 10 },
       }}
     >
       {/* Clouds */}
@@ -27,7 +26,6 @@ function HeroBanner() {
         src="/cloud.svg"
         sx={{
           width: 300,
-
           position: "absolute",
           left: "-5%",
           zIndex: 3,
@@ -38,10 +36,9 @@ function HeroBanner() {
         component="img"
         src="/cloud.svg"
         sx={{
-          width: 300,
-
+          width: { xs: 200, md: 300 },
           position: "absolute",
-          left: "30%",
+          left: { xs: "50%", md: "30%" },
           zIndex: 3,
           bottom: 0,
         }}
@@ -50,10 +47,9 @@ function HeroBanner() {
         component="img"
         src="/cloud.svg"
         sx={{
-          width: 300,
-
+          width: { xs: 200, md: 300 },
           position: "absolute",
-          left: "30%",
+          left: { xs: "50%", md: "30%" },
           zIndex: 3,
           top: "20%",
         }}

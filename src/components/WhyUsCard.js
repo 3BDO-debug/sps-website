@@ -7,7 +7,7 @@ import { Box, Card, CardContent, Typography } from "@mui/material";
 
 function WhyUsCard({ icon, title, description }) {
   return (
-    <Card sx={{ borderRadius: 10, height: 300 }}>
+    <Card sx={{ borderRadius: 10 }}>
       <CardContent>
         <Box sx={{ display: "flex", justifyContent: "center", pt: 1 }}>
           <Image src={icon} alt="none" width={60} style={{}} />

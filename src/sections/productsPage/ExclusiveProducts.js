@@ -87,14 +87,14 @@ function ExclusiveProducts() {
   ];
 
   return (
-    <Box>
+    <Box sx={{ mb: 10 }}>
       <Box
         sx={{
           position: "relative",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          height: "70vh",
+          height: { xs: "45vh", sm: "50vh", md: "65vh" },
           width: "100%",
         }}
       >

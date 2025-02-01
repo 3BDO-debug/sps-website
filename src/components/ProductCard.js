@@ -10,6 +10,8 @@ import {
   IconButton,
   Stack,
   Typography,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
 // components
 import Iconify from "./Iconify";
@@ -17,8 +19,11 @@ import Iconify from "./Iconify";
 function ProductCard({ img, title, description, price }) {
   const router = useRouter();
 
+  const theme = useTheme();
+  const isMdOrLarger = useMediaQuery(theme.breakpoints.up("md"));
+
   return (
-    <Box sx={{ mb: 10 }}>
+    <Box>
       <Card
         sx={{ borderRadius: 10 }}
         onClick={() => {
@@ -38,7 +43,11 @@ function ProductCard({ img, title, description, price }) {
             </IconButton>
           </Stack>
           <Box sx={{ display: "flex", justifyContent: "center" }}>
-            <Image src={img} height={300} />
+            {isMdOrLarger ? (
+              <Image src={img} height={300} />
+            ) : (
+              <Image src={img} height={200} />
+            )}
           </Box>
           <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
             <IconButton>
@@ -49,7 +58,7 @@ function ProductCard({ img, title, description, price }) {
       </Card>
       <Stack
         direction="row"
-        gap={10}
+        gap={3}
         sx={{
           display: "flex",
           justifyContent: "center",
@@ -58,16 +67,7 @@ function ProductCard({ img, title, description, price }) {
         }}
       >
         <Box sx={{ maxWidth: "150px" }}>
-          <Typography
-            variant="h4"
-            sx={{
-              whiteSpace: "nowrap",
-              overflow: "hidden",
-              textOverflow: "ellipsis",
-            }}
-          >
-            {title}
-          </Typography>
+          <Typography variant="h4">{title}</Typography>
           <Typography
             variant="h6"
             sx={{

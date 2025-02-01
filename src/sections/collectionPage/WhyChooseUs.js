@@ -14,7 +14,7 @@ import WhyUsCard from "@/components/WhyUsCard";
 
 function WhyChooseUs() {
   return (
-    <Container maxWidth="xl" sx={{ pb: 10 }}>
+    <Container maxWidth="xl" sx={{ py: 10 }}>
       <Box sx={{ borderRadius: 10, border: 2, borderColor: "grey.0" }}>
         <Box
           sx={{
@@ -50,7 +50,7 @@ function WhyChooseUs() {
             align="center"
             sx={{
               position: "absolute",
-              fontSize: { xs: "1.7vw", sm: "1.5vw", md: "1vw" },
+              fontSize: { xs: "2.2vw", sm: "1.5vw", md: "1vw" },
               textAlign: "center",
               mt: { xs: 3, md: 4 },
               width: "50%",
@@ -58,33 +58,34 @@ function WhyChooseUs() {
           >
             It is a long established fact that a reader will be distracted by
             the readable content It is a long established fact that a reader It
-            is a long established fact that a reader will be distracted by the
-            readable contentIt is a long established fact that a reader will be
+            is a long established fact
           </Typography>
         </Box>
-        <Grid container sx={{ px: 10, pb: 5 }} spacing={3}>
-          <Grid item xs={12} md={4}>
-            <WhyUsCard
-              icon={icon1}
-              title="Premium natural ingredients"
-              description="From powerful botanical extract to nourishing oils each ingredient is carefully selected for its proven benefits to the skin."
-            />
+        <Container maxWidth="xl">
+          <Grid container sx={{ pb: 5 }} spacing={3}>
+            <Grid item xs={12} md={4}>
+              <WhyUsCard
+                icon={icon1}
+                title="Premium natural ingredients"
+                description="From powerful botanical extract to nourishing oils each ingredient is carefully selected for its proven benefits to the skin."
+              />
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <WhyUsCard
+                icon={icon2}
+                title="Scientifically backed formulas"
+                description="Our team of experts combines the best of nature With skincare technology to create formulation that deliver real results"
+              />
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <WhyUsCard
+                icon={icon3}
+                title="Transparent and ethical practices"
+                description="Our commitment to clean beauty and cruelty-free Standards ensure that our products are safe for you and the environment"
+              />
+            </Grid>
           </Grid>
-          <Grid item xs={12} md={4}>
-            <WhyUsCard
-              icon={icon2}
-              title="Scientifically backed formulas"
-              description="Our team of experts combines the best of nature With skincare technology to create formulation that deliver real results"
-            />
-          </Grid>
-          <Grid item xs={12} md={4}>
-            <WhyUsCard
-              icon={icon3}
-              title="Transparent and ethical practices"
-              description="Our commitment to clean beauty and cruelty-free Standards ensure that our products are safe for you and the environment"
-            />
-          </Grid>
-        </Grid>
+        </Container>
       </Box>
     </Container>
   );

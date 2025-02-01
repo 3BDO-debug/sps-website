@@ -7,6 +7,7 @@ import {
   Grid,
   Stack,
   Typography,
+  useMediaQuery,
   useTheme,
 } from "@mui/material";
 // assets
@@ -22,12 +23,16 @@ const ServiceItem = ({ title, description, hideDivider }) => {
     <Stack direction="row" alignItems="center" gap={2}>
       <Stack gap={1}>
         <Typography
-          sx={{ maxWidth: "70%", wordWrap: "break-word" }}
+          sx={{
+            maxWidth: { xs: "100%", md: "70%" },
+            wordWrap: "break-word",
+            textAlign: { xs: "center", md: "inherit" },
+          }}
           variant="h4"
         >
           {title}
         </Typography>
-        <Typography>
+        <Typography sx={{ textAlign: { xs: "center", md: "inherit" } }}>
           It is a long established fact that a reader will be
         </Typography>
       </Stack>
@@ -65,6 +70,8 @@ const FeatureItem = ({ icon, title }) => {
 // -----------------------------------------------------------
 
 function Services() {
+  const theme = useTheme();
+  const isMdOrLarger = useMediaQuery(theme.breakpoints.up("md"));
   return (
     <Box>
       <Grid container spacing={3}>
@@ -73,7 +80,7 @@ function Services() {
             <Grid container spacing={3}>
               <Grid
                 item
-                xs={12}
+                xs={6}
                 md={2.4}
                 sx={{ display: "flex", justifyContent: "center" }}
               >
@@ -83,11 +90,12 @@ function Services() {
                   height={200}
                   objectFit="cover"
                   alt="Just a girl services"
+                  layout="responsive"
                 />
               </Grid>
               <Grid
                 item
-                xs={12}
+                xs={6}
                 md={2.4}
                 sx={{ display: "flex", justifyContent: "center" }}
               >
@@ -96,6 +104,7 @@ function Services() {
                   height={200}
                   objectFit="cover"
                   alt="Just a girl services"
+                  layout="responsive"
                 />
               </Grid>
               <Grid
@@ -104,7 +113,10 @@ function Services() {
                 md={2.4}
                 sx={{ display: "flex", justifyContent: "center" }}
               >
-                <ServiceItem title="Quality Products" />
+                <ServiceItem
+                  title="Quality Products"
+                  hideDivider={!isMdOrLarger}
+                />
               </Grid>
               <Grid
                 item
@@ -112,7 +124,10 @@ function Services() {
                 md={2.4}
                 sx={{ display: "flex", justifyContent: "center" }}
               >
-                <ServiceItem title="Best Production" />
+                <ServiceItem
+                  title="Best Production"
+                  hideDivider={!isMdOrLarger}
+                />
               </Grid>
               <Grid
                 item
@@ -148,9 +163,13 @@ function Services() {
             />
             <Stack
               direction={{ xs: "column", md: "row" }}
-              alignItems="center"
               justifyContent="center"
-              sx={{ gap: "10%", position: "relative", zIndex: 2 }}
+              sx={{
+                gap: { xs: 3, md: "10%" },
+                position: "relative",
+                zIndex: 2,
+                px: { xs: 5, md: 0 },
+              }}
             >
               <FeatureItem icon="la:shipping-fast" title="Free Shipping" />
               <FeatureItem icon="ix:support" title="24th Customer Support" />

@@ -18,7 +18,6 @@ import product9 from "../../assets/products/product9.png";
 import product10 from "../../assets/products/product10.png";
 import product11 from "../../assets/products/product11.png";
 import product12 from "../../assets/products/product12.png";
-import cloud from "../../assets/cloud.png";
 // components
 import ProductCard from "@/components/ProductCard";
 
@@ -62,7 +61,7 @@ function NewCollection() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          height: { xs: "50vh", md: "60vh" },
+          height: { xs: "40vh", sm: "50vh", md: "60vh" },
           width: "100%",
         }}
       >
@@ -98,16 +97,29 @@ function NewCollection() {
           readable content
         </Typography>
       </Box>
-      {isMdOrLarger && (
+      <Container maxWidth="xl">
         <Stack
           direction="row"
-          sx={{ display: "flex", justifyContent: "space-between", mt: -40 }}
+          justifyContent="space-between"
+          sx={{ mt: { xs: -20, md: -40 } }}
         >
-          <Image src={cloud} width={300} alt="Cloud Image" />
-          <Image src={cloud} width={300} alt="Cloud Image" />
+          <Box
+            component="img"
+            src="/cloud.svg"
+            sx={{
+              width: { xs: 100, sm: 300 },
+            }}
+          />
+          <Box
+            component="img"
+            src="/cloud.svg"
+            sx={{
+              width: { xs: 100, sm: 300 },
+            }}
+          />
         </Stack>
-      )}
-      <Container maxWidth="xl" sx={{ mt: !isMdOrLarger && -20 }}>
+      </Container>
+      <Container maxWidth="xl">
         <Grid container spacing={3}>
           {productsList.map((item, index) => (
             <Grid item xs={12} md={6} lg={3} key={index}>

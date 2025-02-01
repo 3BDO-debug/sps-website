@@ -32,7 +32,7 @@ import accessories from "../../assets/accessories.jpg";
 
 const ReviewCard = ({ video, title, subtitle }) => {
   return (
-    <Box sx={{ px: 5, py: 3 }}>
+    <Box sx={{ px: 2, py: 3 }}>
       <Card
         sx={{
           borderRadius: 10,

@@ -21,7 +21,7 @@ function Intro() {
       >
         <Box
           sx={{
-            height: { xs: "80vh", md: "50vh" },
+            height: { xs: "70vh", md: "50vh" },
             backgroundImage: `
             linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
             url(${abouUsBg.src})
@@ -71,8 +71,8 @@ function Intro() {
               position: "absolute",
               textAlign: "center",
               color: "grey.0",
-              width: "60%",
-              mt: { xs: 20, md: 0 },
+              width: "70%",
+              mt: { xs: 15, md: 0 },
             }}
           >
             It is a long established fact that a reader will be distracted by
@@ -86,7 +86,7 @@ function Intro() {
               color: "grey.900",
               bgcolor: "grey.0",
               borderRadius: 3,
-              top: { xs: 800, md: 500 },
+              top: { xs: 750, md: 500 },
             }}
           >
             Learn More

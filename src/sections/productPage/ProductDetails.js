@@ -43,7 +43,7 @@ function ProductDetails({}) {
   const [quantity, setQuantity] = useState(1);
 
   return (
-    <Box sx={{ pb: 10 }}>
+    <Box sx={{ pb: 10, pt: 1 }}>
       <Box
         sx={{
           bgcolor: "grey.900",
