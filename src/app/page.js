@@ -16,7 +16,8 @@ export default function Home() {
   const isMdOrLarger = useMediaQuery(theme.breakpoints.up("md"));
   return (
     <>
-      {isMdOrLarger ? <HeroBanner /> : <HeroBannerMobile />}
+      {/* {isMdOrLarger ? <HeroBanner /> : <HeroBannerMobile />} */}
+      <HeroBanner />
       <Services />
       <Box
         sx={{
@@ -25,6 +26,7 @@ export default function Home() {
           backgroundPosition: "center",
           width: "100%",
           height: "100%",
+          pt: !isMdOrLarger && 4,
         }}
       >
         <Category />

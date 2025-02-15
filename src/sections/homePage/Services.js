@@ -18,33 +18,26 @@ import { Icon } from "@iconify/react";
 
 // ----------------------------------------------------------
 
-const ServiceItem = ({ title, description, hideDivider }) => {
+const ServiceItem = ({ title, description }) => {
   return (
     <Stack direction="row" alignItems="center" gap={2}>
       <Stack gap={1}>
         <Typography
+          align="center"
           sx={{
-            maxWidth: { xs: "100%", md: "70%" },
+            // maxWidth: { xs: "100%", md: "70%" },
             wordWrap: "break-word",
-            textAlign: { xs: "center", md: "inherit" },
+            // textAlign: { xs: "center", md: "inherit" },
+            color: "grey.0",
           }}
-          variant="h4"
+          variant="h2"
         >
           {title}
         </Typography>
-        <Typography sx={{ textAlign: { xs: "center", md: "inherit" } }}>
-          It is a long established fact that a reader will be
+        <Typography align="center" sx={{ width: "100%" }}>
+          {description}
         </Typography>
       </Stack>
-      {!hideDivider && (
-        <Box
-          sx={{
-            bgcolor: "grey.500",
-            height: "10vh",
-            width: 3,
-          }}
-        />
-      )}
     </Stack>
   );
 };
@@ -74,68 +67,63 @@ function Services() {
   const isMdOrLarger = useMediaQuery(theme.breakpoints.up("md"));
   return (
     <Box>
-      <Grid container spacing={3}>
-        <Grid item xs={12}>
-          <Container>
+      <Grid container>
+        <Grid item xs={12} sx={{ bgcolor: "#ee87a8" }}>
+          <Container
+            maxWidth="xl"
+            sx={{
+              border: 2,
+              borderColor: "grey.0",
+              borderRadius: 10,
+              my: 3,
+              py: 4,
+            }}
+          >
             <Grid container spacing={3}>
               <Grid
                 item
-                xs={6}
-                md={2.4}
-                sx={{ display: "flex", justifyContent: "center" }}
-              >
-                <Image
-                  src={service1}
-                  style={{ aspectRatio: "1/1" }}
-                  height={200}
-                  objectFit="cover"
-                  alt="Just a girl services"
-                  layout="responsive"
-                />
-              </Grid>
-              <Grid
-                item
-                xs={6}
-                md={2.4}
-                sx={{ display: "flex", justifyContent: "center" }}
-              >
-                <Image
-                  src={service2}
-                  height={200}
-                  objectFit="cover"
-                  alt="Just a girl services"
-                  layout="responsive"
-                />
-              </Grid>
-              <Grid
-                item
                 xs={12}
-                md={2.4}
+                md={3.6}
                 sx={{ display: "flex", justifyContent: "center" }}
               >
                 <ServiceItem
-                  title="Quality Products"
-                  hideDivider={!isMdOrLarger}
+                  title="Quality Product"
+                  description="It is a long established fact that a reader will be It is a long established fact that a reader will be"
                 />
               </Grid>
-              <Grid
-                item
-                xs={12}
-                md={2.4}
-                sx={{ display: "flex", justifyContent: "center" }}
-              >
+              {isMdOrLarger && (
+                <Grid item md={0.5}>
+                  <Box
+                    sx={{
+                      bgcolor: "grey.500",
+                      height: "10vh",
+                      width: 2,
+                    }}
+                  />
+                </Grid>
+              )}
+              <Grid item xs={12} md={3.6}>
                 <ServiceItem
                   title="Best Production"
-                  hideDivider={!isMdOrLarger}
+                  description="It is a long established fact that a reader will be It is a long established fact that a reader will be"
                 />
               </Grid>
-              <Grid
-                item
-                xs={12}
-                md={2.4}
-                sx={{ display: "flex", justifyContent: "center" }}
-              >
-                <ServiceItem title="100% Authentic" hideDivider />
+              {isMdOrLarger && (
+                <Grid item md={0.5}>
+                  <Box
+                    sx={{
+                      bgcolor: "grey.500",
+                      height: "10vh",
+                      width: 2,
+                    }}
+                  />
+                </Grid>
+              )}
+              <Grid item xs={12} md={3.6}>
+                <ServiceItem
+                  title="100% Authntic"
+                  description="It is a long established fact that a reader will be It is a long established fact that a reader will be"
+                />
               </Grid>
             </Grid>
           </Container>

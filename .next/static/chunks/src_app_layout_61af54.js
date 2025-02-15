@@ -7,11 +7,11 @@
   "chunks": [
     "static/chunks/_7a0eae._.js",
     "static/chunks/node_modules_next_5b643c._.js",
-    "static/chunks/node_modules_@mui_system_esm_06a5a3._.js",
+    "static/chunks/29970_@mui_system_esm_9397cf._.js",
     "static/chunks/node_modules_@mui_material_538b48._.js",
     "static/chunks/node_modules_framer-motion_dist_es_ec36d6._.js",
     "static/chunks/node_modules_@popperjs_core_lib_b9b8df._.js",
-    "static/chunks/node_modules_414b7a._.js"
+    "static/chunks/node_modules_0153e2._.js"
   ],
   "source": "dynamic"
 });

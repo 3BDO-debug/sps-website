@@ -121,41 +121,41 @@ function Category() {
         sx={{ borderRadius: 10, border: 2, borderColor: "grey.0" }}
       >
         <Grid container spacing={3} sx={{ paddingY: 3 }}>
-          <Grid item xs={12} md={3}>
+          <Grid item xs={6} md={3}>
             <CategoryCard
               img={skincare}
               title="Skincare"
               items="20"
-              height={isMdOrLarger ? 36 : 10}
+              height={isMdOrLarger ? 24.1 : 4}
             />
           </Grid>
-          <Grid item xs={12} md={3}>
+          <Grid item xs={6} md={3}>
             <CategoryCard
               img={makeup}
               title="Makeup"
               items="30"
-              height={isMdOrLarger ? 36 : 10}
+              height={isMdOrLarger ? 24.1 : 4}
             />
           </Grid>
-          <Grid item xs={12} md={3}>
+          <Grid item xs={6} md={3}>
             <Stack gap={3}>
-              <CategoryCard img={body} title="Body" items="10" height={10} />
+              <CategoryCard img={body} title="Body" items="10" height={4} />
               <CategoryCard
                 img={sunscreen}
                 title="Sunscreen"
                 items="15"
-                height={10}
+                height={4}
               />
             </Stack>
           </Grid>
-          <Grid item xs={12} md={3}>
+          <Grid item xs={6} md={3}>
             <Stack gap={3}>
-              <CategoryCard img={hair} title="Hair" items="3" height={10} />
+              <CategoryCard img={hair} title="Hair" items="3" height={4} />
               <CategoryCard
                 img={accessories}
                 title="Accessories"
                 items="8"
-                height={10}
+                height={4}
               />
             </Stack>
           </Grid>

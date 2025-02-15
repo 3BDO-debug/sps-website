@@ -8,10 +8,14 @@ import {
   IconButton,
   Paper,
   Typography,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
 import Iconify from "./Iconify";
 
 function CategoryCard({ items, title, img, height }) {
+  const theme = useTheme();
+  const isMdOrLarger = useMediaQuery(theme.breakpoints.up("md"));
   return (
     <Card
       sx={{
@@ -41,7 +45,10 @@ function CategoryCard({ items, title, img, height }) {
             height: `${height}vh`,
           }}
         >
-          <Typography variant="h1" sx={{ color: "grey.0" }}>
+          <Typography
+            variant={isMdOrLarger ? "h1" : "h5"}
+            sx={{ color: "grey.0" }}
+          >
             {title}
           </Typography>
         </Box>

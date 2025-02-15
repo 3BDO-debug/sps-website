@@ -21,7 +21,7 @@ function HeroBanner() {
       }}
     >
       {/* Clouds */}
-      <Box
+      {/* <Box
         component="img"
         src="/cloud.svg"
         sx={{
@@ -53,9 +53,9 @@ function HeroBanner() {
           zIndex: 3,
           top: "20%",
         }}
-      />
+      /> */}
       {/* Hero Content */}
-      <Box
+      {/* <Box
         sx={{
           position: "absolute",
           height: "100%",
@@ -87,6 +87,27 @@ function HeroBanner() {
           <Typography sx={{ mt: 3 }} variant="subtitle1" color="grey.200">
             It is a long established fact that a reader will be distracted{" "}
           </Typography>
+        </Stack>
+      </Box> */}
+      <Box
+        sx={{
+          position: "absolute",
+          height: "100%",
+          width: "100%",
+          zIndex: 2,
+          px: 3,
+          pt: 30,
+        }}
+      >
+        <Stack sx={{ display: "flex", justifyContent: "center" }}>
+          <Typography variant="h1" color="grey.0" align="center">
+            Your Ultimate Online Skincare destination.
+          </Typography>
+          <Box sx={{ display: "flex", justifyContent: "center", mt: 3 }}>
+            <Button variant="contained" size="large">
+              Shop Now
+            </Button>
+          </Box>
         </Stack>
       </Box>
       <motion.div

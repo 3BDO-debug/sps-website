@@ -52,7 +52,7 @@ function Header() {
           justifyContent="space-between"
           alignItems="center"
         >
-          <Box sx={{ width: 150 }}>
+          <Box sx={{ width: 130 }}>
             <Logo />
           </Box>
 
