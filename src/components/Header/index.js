@@ -36,7 +36,7 @@ function Header() {
     <Box
       sx={{
         bgcolor: "rgba(255, 255, 255, 0.9)",
-        py: 2,
+        py: 1,
         position: "fixed",
         top: 20,
         zIndex: 10,
@@ -52,10 +52,9 @@ function Header() {
           justifyContent="space-between"
           alignItems="center"
         >
-          <Box sx={{ width: 130 }}>
+          <Box sx={{ width: 120 }}>
             <Logo />
           </Box>
-
           {/* Header Links */}
           {isMdOrLarger && (
             <Stack direction="row" alignItems="center" gap={3}>

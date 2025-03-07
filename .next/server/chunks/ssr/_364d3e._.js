@@ -226,7 +226,7 @@ function WhyChooseUs() {
                         justifyContent: "center",
                         alignItems: "center",
                         height: {
-                            xs: "20vh",
+                            xs: "30vh",
                             md: "30vh"
                         },
                         width: "100%"
@@ -260,13 +260,13 @@ function WhyChooseUs() {
                             sx: {
                                 position: "absolute",
                                 fontSize: {
-                                    xs: "7vw",
-                                    sm: "6vw",
-                                    md: "3vw"
+                                    xs: "15vw",
+                                    sm: "13vw",
+                                    md: "5vw"
                                 },
                                 textAlign: "center",
                                 mt: {
-                                    xs: -7,
+                                    xs: -10,
                                     md: -17
                                 }
                             },
@@ -282,9 +282,9 @@ function WhyChooseUs() {
                             sx: {
                                 position: "absolute",
                                 fontSize: {
-                                    xs: "2.2vw",
-                                    sm: "1.5vw",
-                                    md: "1vw"
+                                    xs: "2.8vw",
+                                    sm: "2.2vw",
+                                    md: "2vw"
                                 },
                                 textAlign: "center",
                                 mt: {

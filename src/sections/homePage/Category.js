@@ -57,7 +57,7 @@ function Category() {
           variant="h1"
           sx={{
             position: "absolute",
-            fontSize: { xs: "11vw", sm: "8vw", md: "5vw" },
+            fontSize: { xs: "18vw", sm: "8vw", md: "8vw" },
             textAlign: "center",
             mt: { xs: -7, md: -10 },
           }}
@@ -68,7 +68,7 @@ function Category() {
           variant="h1"
           sx={{
             position: "absolute",
-            fontSize: { xs: "2vw", sm: "2vw", md: "1vw" },
+            fontSize: { xs: "3.5vw", sm: "2.5vw", md: "1.5vw" },
             textAlign: "center",
             mt: { xs: 4, md: 8 },
           }}

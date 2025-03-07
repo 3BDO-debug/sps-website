@@ -9,6 +9,7 @@ import { CssBaseline } from "@mui/material";
 import { lightPalette, darkPalette } from "./palette";
 import typography from "./typography";
 import button from "./button";
+import "./index.css";
 
 // ----------------------------------------------------------------------------------------------------
 

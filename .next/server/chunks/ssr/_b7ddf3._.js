@@ -617,9 +617,9 @@ function ExclusiveProducts() {
                         sx: {
                             position: "absolute",
                             fontSize: {
-                                xs: "9vw",
-                                sm: "8vw",
-                                md: "5vw"
+                                xs: "15vw",
+                                sm: "13vw",
+                                md: "8vw"
                             },
                             textAlign: "center",
                             mt: {
@@ -638,9 +638,9 @@ function ExclusiveProducts() {
                         sx: {
                             position: "absolute",
                             fontSize: {
-                                xs: "2vw",
-                                sm: "2vw",
-                                md: "1vw"
+                                xs: "4vw",
+                                sm: "3vw",
+                                md: "1.5vw"
                             },
                             textAlign: "center",
                             mt: {

@@ -148,13 +148,13 @@ const typography = {
         }
     ],
     h1: {
-        fontSize: "2.5rem",
+        fontSize: "4rem",
         fontWeight: 800,
         lineHeight: 1.3,
         letterSpacing: "-0.02em"
     },
     h2: {
-        fontSize: "2rem",
+        fontSize: "3rem",
         fontWeight: 700,
         lineHeight: 1.35,
         letterSpacing: "-0.015em"
@@ -172,43 +172,43 @@ const typography = {
         letterSpacing: "-0.005em"
     },
     h5: {
-        fontSize: "1.25rem",
+        fontSize: "1.5rem",
         fontWeight: 600,
         lineHeight: 1.5,
         letterSpacing: "0em"
     },
     h6: {
-        fontSize: "1rem",
+        fontSize: "1.3rem",
         fontWeight: 500,
         lineHeight: 1.55,
         letterSpacing: "0.005em"
     },
     subtitle1: {
-        fontSize: "1rem",
+        fontSize: "1.5rem",
         fontWeight: 400,
         lineHeight: 1.6,
         letterSpacing: "0.01em"
     },
     subtitle2: {
-        fontSize: "0.875rem",
+        fontSize: "1.1rem",
         fontWeight: 400,
         lineHeight: 1.57,
         letterSpacing: "0.01em"
     },
     body1: {
-        fontSize: "1rem",
+        fontSize: "1.3rem",
         fontWeight: 400,
         lineHeight: 1.6,
         letterSpacing: "0.015em"
     },
     body2: {
-        fontSize: "0.875rem",
+        fontSize: "1rem",
         fontWeight: 400,
         lineHeight: 1.57,
         letterSpacing: "0.02em"
     },
     button: {
-        fontSize: "0.875rem",
+        fontSize: "1.875rem",
         fontWeight: 500,
         lineHeight: 1.75,
         textTransform: "none",
@@ -305,6 +305,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$mat
 ;
 ;
 ;
+;
 // ----------------------------------------------------------------------------------------------------
 function ThemeProvider({ children }) {
     const palette = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$theme$2f$palette$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["lightPalette"];
@@ -324,13 +325,13 @@ function ThemeProvider({ children }) {
             children,
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$CssBaseline$2f$CssBaseline$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CssBaseline$3e$__["CssBaseline"], {}, void 0, false, {
                 fileName: "[project]/src/theme/index.js",
-                lineNumber: 33,
+                lineNumber: 34,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/theme/index.js",
-        lineNumber: 31,
+        lineNumber: 32,
         columnNumber: 5
     }, this);
 }
@@ -701,6 +702,7 @@ function HeaderLink({ title, href }) {
                     opacity: hovered || href === location ? 1 : 0,
                     transition: "opacity 0.5s ease-in-out"
                 },
+                fontSize: 20,
                 icon: "fa6-solid:chess-queen"
             }, void 0, false, {
                 fileName: "[project]/src/components/Header/HeaderLink.js",
@@ -719,7 +721,7 @@ function HeaderLink({ title, href }) {
                 children: title
             }, void 0, false, {
                 fileName: "[project]/src/components/Header/HeaderLink.js",
-                lineNumber: 39,
+                lineNumber: 40,
                 columnNumber: 7
             }, this)
         ]
@@ -1006,7 +1008,7 @@ function Header() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
         sx: {
             bgcolor: "rgba(255, 255, 255, 0.9)",
-            py: 2,
+            py: 1,
             position: "fixed",
             top: 20,
             zIndex: 10,
@@ -1024,7 +1026,7 @@ function Header() {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                             sx: {
-                                width: 130
+                                width: 120
                             },
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Logo$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                 fileName: "[project]/src/components/Header/index.js",
@@ -1045,12 +1047,12 @@ function Header() {
                                     href: _.href
                                 }, index, false, {
                                     fileName: "[project]/src/components/Header/index.js",
-                                    lineNumber: 63,
+                                    lineNumber: 62,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/components/Header/index.js",
-                            lineNumber: 61,
+                            lineNumber: 60,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Stack$2f$Stack$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Stack$3e$__["Stack"], {
@@ -1069,17 +1071,17 @@ function Header() {
                                             }
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Header/index.js",
-                                            lineNumber: 71,
+                                            lineNumber: 70,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Header/index.js",
-                                        lineNumber: 70,
+                                        lineNumber: 69,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Header/index.js",
-                                    lineNumber: 69,
+                                    lineNumber: 68,
                                     columnNumber: 13
                                 }, this),
                                 !isMdOrLarger && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Tooltip$2f$Tooltip$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Tooltip$3e$__["Tooltip"], {
@@ -1094,17 +1096,17 @@ function Header() {
                                             }
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Header/index.js",
-                                            lineNumber: 77,
+                                            lineNumber: 76,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Header/index.js",
-                                        lineNumber: 76,
+                                        lineNumber: 75,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Header/index.js",
-                                    lineNumber: 75,
+                                    lineNumber: 74,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Tooltip$2f$Tooltip$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Tooltip$3e$__["Tooltip"], {
@@ -1114,23 +1116,23 @@ function Header() {
                                             icon: "icon-park-outline:search"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Header/index.js",
-                                            lineNumber: 83,
+                                            lineNumber: 82,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Header/index.js",
-                                        lineNumber: 82,
+                                        lineNumber: 81,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Header/index.js",
-                                    lineNumber: 81,
+                                    lineNumber: 80,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Header/index.js",
-                            lineNumber: 68,
+                            lineNumber: 67,
                             columnNumber: 11
                         }, this)
                     ]
@@ -1150,7 +1152,7 @@ function Header() {
                 navLinks: HEADER_LINKS
             }, void 0, false, {
                 fileName: "[project]/src/components/Header/index.js",
-                lineNumber: 89,
+                lineNumber: 88,
                 columnNumber: 7
             }, this)
         ]

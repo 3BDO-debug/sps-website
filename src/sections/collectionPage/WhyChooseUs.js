@@ -22,7 +22,7 @@ function WhyChooseUs() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            height: { xs: "20vh", md: "30vh" },
+            height: { xs: "30vh", md: "30vh" },
             width: "100%",
           }}
         >
@@ -38,9 +38,9 @@ function WhyChooseUs() {
             variant="h1"
             sx={{
               position: "absolute",
-              fontSize: { xs: "7vw", sm: "6vw", md: "3vw" },
+              fontSize: { xs: "15vw", sm: "13vw", md: "5vw" },
               textAlign: "center",
-              mt: { xs: -7, md: -17 },
+              mt: { xs: -10, md: -17 },
             }}
           >
             Why Choose Us
@@ -50,7 +50,7 @@ function WhyChooseUs() {
             align="center"
             sx={{
               position: "absolute",
-              fontSize: { xs: "2.2vw", sm: "1.5vw", md: "1vw" },
+              fontSize: { xs: "2.8vw", sm: "2.2vw", md: "2vw" },
               textAlign: "center",
               mt: { xs: 3, md: 4 },
               width: "50%",

@@ -34,6 +34,7 @@ function HeaderLink({ title, href }) {
           opacity: hovered || href === location ? 1 : 0,
           transition: "opacity 0.5s ease-in-out",
         }}
+        fontSize={20}
         icon="fa6-solid:chess-queen"
       />
       <Typography

@@ -56,7 +56,7 @@ function Intro() {
               variant="h1"
               sx={{
                 position: "absolute",
-                fontSize: { xs: "11vw", sm: "8vw", md: "4vw" },
+                fontSize: { xs: "18vw", sm: "13vw", md: "8vw" },
                 textAlign: "center",
                 mt: { xs: -7, md: -7 },
                 color: "grey.0",

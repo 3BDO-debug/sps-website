@@ -482,13 +482,13 @@ function NewCollection() {
                         sx: {
                             position: "absolute",
                             fontSize: {
-                                xs: "9vw",
-                                sm: "8vw",
-                                md: "5vw"
+                                xs: "18vw",
+                                sm: "17vw",
+                                md: "8vw"
                             },
                             textAlign: "center",
                             mt: {
-                                xs: -7,
+                                xs: -15,
                                 md: -17
                             }
                         },
@@ -503,9 +503,9 @@ function NewCollection() {
                         sx: {
                             position: "absolute",
                             fontSize: {
-                                xs: "2vw",
-                                sm: "2vw",
-                                md: "1vw"
+                                xs: "4vw",
+                                sm: "3vw",
+                                md: "2vw"
                             },
                             textAlign: "center",
                             mt: {

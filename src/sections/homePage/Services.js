@@ -1,5 +1,7 @@
 "use client";
 import React from "react";
+// next
+import Image from "next/image";
 // @Mui
 import {
   Box,
@@ -10,11 +12,12 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
+// iconify
+import { Icon } from "@iconify/react";
 // assets
 import service1 from "@/assets/service-1.png";
 import service2 from "@/assets/service-2.png";
-import Image from "next/image";
-import { Icon } from "@iconify/react";
+import crown from "../../assets/crown.png";
 
 // ----------------------------------------------------------
 
@@ -25,16 +28,32 @@ const ServiceItem = ({ title, description }) => {
         <Typography
           align="center"
           sx={{
-            // maxWidth: { xs: "100%", md: "70%" },
             wordWrap: "break-word",
-            // textAlign: { xs: "center", md: "inherit" },
             color: "grey.0",
+            fontWeight: "bold",
+            fontSize: {
+              xs: "1.25rem", // Increased
+              sm: "1.5rem", // Increased
+              md: "1.75rem", // Increased
+              lg: "2rem", // Increased
+              xl: "2.25rem", // Added for extra-large screens
+            },
           }}
-          variant="h2"
         >
           {title}
         </Typography>
-        <Typography align="center" sx={{ width: "100%" }}>
+
+        <Typography
+          align="center"
+          sx={{
+            fontSize: {
+              xs: "0.65rem", // Increased
+              sm: "1rem", // Increased
+              md: "1.25rem", // Increased
+              lg: "1.5rem", // Added for larger screens
+            },
+          }}
+        >
           {description}
         </Typography>
       </Stack>
@@ -48,12 +67,25 @@ const FeatureItem = ({ icon, title }) => {
   const theme = useTheme();
 
   return (
-    <Stack direction="row" alignItems="center" gap={3}>
+    <Stack direction="row" alignItems="center" gap={0.5}>
       <Icon
-        style={{ color: theme.palette.grey[300], width: 35, height: 35 }}
+        style={{ color: theme.palette.grey[300], width: 25, height: 25 }}
         icon={icon}
       />
-      <Typography variant="subtitle1" color="grey.300">
+      <Typography
+        variant="caption"
+        color="grey.300"
+        sx={{
+          fontSize: {
+            xs: "0.75rem",  // Increased
+            sm: "1rem",     // Increased
+            md: "1.25rem",  // Increased
+            lg: "1.5rem",   // Increased
+            xl: "1.75rem",  // Increased
+          }
+          
+        }}
+      >
         {title}
       </Typography>
     </Stack>
@@ -68,61 +100,83 @@ function Services() {
   return (
     <Box>
       <Grid container>
-        <Grid item xs={12} sx={{ bgcolor: "#ee87a8" }}>
+        <Grid item xs={12} sx={{ bgcolor: "transparent" }}>
+          <Box sx={{ display: "flex", justifyContent: "center", mt: 2 }}>
+            <Image
+              src={crown}
+              style={{
+                width: "auto",
+                height: "auto",
+              }}
+            />
+          </Box>
           <Container
             maxWidth="xl"
             sx={{
               border: 2,
               borderColor: "grey.0",
               borderRadius: 10,
-              my: 3,
+              mb: 2,
               py: 4,
+              height: 160,
             }}
           >
-            <Grid container spacing={3}>
+            <Grid container spacing={2}>
               <Grid
                 item
-                xs={12}
-                md={3.6}
+                xs={3.5}
                 sx={{ display: "flex", justifyContent: "center" }}
               >
                 <ServiceItem
                   title="Quality Product"
-                  description="It is a long established fact that a reader will be It is a long established fact that a reader will be"
+                  description="It is a long established fact that a reader will"
                 />
               </Grid>
-              {isMdOrLarger && (
-                <Grid item md={0.5}>
-                  <Box
-                    sx={{
-                      bgcolor: "grey.500",
-                      height: "10vh",
-                      width: 2,
-                    }}
-                  />
-                </Grid>
-              )}
-              <Grid item xs={12} md={3.6}>
+              <Grid item xs={0.5}>
+                <Box
+                  sx={{
+                    bgcolor: "grey.0",
+                    height: "10vh",
+                    width: 2,
+                  }}
+                />
+              </Grid>
+              <Grid
+                item
+                xs={3.5}
+                sx={{ display: "flex", justifyContent: "center" }}
+              >
                 <ServiceItem
                   title="Best Production"
-                  description="It is a long established fact that a reader will be It is a long established fact that a reader will be"
+                  description="It is a long established fact that a reader will"
                 />
               </Grid>
-              {isMdOrLarger && (
-                <Grid item md={0.5}>
-                  <Box
-                    sx={{
-                      bgcolor: "grey.500",
-                      height: "10vh",
-                      width: 2,
-                    }}
-                  />
-                </Grid>
-              )}
-              <Grid item xs={12} md={3.6}>
+              <Grid item xs={0.5}>
+                <Box
+                  sx={{
+                    bgcolor: "grey.0",
+                    height: "10vh",
+                    width: 2,
+                  }}
+                />
+              </Grid>
+              <Grid
+                item
+                xs={3.5}
+                sx={{ display: "flex", justifyContent: "center" }}
+              >
                 <ServiceItem
                   title="100% Authntic"
-                  description="It is a long established fact that a reader will be It is a long established fact that a reader will be"
+                  description="It is a long established fact that a reader will"
+                />
+              </Grid>
+              <Grid item xs={0.5}>
+                <Box
+                  sx={{
+                    bgcolor: "transparent",
+                    height: "10vh",
+                    width: 2,
+                  }}
                 />
               </Grid>
             </Grid>
@@ -132,31 +186,29 @@ function Services() {
           <Box
             sx={{
               width: "100%",
-              py: 3,
+              py: 1,
               position: "relative",
             }}
           >
             <Box
               sx={{
                 position: "absolute",
-                left: 0,
                 width: "100%",
                 height: "100%",
                 bgcolor: "grey.900",
                 zIndex: 2,
                 top: 0,
                 backdropFilter: "blur(5px)",
-                opacity: 1,
+                opacity: 0.8,
               }}
             />
             <Stack
-              direction={{ xs: "column", md: "row" }}
+              direction="row"
               justifyContent="center"
               sx={{
-                gap: { xs: 3, md: "10%" },
+                gap: { xs: 1, sm: 15, md: 30, lg: 40 },
                 position: "relative",
                 zIndex: 2,
-                px: { xs: 5, md: 0 },
               }}
             >
               <FeatureItem icon="la:shipping-fast" title="Free Shipping" />

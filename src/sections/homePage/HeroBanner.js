@@ -6,8 +6,6 @@ import Image from "next/image";
 import { Box, Button, Stack, Typography } from "@mui/material";
 // framer-motion
 import { motion } from "framer-motion";
-// assets
-import heroBg from "@/assets/heroBg.png";
 
 // -----------------------------------------------------------------------------
 
@@ -20,8 +18,6 @@ function HeroBanner() {
         overflow: "hidden",
       }}
     >
-      {/* Clouds */}
-    
       <Box
         sx={{
           position: "absolute",
@@ -43,28 +39,6 @@ function HeroBanner() {
           </Box>
         </Stack>
       </Box>
-      <motion.div
-        initial={{ opacity: 0, scale: 1 }} // Start hidden and slightly scaled down
-        animate={{ opacity: 1, scale: 1.1 }} // Fade in and scale to normal size
-        transition={{
-          duration: 3, // Animation duration
-          ease: "easeInOut", // Smooth easing
-        }}
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-        }}
-      >
-        <Image
-          src={heroBg}
-          alt="Welcome to just a girl"
-          objectFit="cover"
-          layout="fill"
-        />
-      </motion.div>
     </Box>
   );
 }
