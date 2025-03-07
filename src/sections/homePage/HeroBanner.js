@@ -18,6 +18,7 @@ function HeroBanner() {
         overflow: "hidden",
       }}
     >
+      {/* d */}
       <Box
         sx={{
           position: "absolute",
