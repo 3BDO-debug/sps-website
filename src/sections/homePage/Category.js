@@ -126,7 +126,7 @@ function Category() {
               img={skincare}
               title="Skincare"
               items="20"
-              height={isMdOrLarger ? 24.1 : 4}
+              height={isMdOrLarger ? 25 : 4}
             />
           </Grid>
           <Grid item xs={6} md={3}>
@@ -134,7 +134,7 @@ function Category() {
               img={makeup}
               title="Makeup"
               items="30"
-              height={isMdOrLarger ? 24.1 : 4}
+              height={isMdOrLarger ? 25 : 4}
             />
           </Grid>
           <Grid item xs={6} md={3}>
@@ -176,7 +176,7 @@ function Category() {
             backgroundImage: `url(${offerBg.src})`,
             backgroundSize: "cover",
             borderRadius: 4,
-            height: { xs: "30vh", md: "60vh" },
+            height: { xs: "50vh", md: "60vh" },
             display: "flex",
             justifyContent: isMdOrLarger ? "flex-end" : "center",
             alignItems: "center",
@@ -192,7 +192,7 @@ function Category() {
                   position: "absolute",
                   zIndex: 1,
                   right: 40,
-                  top: 2000,
+                  top: 1750,
                   mt: -5,
                 }}
               />
@@ -271,7 +271,7 @@ function Category() {
                   position: "absolute",
                   zIndex: 1,
                   right: 500,
-                  top: 2350,
+                  top: 2150,
                   transform: "scaleX(-1)",
                 }}
               />
