@@ -24,7 +24,7 @@ function HeroBanner() {
         </Typography>
         <Box sx={{ display: "flex", justifyContent: "center", mt: 3 }}>
           <Button variant="contained" size="large">
-            Shop No
+            Shop Now
           </Button>
         </Box>
       </Stack>
