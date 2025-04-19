@@ -56,9 +56,9 @@ function Intro() {
               variant="h1"
               sx={{
                 position: "absolute",
-                fontSize: { xs: "18vw", sm: "13vw", md: "8vw" },
+                fontSize: { xs: "10vw", sm: "8vw", md: "5vw" },
                 textAlign: "center",
-                mt: { xs: -7, md: -7 },
+                mt: { xs: 1, md: 10 },
                 color: "grey.0",
               }}
             >
@@ -66,13 +66,13 @@ function Intro() {
             </Typography>
           </Box>
           <Typography
-            variant="h5"
+            variant="h6"
             sx={{
               position: "absolute",
               textAlign: "center",
               color: "grey.0",
               width: "70%",
-              mt: { xs: 15, md: 0 },
+              mt: { xs: 15, md: 5 },
             }}
           >
             It is a long established fact that a reader will be distracted by

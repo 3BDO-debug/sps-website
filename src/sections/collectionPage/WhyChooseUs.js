@@ -38,9 +38,9 @@ function WhyChooseUs() {
             variant="h1"
             sx={{
               position: "absolute",
-              fontSize: { xs: "15vw", sm: "13vw", md: "5vw" },
+              fontSize: { xs: "9vw", sm: "7.5vw", md: "2.8vw" },
               textAlign: "center",
-              mt: { xs: -10, md: -17 },
+              mt: { xs: -7, md: -10 },
             }}
           >
             Why Choose Us
@@ -50,7 +50,7 @@ function WhyChooseUs() {
             align="center"
             sx={{
               position: "absolute",
-              fontSize: { xs: "2.8vw", sm: "2.2vw", md: "2vw" },
+              fontSize: { xs: "2vw", sm: "1.5vw", md: "1vw" },
               textAlign: "center",
               mt: { xs: 3, md: 4 },
               width: "50%",

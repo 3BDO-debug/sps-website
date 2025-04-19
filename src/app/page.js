@@ -20,8 +20,8 @@ export default function Home() {
   return (
     <>
       <motion.div
-        initial={{ opacity: 0, scale: 1 }} // Start hidden
-        animate={{ opacity: 1, scale: 1.1 }} // Animate only the background
+        initial={{ opacity: 0, scale: 0.95 }} // Start hidden
+        animate={{ opacity: 1, scale: 1 }} // Animate only the background
         transition={{
           duration: 3,
           ease: "easeInOut",
@@ -31,7 +31,7 @@ export default function Home() {
           top: 0,
           left: 0,
           width: "100%",
-          height: "100%",
+          height: 1000,
           zIndex: -1, // Puts it behind the content
           backgroundImage: `url(${
             isMdOrLarger ? chairWideView.src : chair.src
@@ -51,13 +51,7 @@ export default function Home() {
           }}
         />
       </motion.div>
-      <Box
-        sx={{
-          position: "relative", // Ensures content stays on top
-          width: "100%",
-          height: "100%",
-        }}
-      >
+      <Box>
         <HeroBanner />
         <Services />
       </Box>
@@ -68,7 +62,6 @@ export default function Home() {
           backgroundPosition: "center",
           width: "100%",
           height: "100%",
-          pt: !isMdOrLarger && 4,
         }}
       >
         <Category />

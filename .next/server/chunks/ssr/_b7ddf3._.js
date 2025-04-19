@@ -617,13 +617,13 @@ function ExclusiveProducts() {
                         sx: {
                             position: "absolute",
                             fontSize: {
-                                xs: "15vw",
-                                sm: "13vw",
-                                md: "8vw"
+                                xs: "8vw",
+                                sm: "7vw",
+                                md: "4.5vw"
                             },
                             textAlign: "center",
                             mt: {
-                                xs: -7,
+                                xs: -8,
                                 md: -23
                             }
                         },

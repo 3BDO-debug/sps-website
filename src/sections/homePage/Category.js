@@ -57,7 +57,7 @@ function Category() {
           variant="h1"
           sx={{
             position: "absolute",
-            fontSize: { xs: "18vw", sm: "8vw", md: "8vw" },
+            fontSize: { xs: "8vw", sm: "6.5vw", md: "4.5vw" },
             textAlign: "center",
             mt: { xs: -7, md: -10 },
           }}
@@ -70,7 +70,7 @@ function Category() {
             position: "absolute",
             fontSize: { xs: "3.5vw", sm: "2.5vw", md: "1.5vw" },
             textAlign: "center",
-            mt: { xs: 4, md: 8 },
+            mt: { xs: 3, md: 8 },
           }}
         >
           It is a long established fact that a reader will be distracted by the

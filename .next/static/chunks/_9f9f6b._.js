@@ -514,13 +514,12 @@ function NewCollection() {
                         sx: {
                             position: "absolute",
                             fontSize: {
-                                xs: "18vw",
-                                sm: "17vw",
-                                md: "8vw"
+                                xs: "9.5vw",
+                                md: "4.5vw"
                             },
                             textAlign: "center",
                             mt: {
-                                xs: -15,
+                                xs: -7,
                                 md: -17
                             }
                         },

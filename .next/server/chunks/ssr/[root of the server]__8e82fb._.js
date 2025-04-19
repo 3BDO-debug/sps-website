@@ -125,36 +125,29 @@ __turbopack_esm__({
     "default": (()=>__TURBOPACK__default__export__)
 });
 const typography = {
-    fontFamily: "'Somar', Arial, sans-serif",
+    fontFamily: "'FoglihtenNo07', Arial, sans-serif",
     fontWeightRegular: 400,
     fontWeightMedium: 600,
     fontWeightBold: 700,
     "@font-face": [
         {
-            fontFamily: "Somar",
+            fontFamily: "FoglihtenNo07.otf",
             src: `
-          url('/fonts/ArbFONTS-Somar-Black.otf') format('opentype'),
-          url('/fonts/ArbFONTS-Somar-Bold.otf') format('opentype'),
-          url('/fonts/ArbFONTS-Somar-Black.otf') format('opentype'),
-          url('/fonts/ArbFONTS-Somar-ExtraBold.otf') format('opentype'),
-          url('/fonts/ArbFONTS-Somar-Light.otf') format('opentype'),
-          url('/fonts/ArbFONTS-Somar-Medium.otf') format('opentype'),
-          url('/fonts/ArbFONTS-Somar-Regular.otf') format('opentype'),
-          url('/fonts/ArbFONTS-Somar-SemiBold.otf') format('opentype'),
-          url('/fonts/ArbFONTS-Somar-Thin.otf') format('opentype'),
+          url('/fonts/FoglihtenNo07.otf') format('opentype'),
+      
                 `,
             fontWeight: "normal",
             fontStyle: "normal"
         }
     ],
     h1: {
-        fontSize: "4rem",
+        fontSize: "2.5rem",
         fontWeight: 800,
         lineHeight: 1.3,
         letterSpacing: "-0.02em"
     },
     h2: {
-        fontSize: "3rem",
+        fontSize: "2rem",
         fontWeight: 700,
         lineHeight: 1.35,
         letterSpacing: "-0.015em"
@@ -172,43 +165,43 @@ const typography = {
         letterSpacing: "-0.005em"
     },
     h5: {
-        fontSize: "1.5rem",
+        fontSize: "1.25rem",
         fontWeight: 600,
         lineHeight: 1.5,
         letterSpacing: "0em"
     },
     h6: {
-        fontSize: "1.3rem",
+        fontSize: "1rem",
         fontWeight: 500,
         lineHeight: 1.55,
         letterSpacing: "0.005em"
     },
     subtitle1: {
-        fontSize: "1.5rem",
+        fontSize: "1rem",
         fontWeight: 400,
         lineHeight: 1.6,
         letterSpacing: "0.01em"
     },
     subtitle2: {
-        fontSize: "1.1rem",
+        fontSize: "0.875rem",
         fontWeight: 400,
         lineHeight: 1.57,
         letterSpacing: "0.01em"
     },
     body1: {
-        fontSize: "1.3rem",
+        fontSize: "1rem",
         fontWeight: 400,
         lineHeight: 1.6,
         letterSpacing: "0.015em"
     },
     body2: {
-        fontSize: "1rem",
+        fontSize: "0.875rem",
         fontWeight: 400,
         lineHeight: 1.57,
         letterSpacing: "0.02em"
     },
     button: {
-        fontSize: "1.875rem",
+        fontSize: "0.875rem",
         fontWeight: 500,
         lineHeight: 1.75,
         textTransform: "none",

@@ -77,9 +77,9 @@ function NewCollection() {
           variant="h1"
           sx={{
             position: "absolute",
-            fontSize: { xs: "18vw", sm: "17vw", md: "8vw" },
+            fontSize: { xs: "9.5vw", md: "4.5vw" },
             textAlign: "center",
-            mt: { xs: -15, md: -17 },
+            mt: { xs: -7, md: -17 },
           }}
         >
           New Collection

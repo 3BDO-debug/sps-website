@@ -32,11 +32,11 @@ const ServiceItem = ({ title, description }) => {
             color: "grey.0",
             fontWeight: "bold",
             fontSize: {
-              xs: "1.25rem", // Increased
-              sm: "1.5rem", // Increased
-              md: "1.75rem", // Increased
-              lg: "2rem", // Increased
-              xl: "2.25rem", // Added for extra-large screens
+              xs: "0.75rem", // Extra small
+              sm: "0.875rem", // Small
+              md: "1rem", // Medium
+              lg: "1.125rem", // Large
+              xl: "1.25rem", // Extra-large
             },
           }}
         >
@@ -47,10 +47,10 @@ const ServiceItem = ({ title, description }) => {
           align="center"
           sx={{
             fontSize: {
-              xs: "0.65rem", // Increased
-              sm: "1rem", // Increased
-              md: "1.25rem", // Increased
-              lg: "1.5rem", // Added for larger screens
+              xs: "0.5rem",
+              sm: "0.75rem",
+              md: "1rem",
+              lg: "1.125rem",
             },
           }}
         >
@@ -77,13 +77,12 @@ const FeatureItem = ({ icon, title }) => {
         color="grey.300"
         sx={{
           fontSize: {
-            xs: "0.75rem",  // Increased
-            sm: "1rem",     // Increased
-            md: "1.25rem",  // Increased
-            lg: "1.5rem",   // Increased
-            xl: "1.75rem",  // Increased
-          }
-          
+            xs: "0.625rem",
+            sm: "0.75rem",
+            md: "0.875rem",
+            lg: "1rem",
+            xl: "1.125rem",
+          },
         }}
       >
         {title}
@@ -117,11 +116,10 @@ function Services() {
               borderColor: "grey.0",
               borderRadius: 10,
               mb: 2,
-              py: 4,
-              height: 160,
+              py: 3,
             }}
           >
-            <Grid container spacing={2}>
+            <Grid container spacing={1}>
               <Grid
                 item
                 xs={3.5}
@@ -199,7 +197,7 @@ function Services() {
                 zIndex: 2,
                 top: 0,
                 backdropFilter: "blur(5px)",
-                opacity: 0.8,
+                opacity: 0.7,
               }}
             />
             <Stack

@@ -110,9 +110,9 @@ function ExclusiveProducts() {
           variant="h1"
           sx={{
             position: "absolute",
-            fontSize: { xs: "15vw", sm: "13vw", md: "8vw" },
+            fontSize: { xs: "8vw", sm: "7vw", md: "4.5vw" },
             textAlign: "center",
-            mt: { xs: -7, md: -23 },
+            mt: { xs: -8, md: -23 },
           }}
         >
           Exclusive Products
