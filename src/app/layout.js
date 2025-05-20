@@ -9,8 +9,8 @@ import Footer from "@/components/Footer";
 // ----------------------------------------------------------------------------------------------------
 
 export const metadata = {
-  title: "Just A Girl",
-  description: "Welcome to just a girl",
+  title: "Smart Power Services",
+  description: "Welcome to SPS",
 };
 
 export default function RootLayout({ children }) {

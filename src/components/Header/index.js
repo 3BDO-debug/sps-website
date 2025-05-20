@@ -1,9 +1,14 @@
 "use client";
 import React, { useState } from "react";
+// next
+import Image from "next/image";
+import { useRouter, usePathname } from "next/navigation";
 // @Mui
 import {
   Box,
+  Button,
   Container,
+  Divider,
   IconButton,
   Stack,
   Tooltip,
@@ -11,11 +16,14 @@ import {
   useTheme,
 } from "@mui/material";
 //
-import Logo from "../Logo";
-import HeaderSearch from "./HeaderSearch";
+// import Logo from "../Logo";
 import HeaderLink from "./HeaderLink";
 import { Icon } from "@iconify/react";
 import SideDrawer from "./SideDrawer";
+// assets
+import logo from "@/assets/logo.png";
+import logo2 from "@/assets/logo2.png";
+import CustomButton from "../CustomButton";
 
 // ---------------------------------------------------------------------
 
@@ -24,64 +32,87 @@ function Header() {
 
   const HEADER_LINKS = [
     { title: "Home", href: "/" },
-    { title: "Products", children: [], href: "/products" },
-    { title: "Collection", href: "/collection" },
-    { title: "About Us", href: "/about-us" },
+    {
+      title: "What We Do",
+      children: [
+        { title: "Services", href: "/what-we-do/services" },
+        { title: "Fields", href: "/what-we-do/fields" },
+      ],
+    },
+    { title: "Projects", href: "/projects" },
+    { title: "Lab", href: "/lab" },
+    { title: "Why SPS", href: "/why-sps" },
+    { title: "Careers", href: "/careers" },
   ];
 
   const theme = useTheme();
+
   const isMdOrLarger = useMediaQuery(theme.breakpoints.up("md"));
+
+  const { push } = useRouter();
+
+  const pathname = usePathname();
 
   return (
     <Box
       sx={{
-        bgcolor: "rgba(255, 255, 255, 0.9)",
         py: 1,
         position: "fixed",
-        top: 20,
+        top: 0,
         zIndex: 10,
-        width: "80%",
-        left: "50%",
-        transform: "translateX(-50%)",
-        borderRadius: 7,
+        width: "100%",
+        bgcolor: "white",
       }}
     >
-      <Container>
+      <Container maxWidth="xl">
         <Stack
           direction="row"
-          justifyContent="space-between"
+          justifyContent={isMdOrLarger ? "space-between" : "center"}
           alignItems="center"
         >
-          <Box sx={{ width: 120 }}>
-            <Logo />
+          {isMdOrLarger && (
+            <Box>
+              <Image src={logo} alt="logo" />
+            </Box>
+          )}
+          <Box>
+            <Image src={logo2} alt="logo" />
           </Box>
+          {isMdOrLarger && pathname !== "/contact-us" && (
+            <Box>
+              <CustomButton
+                color="secondary.main"
+                bgColor="grey.0"
+                label="Contact Us"
+                onClick={() => push("/contact-us")}
+              />
+            </Box>
+          )}
+        </Stack>
+        <Divider sx={{ my: 2 }} />
+        <Stack direction="row" justifyContent="center" alignItems="center">
           {/* Header Links */}
           {isMdOrLarger && (
-            <Stack direction="row" alignItems="center" gap={3}>
-              {HEADER_LINKS.map((_, index) => (
-                <HeaderLink key={index} title={_.title} href={_.href} />
+            <Stack direction="row" alignItems="center" gap={15}>
+              {HEADER_LINKS.map((link, index) => (
+                <HeaderLink
+                  key={index}
+                  title={link.title}
+                  href={link.href}
+                  children={link.children}
+                />
               ))}
             </Stack>
           )}
           {/* Actions */}
           <Stack direction="row" alignItems="center" gap={1}>
-            <Tooltip title="Cart">
-              <IconButton>
-                <Icon icon="proicons:cart" style={{ width: 30, height: 30 }} />
-              </IconButton>
-            </Tooltip>
             {!isMdOrLarger && (
               <Tooltip title="Menu">
                 <IconButton onClick={() => triggerSideDrawer(!sideDrawer)}>
-                  <Icon icon="jam:menu" style={{ width: 30, height: 30 }} />
+                  <Icon icon="mi:menu" style={{ width: 40, height: 40 }} />
                 </IconButton>
               </Tooltip>
             )}
-            <Tooltip title="Search Product">
-              <IconButton>
-                <Icon icon="icon-park-outline:search" />
-              </IconButton>
-            </Tooltip>
           </Stack>
         </Stack>
       </Container>

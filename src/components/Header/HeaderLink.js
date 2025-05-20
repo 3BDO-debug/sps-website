@@ -1,55 +1,96 @@
 "use client";
 import React, { useState } from "react";
-// next
-import { usePathname } from "next/navigation";
 import Link from "next/link";
-// @Mui
-import { alpha, Stack, Typography, useTheme } from "@mui/material";
-// @Iconify
-import { Icon } from "@iconify/react";
+import { usePathname } from "next/navigation";
+import {
+  Box,
+  Typography,
+  Stack,
+  Popper,
+  Paper,
+  ClickAwayListener,
+} from "@mui/material";
 
-// ---------------------------------------------------------------------------------------------
+function HeaderLink({ title, href, children }) {
+  const pathname = usePathname();
+  const [anchorEl, setAnchorEl] = useState(null);
+  const open = Boolean(anchorEl);
 
-function HeaderLink({ title, href }) {
-  const location = usePathname();
+  const handleClick = (event) => {
+    if (children?.length) {
+      setAnchorEl(anchorEl ? null : event.currentTarget);
+    }
+  };
 
-  const theme = useTheme();
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
 
-  const [hovered, setIsHovered] = useState(false);
+  const isActive = pathname === href;
 
   return (
-    <Stack
-      gap={1}
-      direction="row"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      alignItems="center"
-    >
-      <Icon
-        style={{
-          color:
-            hovered && href !== location
-              ? alpha(theme.palette.text.primary, 0.5)
-              : theme.palette.primary.main,
-          opacity: hovered || href === location ? 1 : 0,
-          transition: "opacity 0.5s ease-in-out",
-        }}
-        fontSize={20}
-        icon="fa6-solid:chess-queen"
-      />
-      <Typography
-        sx={{
-          textDecoration: "none",
-          color: location === href ? "primary.main" : "text.primary",
-          fontWeight: 600,
-        }}
-        component={Link}
-        href={href}
-        variant="subtitle1"
-      >
-        {title}
-      </Typography>
-    </Stack>
+    <Box position="relative" onClick={handleClick}>
+      {href ? (
+        <Typography
+          component={Link}
+          href={href}
+          sx={{
+            textDecoration: "none",
+            color: isActive ? "secondary.main" : "text.primary",
+            fontWeight: 600,
+            cursor: "pointer",
+          }}
+          variant="subtitle1"
+        >
+          {title}
+        </Typography>
+      ) : (
+        <Typography
+          sx={{
+            color: "text.primary",
+            fontWeight: 600,
+            cursor: "pointer",
+          }}
+          variant="subtitle1"
+        >
+          {title}
+        </Typography>
+      )}
+
+      {children?.length > 0 && (
+        <Popper
+          open={open}
+          anchorEl={anchorEl}
+          placement="bottom-start"
+          sx={{ zIndex: 100 }}
+        >
+          <ClickAwayListener onClickAway={handleClose}>
+            <Paper elevation={3}>
+              <Stack p={1}>
+                {children.map((child) => (
+                  <Typography
+                    key={child.href}
+                    component={Link}
+                    href={child.href}
+                    sx={{
+                      px: 2,
+                      py: 1,
+                      color: "text.primary",
+                      textDecoration: "none",
+                      "&:hover": {
+                        color: "secondary.main",
+                      },
+                    }}
+                  >
+                    {child.title}
+                  </Typography>
+                ))}
+              </Stack>
+            </Paper>
+          </ClickAwayListener>
+        </Popper>
+      )}
+    </Box>
   );
 }
 

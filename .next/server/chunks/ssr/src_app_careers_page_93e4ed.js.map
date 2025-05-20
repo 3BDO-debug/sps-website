@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/abdelrahmanali/Documents/Abdelrahman/Based%20on%20Tech/sps-website/src/app/careers/page.js"],"sourcesContent":["\"use client\";\nimport React from \"react\";\n\nfunction page() {\n  return <></>;\n}\n\nexport default page;\n"],"names":[],"mappings":";;;;AACA;AADA;;;AAGA,SAAS;IACP,qBAAO;AACT;uCAEe"}},
+    {"offset": {"line": 19, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

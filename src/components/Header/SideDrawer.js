@@ -1,10 +1,9 @@
 "use client";
 import React from "react";
 // Next
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-// Iconify
-import { Icon } from "@iconify/react";
 // @Mui
 import {
   Box,
@@ -12,12 +11,17 @@ import {
   List,
   ListItem,
   Divider,
-  IconButton,
-  Button,
   styled,
+  Popper,
+  ClickAwayListener,
+  Paper,
+  Stack,
+  Typography,
 } from "@mui/material";
-//
-import Logo from "../Logo";
+// components
+import CustomButton from "../CustomButton";
+// assets
+import logo from "@/assets/logo.png";
 
 // ------------------------------------------------------------------------------------------------------------------
 
@@ -28,11 +32,11 @@ function SideDrawer({ isTriggered, closeHandler, navLinks }) {
     textDecoration: "none",
   }));
 
-  const router = useRouter();
+  const { push } = useRouter();
 
   return (
     <Drawer anchor="left" open={isTriggered} onClose={closeHandler}>
-      <div
+      <Box
         style={{ width: 250 }}
         role="presentation"
         onClick={closeHandler}
@@ -41,76 +45,76 @@ function SideDrawer({ isTriggered, closeHandler, navLinks }) {
         {/* Logo Section */}
         <Box sx={{ padding: "16px", textAlign: "center" }}>
           {/* Replace with your logo */}
-          <Logo />
+          <Image src={logo} alt="logo" />
         </Box>
-
         <Divider />
-
         {/* Drawer Items */}
         <List>
-          {navLinks.map((link, index) => (
-            <NavLink key={index} href={link.href} passHref>
+          {navLinks.map((link, index) => {
+            if (link.title === "What We Do") {
+              return null; // skip rendering this link
+            }
+
+            const listItem = (
               <ListItem
                 button
-                component="a"
+                component={link.href ? "a" : "div"}
                 sx={{ display: "flex", justifyContent: "center" }}
               >
                 {link.title}
               </ListItem>
-            </NavLink>
-          ))}
+            );
+
+            return link.href ? (
+              <NavLink key={index} href={link.href} passHref>
+                {listItem}
+              </NavLink>
+            ) : (
+              <React.Fragment key={index}>{listItem}</React.Fragment>
+            );
+          })}
+          <Stack sx={{ display: "flex", justifyContent: "center" }}>
+            <Typography
+              component={Link}
+              href={"/what-we-do/services"}
+              sx={{
+                textDecoration: "none",
+                fontWeight: 600,
+                cursor: "pointer",
+                textAlign: "center",
+                mb: 1,
+                color: "black",
+              }}
+              variant="subtitle1"
+            >
+              Services
+            </Typography>
+            <Typography
+              component={Link}
+              href={"/what-we-do/fields"}
+              sx={{
+                textDecoration: "none",
+                fontWeight: 600,
+                cursor: "pointer",
+                textAlign: "center",
+                color: "black",
+              }}
+              variant="subtitle1"
+            >
+              Fields
+            </Typography>
+          </Stack>
         </List>
-
-        <Divider />
-
-        {/* Social Media Section */}
-        <div
-          style={{ display: "flex", justifyContent: "center", padding: "16px" }}
-        >
-          <Box marginRight={1}>
-            <IconButton
-              onClick={() =>
-                window.open("https://www.instagram.com/dt.lamisalkhawaja/")
-              }
-            >
-              <Icon icon="skill-icons:instagram" width={30} height={30} />
-            </IconButton>
-          </Box>
-
-          <Box marginRight={1}>
-            <IconButton
-              onClick={() =>
-                window.open(
-                  "https://www.youtube.com/watch?v=fEEfXSqph5E&feature=youtu.be"
-                )
-              }
-            >
-              <Icon icon="logos:youtube-icon" width={30} height={30} />
-            </IconButton>
-          </Box>
-        </div>
-        <Divider />
-        <div style={{ padding: "16px", textAlign: "center" }}>
-          <Button
-            variant="outlined"
-            startIcon={
-              <Icon
-                icon="fluent:call-12-filled"
-                // style={{
-                //   marginLeft: currentLang.value === "ar" ? "10" : "0",
-                //   marginRight: currentLang.value === "ar" ? "-10" : "0",
-                // }}
-              />
-            }
-            color="primary"
-            size="medium"
-            sx={{ mt: 2 }}
-            onClick={() => router.push("/contact-us")}
-          >
-            Contact Us
-          </Button>
-        </div>
-      </div>
+        <Divider sx={{ my: 2 }} />
+        <Box sx={{ display: "flex", justifyContent: "center" }}>
+          <CustomButton
+            label="Contact Us"
+            bgColor="grey.0"
+            color="secondary.main"
+            onClick={() => push("/contact-us")}
+          />
+        </Box>
+      </Box>
     </Drawer>
   );
 }

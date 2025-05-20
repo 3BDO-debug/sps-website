@@ -11,16 +11,16 @@ import {
   IconButton,
   InputAdornment,
   Link,
+  Stack,
   TextField,
   Typography,
   useMediaQuery,
   useTheme,
 } from "@mui/material";
-// assets
-import bg from "../../../public/bg.png";
-import footer from "../../assets/footer.png";
-import { Icon } from "@iconify/react";
+// components
 import Iconify from "../Iconify";
+// assets
+import logo from "@/assets/logo.png";
 
 function Footer() {
   const theme = useTheme();
@@ -28,131 +28,35 @@ function Footer() {
 
   const FOOTER_LINKS = [
     { title: "Home", href: "/" },
-    { title: "Products", children: [], href: "/products" },
-    { title: "Collection", href: "/collection" },
-    { title: "About Us", href: "/about-us" },
-  ];
-
-  const LEGAL_FOOTER_LINKS = [
-    { title: "Terms & Conditions", href: "/terms-Conditions" },
-    { title: "Privacy & Policy", href: "/privacy-Policy" },
+    { title: "Projects", href: "/projects" },
+    { title: "Lab", href: "/lab" },
+    { title: "Why SPS", href: "/why-sps" },
+    { title: "Careers", href: "/careers" },
   ];
 
   return (
-    <Box
-      sx={{
-        backgroundImage: `url(${bg.src})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        width: "100%",
-        height: "100%",
-      }}
-    >
-      <Divider sx={{ bgcolor: "#939598" }} />
-      <Box sx={{ mx: 5, mt: 5 }}>
-        <Grid container spacing={5}>
-          <Grid
-            item
-            xs={12}
-            md={7}
-            sx={{ mt: { lg: 10, xl: 20 }, order: isMdOrLarger ? 1 : 2 }}
-          >
-            <Box>
-              <Typography
-                variant="h1"
-                sx={{
-                  fontSize: { md: 55 },
-                  textAlign: { xs: "center", md: "inherit" },
-                }}
-              >
-                Join Our Rediant Newsletter And <br /> Get exclusive Offers
-              </Typography>
-              <TextField
-                placeholder="Enter your email"
-                variant="outlined"
-                sx={{
-                  width: { xs: "100%", md: "60%" },
-                  mt: 2,
-                  bgcolor: "grey.0",
-                  borderRadius: 10,
-                  "& .MuiOutlinedInput-root": {
-                    borderRadius: 10,
-                  },
-                }}
-                InputProps={{
-                  endAdornment: (
-                    <InputAdornment position="end">
-                      {isMdOrLarger ? (
-                        <Button variant="contained">Subscribe</Button>
-                      ) : (
-                        <IconButton>
-                          <Iconify
-                            icon="iconamoon:send-fill"
-                            color="primary.main"
-                          />
-                        </IconButton>
-                      )}
-                    </InputAdornment>
-                  ),
-                }}
-              />
-            </Box>
-          </Grid>
-          <Grid item xs={12} md={5} sx={{ order: isMdOrLarger ? 2 : 1 }}>
-            <Image src={footer} alt="Footer" layout="responsive" width={100} />
-          </Grid>
-        </Grid>
-        <Grid container spacing={5} sx={{ mt: 3 }}>
-          <Grid item xs={12} md={5}>
+    <Box sx={{ mt: 5 }}>
+      <Divider sx={{ bgcolor: "primary.main" }} />
+      <Box sx={{ paddingY: 5, paddingX: isMdOrLarger ? 10 : 2 }}>
+        <Stack
+          direction={isMdOrLarger ? "row" : "column"}
+          alignItems="center"
+          gap={isMdOrLarger ? 40 : 5}
+        >
+          <Stack gap={3}>
+            <Image src={logo} />
             <Typography
-              variant="h3"
-              sx={{ textAlign: { xs: "center", md: "inherit" } }}
-            >
-              Just a girl
-            </Typography>
-            <Typography
-              variant="subtitle1"
               sx={{
-                mt: 2,
-                width: { xs: "100%", md: "60%" },
-                textAlign: { xs: "center", md: "inherit" },
+                color: "primary.main",
+                width: isMdOrLarger ? "60%" : "100%",
               }}
             >
-              we are passionate about empowering you to embrace your natural
-              beauty and achieve a glowing health complexion
+              SPS is a multidisciplinary partner with an integrated and
+              forward-thinking approach.
             </Typography>
-          </Grid>
-          <Grid item xs={12} md={2.3}>
-            <Typography
-              variant="h4"
-              sx={{ textAlign: { xs: "center", md: "inherit" } }}
-            >
-              Contact Us
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              sx={{
-                mt: 2,
-                textAlign: { xs: "center", md: "inherit" },
-              }}
-            >
-              justagirl@info.com
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              sx={{
-                mt: 2,
-                textAlign: { xs: "center", md: "inherit" },
-              }}
-            >
-              112343443234
-            </Typography>
-          </Grid>
-          <Grid item xs={12} md={2.3}>
-            <Typography
-              variant="h4"
-              sx={{ textAlign: { xs: "center", md: "inherit" } }}
-            >
+          </Stack>
+          <Box>
+            <Typography variant="h4" sx={{ color: "primary.main", mb: 2 }}>
               Our Company
             </Typography>
             {FOOTER_LINKS.map((link, index) => (
@@ -164,9 +68,9 @@ function Footer() {
                 <Typography
                   variant="subtitle1"
                   sx={{
-                    mt: 2,
+                    mt: 1,
                     cursor: "pointer",
-                    color: "grey.900",
+                    color: "primary.main",
                     textAlign: { xs: "center", md: "inherit" },
                   }}
                 >
@@ -174,39 +78,28 @@ function Footer() {
                 </Typography>
               </Link>
             ))}
-          </Grid>
-          <Grid item xs={12} md={2.3}>
-            <Typography
-              variant="h4"
-              sx={{ textAlign: { xs: "center", md: "inherit" } }}
-            >
-              Legal
-            </Typography>
-            {LEGAL_FOOTER_LINKS.map((link, index) => (
-              <Link
-                key={index}
-                href={link.href}
-                sx={{ textDecoration: "none" }}
-              >
-                <Typography
-                  variant="subtitle1"
-                  sx={{
-                    mt: 2,
-                    cursor: "pointer",
-                    color: "grey.900",
-                    textAlign: { xs: "center", md: "inherit" },
-                  }}
-                >
-                  {link.title}
-                </Typography>
-              </Link>
-            ))}
-          </Grid>
-        </Grid>
+          </Box>
+          <Stack
+            direction={isMdOrLarger ? "row" : "column"}
+            alignItems="center"
+          >
+            <Box>
+              <Typography variant="h4" sx={{ color: "primary.main", mb: 2 }}>
+                Contact Us
+              </Typography>
+              <Typography sx={{ color: "primary.main" }}>
+                sps@info.com
+              </Typography>
+              <Typography sx={{ color: "primary.main", mt: 1 }}>
+                +20123129837
+              </Typography>
+            </Box>
+          </Stack>
+        </Stack>
       </Box>
-      <Divider sx={{ bgcolor: "#939598", mt: 10 }} />
-      <Typography variant="subtitle1" sx={{ mx: 5, py: 3 }}>
-        @ 2025 just a girl . All rights reserved
+      <Divider sx={{ bgcolor: "primary.main" }} />
+      <Typography sx={{ color: "primary.main", paddingLeft: 10, paddingY: 3 }}>
+        @SPS. All rights reseved
       </Typography>
     </Box>
   );

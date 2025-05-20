@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/abdelrahmanali/Documents/Abdelrahman/Based%20on%20Tech/sps-website/src/sections/homePage/HeroBanner.js"],"sourcesContent":["\"use client\";\nimport React from \"react\";\n// next\nimport Image from \"next/image\";\n// @Mui\nimport { Box, Button, Stack, Typography } from \"@mui/material\";\n// assets\nimport hero from \"@/assets/\"\n\n// -----------------------------------------------------------------------------\n\nfunction HeroBanner() {\n  return (\n    <Box sx={{ pt: 15 }}>\n      <Typography>HomePage</Typography>\n    </Box>\n  );\n}\n\nexport default HeroBanner;\n"],"names":[],"mappings":";;;;AACA;AACA,OAAO;AACP;;;;;;AACA,OAAO;AACP;AAAA;AALA;;;;;;AASA,gFAAgF;AAEhF,SAAS;IACP,qBACE,6LAAC,oLAAA,CAAA,MAAG;QAAC,IAAI;YAAE,IAAI;QAAG;kBAChB,cAAA,6LAAC,yMAAA,CAAA,aAAU;sBAAC;;;;;;;;;;;AAGlB;KANS;uCAQM"}},
+    {"offset": {"line": 54, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 60, "column": 0}, "map": {"version":3,"sources":["file:///Users/abdelrahmanali/Documents/Abdelrahman/Based%20on%20Tech/sps-website/src/app/page.js"],"sourcesContent":["\"use client\";\n// sectoins\n\nimport HeroBanner from \"@/sections/homePage/HeroBanner\";\n\n// ---------------------------------------------------------------------------------------\n\nexport default function Home() {\n  return (\n    <>\n      <HeroBanner />\n    </>\n  );\n}\n"],"names":[],"mappings":";;;;AACA,WAAW;AAEX;AAHA;;;AAOe,SAAS;IACtB,qBACE;kBACE,cAAA,6LAAC,4IAAA,CAAA,UAAU;;;;;;AAGjB;KANwB"}},
+    {"offset": {"line": 84, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

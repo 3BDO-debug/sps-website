@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 12, "column": 0}, "map": {"version":3,"sources":["file:///Users/abdelrahmanali/Documents/Abdelrahman/Based%20on%20Tech/sps-website/src/assets/servicesBg.png.mjs%20%28structured%20image%20object%29"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 1918, height: 877, blurDataURL: \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAj0lEQVR42gGEAHv/AKSKg//OuK7/q5OM/8y8s//Ps5H/wLOv/93W0v/h2tb/AKaRi//Cq6D/p5CK/7GajP+pkHf/dmxu/354df+bmZT/AMCupv/AraT/vKuk/9zHuf+vjnb/UEBC/3poYf+LeXP/AINvav+Nb2T/nXhn/8Sqn/+bhn3/Sj1A/6KJff/lw63/0PBZIuB/hrgAAAAASUVORK5CYII=\", blurWidth: 8, blurHeight: 4 }\n"],"names":[],"mappings":";;;AAAA;;uCACe;IAAE,KAAA,2HAAA,CAAA,UAAG;IAAE,OAAO;IAAM,QAAQ;IAAK,aAAa;IAAsS,WAAW;IAAG,YAAY;AAAE"}},
+    {"offset": {"line": 28, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
