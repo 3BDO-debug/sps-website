@@ -22,7 +22,6 @@ import { Icon } from "@iconify/react";
 import SideDrawer from "./SideDrawer";
 // assets
 import logo from "@/assets/logo.png";
-import logo2 from "@/assets/logo2.png";
 import CustomButton from "../CustomButton";
 
 // ---------------------------------------------------------------------
@@ -65,30 +64,9 @@ function Header() {
       }}
     >
       <Container maxWidth="xl">
-        <Stack
-          direction="row"
-          justifyContent={isMdOrLarger ? "space-between" : "center"}
-          alignItems="center"
-        >
-          {isMdOrLarger && (
-            <Box>
-              <Image src={logo} alt="logo" />
-            </Box>
-          )}
-          <Box>
-            <Image src={logo2} alt="logo" />
-          </Box>
-          {isMdOrLarger && pathname !== "/contact-us" && (
-            <Box>
-              <CustomButton
-                color="secondary.main"
-                bgColor="grey.0"
-                label="Contact Us"
-                onClick={() => push("/contact-us")}
-              />
-            </Box>
-          )}
-        </Stack>
+        <Box sx={{ display: "flex", justifyContent: "center" }}>
+          <Image src={logo} alt="logo" style={{ width: 250, height: 80 }} />
+        </Box>
         <Divider sx={{ my: 2 }} />
         <Stack direction="row" justifyContent="center" alignItems="center">
           {/* Header Links */}

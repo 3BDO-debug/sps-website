@@ -97,7 +97,7 @@ function HeroBanner() {
         sx={{
           bgcolor: "primary.main",
           paddingX: isMdOrLarger ? 20 : 5,
-          paddingY: 2
+          paddingY: 2,
         }}
       >
         <Typography
@@ -113,7 +113,7 @@ function HeroBanner() {
         <CustomButton
           color="white"
           label="Know More"
-          onClick={() => push("/what-we-do")}
+          onClick={() => push("/why-sps")}
         />
       </Stack>
     </>

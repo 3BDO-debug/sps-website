@@ -1,12 +1,6 @@
 {
   "/page": "app/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/_not-found/page": "app/_not-found/page.js",
-  "/what-we-do/services/page": "app/what-we-do/services/page.js",
-  "/what-we-do/fields/page": "app/what-we-do/fields/page.js",
-  "/projects/page": "app/projects/page.js",
   "/why-sps/page": "app/why-sps/page.js",
-  "/lab/page": "app/lab/page.js",
-  "/contact-us/page": "app/contact-us/page.js",
-  "/careers/page": "app/careers/page.js"
+  "/projects/page": "app/projects/page.js"
 }

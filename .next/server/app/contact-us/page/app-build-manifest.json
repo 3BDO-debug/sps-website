@@ -1,9 +1,7 @@
 {
   "pages": {
     "/contact-us/page": [
-      "static/chunks/_a91c21._.js",
-      "static/chunks/src_app_favicon_ico_mjs_ddfdf0._.js",
-      "static/chunks/node_modules_next_21e4df._.js",
+      "static/chunks/node_modules_next_a571b3._.js",
       "static/chunks/29970_@mui_system_esm_6b0b96._.js",
       "static/chunks/node_modules_@mui_material_b2f030._.js",
       "static/chunks/node_modules_@popperjs_core_lib_b9b8df._.js",

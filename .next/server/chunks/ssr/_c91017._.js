@@ -285,32 +285,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$mat
 function intro() {
     const infoCardData = [
         {
-            title: "High-quality service",
-            item1: "SPS projects consistently exceed"
+            title: "Our Mission",
+            item1: "To deliver world-class testing, Commissioning, and diagnostic services across the energy sector using advanced tools, certified processes and a team of passionate experts"
         },
         {
-            title: "Flexibility",
+            title: "Our Vision",
             item1: "Client needs are always a top priority"
-        },
-        {
-            title: "People",
-            item1: "Our teams are the foundation of every success"
-        },
-        {
-            title: "Integrated solutions",
-            item1: "We offer a single point of coordination across disciplines"
-        },
-        {
-            title: "Global Reach",
-            item1: "We operate across borders with confidence"
-        },
-        {
-            title: "Efficiency",
-            item1: "We deliver excellence without compromising time or resources"
-        },
-        {
-            title: "Tradition & Innovation",
-            item1: "A legacy of precision, shaped by forward thinking"
         }
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -330,7 +310,7 @@ function intro() {
                 mt: 5
             }, void 0, false, {
                 fileName: "[project]/src/sections/whySpsPage/intro.js",
-                lineNumber: 44,
+                lineNumber: 25,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Container$2f$Container$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Container$3e$__["Container"], {
@@ -347,15 +327,15 @@ function intro() {
                                 my: 5,
                                 color: "primary.main"
                             },
-                            children: "Our Core Pillars"
+                            children: "Our Mission and Vision"
                         }, void 0, false, {
                             fileName: "[project]/src/sections/whySpsPage/intro.js",
-                            lineNumber: 57,
+                            lineNumber: 38,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/sections/whySpsPage/intro.js",
-                        lineNumber: 56,
+                        lineNumber: 37,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Grid$2f$Grid$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Grid$3e$__["Grid"], {
@@ -367,40 +347,40 @@ function intro() {
                             children: infoCardData.map((card, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Grid$2f$Grid$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Grid$3e$__["Grid"], {
                                     item: true,
                                     xs: 12,
-                                    md: 3,
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$InfoCard$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                         title: card.title,
-                                        item1: card.item1
+                                        item1: card.item1,
+                                        item2: card.item2
                                     }, void 0, false, {
                                         fileName: "[project]/src/sections/whySpsPage/intro.js",
-                                        lineNumber: 65,
+                                        lineNumber: 46,
                                         columnNumber: 17
                                     }, this)
                                 }, index, false, {
                                     fileName: "[project]/src/sections/whySpsPage/intro.js",
-                                    lineNumber: 64,
+                                    lineNumber: 45,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/sections/whySpsPage/intro.js",
-                            lineNumber: 62,
+                            lineNumber: 43,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/sections/whySpsPage/intro.js",
-                        lineNumber: 61,
+                        lineNumber: 42,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/sections/whySpsPage/intro.js",
-                lineNumber: 55,
+                lineNumber: 36,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/sections/whySpsPage/intro.js",
-        lineNumber: 43,
+        lineNumber: 24,
         columnNumber: 5
     }, this);
 }

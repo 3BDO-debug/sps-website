@@ -10,32 +10,13 @@ import InfoCard from "@/components/InfoCard";
 function intro() {
   const infoCardData = [
     {
-      title: "High-quality service",
-      item1: "SPS projects consistently exceed",
+      title: "Our Mission",
+      item1:
+        "To deliver world-class testing, Commissioning, and diagnostic services across the energy sector using advanced tools, certified processes and a team of passionate experts",
     },
     {
-      title: "Flexibility",
+      title: "Our Vision",
       item1: "Client needs are always a top priority",
-    },
-    {
-      title: "People",
-      item1: "Our teams are the foundation of every success",
-    },
-    {
-      title: "Integrated solutions",
-      item1: "We offer a single point of coordination across disciplines",
-    },
-    {
-      title: "Global Reach",
-      item1: "We operate across borders with confidence",
-    },
-    {
-      title: "Efficiency",
-      item1: "We deliver excellence without compromising time or resources",
-    },
-    {
-      title: "Tradition & Innovation",
-      item1: "A legacy of precision, shaped by forward thinking",
     },
   ];
 
@@ -55,14 +36,18 @@ function intro() {
       <Container maxWidth="xl">
         <Box sx={{ display: "flex", justifyContent: "center" }}>
           <Typography variant="h3" sx={{ my: 5, color: "primary.main" }}>
-            Our Core Pillars
+            Our Mission and Vision
           </Typography>
         </Box>
         <Grid container spacing={3}>
           <Grid container spacing={3}>
             {infoCardData.map((card, index) => (
-              <Grid item xs={12} md={3} key={index}>
-                <InfoCard title={card.title} item1={card.item1} />
+              <Grid item xs={12} key={index}>
+                <InfoCard
+                  title={card.title}
+                  item1={card.item1}
+                  item2={card.item2}
+                />
               </Grid>
             ))}
           </Grid>

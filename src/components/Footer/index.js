@@ -44,7 +44,7 @@ function Footer() {
           gap={isMdOrLarger ? 40 : 5}
         >
           <Stack gap={3}>
-            <Image src={logo} />
+            <Image src={logo} style={{ width: 250, height: 80 }} alt="logo" />
             <Typography
               sx={{
                 color: "primary.main",
