@@ -31,59 +31,23 @@ function page() {
   const servicesCardsData = [
     {
       color: "primary.main",
-      image: feasibility,
-      title: "Feasibility",
-      items: [
-        "Master Planning",
-        "Feasibility Studies",
-        "Transport & Traffic Planning",
-      ],
+      icon: "material-symbols:engineering",
+      title: "Engineering",
     },
     {
       color: "primary.main",
-      image: planning,
-      title: "Planning",
-      items: [
-        "Architectural & Interior Design",
-        "Urban Design",
-        "Sustainability & Environmental ",
-      ],
-    },
-    {
-      color: "primary.main",
-      image: design,
-      title: "Design",
-      items: [
-        "Structural Engineering",
-        "Mechanical & Electrical Engineering",
-        "Infrastructure & Water Systems Design",
-      ],
-    },
-    {
-      color: "primary.main",
-      image: procurement,
-      title: "Procurement",
-      items: [
-        "Procurement Strategy",
-        "Tender Evaluation",
-        "Contract Management",
-      ],
-    },
-    {
-      color: "primary.main",
-      image: construction,
+      icon: "emojione-monotone:building-construction",
       title: "Construction",
-      items: ["Construction Management", "Site Supervision", "Quality Control"],
     },
     {
       color: "primary.main",
-      image: operation,
-      title: "Operation & Maintenance",
-      items: [
-        "Facility Management",
-        "Maintenance Planning",
-        "Technology Transfer & Training",
-      ],
+      icon: "pajamas:rocket-launch",
+      title: "Testing & Commissioning",
+    },
+    {
+      color: "primary.main",
+      icon: "fa:group",
+      title: "Staffing",
     },
   ];
 
@@ -100,7 +64,7 @@ function page() {
             content: '""',
             position: "absolute",
             width: "100%",
-            height: isMdOrLarger ? "108vh" : "347vh",
+            height: isMdOrLarger ? "85vh" : "225vh",
             bgcolor: alpha(theme.palette.primary.main, 0.7),
             zIndex: 1,
           },
@@ -133,12 +97,9 @@ function page() {
             {servicesCardsData.map((card, index) => (
               <Grid item xs={12} md={3} key={index}>
                 <InfoCard
-                  image={card.image}
+                  icon={card.icon}
                   color={card.color}
                   title={card.title}
-                  item1={card.items[0]}
-                  item2={card.items[1]}
-                  item3={card.items[2]}
                 />
               </Grid>
             ))}

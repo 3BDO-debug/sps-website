@@ -15,13 +15,15 @@
     "@mui/joy": "^5.0.0-beta.51",
     "@mui/material": "^6.4.0",
     "@mui/material-nextjs": "^6.3.1",
+    "axios": "^1.9.0",
     "framer-motion": "^11.18.0",
     "next": "15.1.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.6.0",
     "react-slick": "^0.30.3",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "zustand": "^5.0.5"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

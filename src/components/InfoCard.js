@@ -3,14 +3,19 @@ import React from "react";
 import Image from "next/image";
 // mui
 import { Box, Divider, Stack, Typography } from "@mui/material";
+import Iconify from "./Iconify";
 
 function InfoCard({
-  image,
+  icon,
   color = "primary.main",
   title,
   item1,
   item2,
   item3,
+  item4,
+  item5,
+  item6,
+  item7,
 }) {
   return (
     <Box
@@ -18,21 +23,20 @@ function InfoCard({
         bgcolor: "grey.0",
         position: "relative",
         mx: 1,
-        paddingTop: 10,
         boxShadow: 3,
       }}
     >
-      <Box sx={{ height: "35vh" }}>
+      <Box sx={{ paddingY: 10 }}>
         <Box
           sx={{
             display: "flex",
             justifyContent: "center",
           }}
         >
-          <Stack gap={1} sx={{ mb: 5 }}>
-            {image && (
+          <Stack gap={1}>
+            {icon && (
               <Box sx={{ display: "flex", justifyContent: "center" }}>
-                <Image src={image} alt="icon" />
+                <Iconify icon={icon} sx={{ color: color, fontSize: 100 }} />
               </Box>
             )}
             <Box sx={{ display: "flex", justifyContent: "center" }}>
@@ -45,22 +49,29 @@ function InfoCard({
             </Box>
           </Stack>
         </Box>
-        <Stack direction="row" alignItems="center" gap={2} sx={{ ml: 3 }}>
-          <Box>
-            <Box sx={{ bgcolor: color, height: 100, width: 2 }}></Box>
-          </Box>
-          <Box>
-            <Typography variant="subtitle1" sx={{ color: color }}>
-              {item1}
-            </Typography>
-            <Typography variant="subtitle1" sx={{ color: color }}>
-              {item2}
-            </Typography>
-            <Typography variant="subtitle1" sx={{ color: color }}>
-              {item3}
-            </Typography>
-          </Box>
-        </Stack>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            mt: 3,
+            paddingX: 10,
+          }}
+        >
+          <Stack gap={2}>
+            {[item1, item2, item3, item4, item5, item6, item7].map(
+              (item, index) =>
+                item && (
+                  <Typography
+                    key={index}
+                    variant="subtitle1"
+                    sx={{ color: color }}
+                  >
+                    {item}
+                  </Typography>
+                )
+            )}
+          </Stack>
+        </Box>
       </Box>
       <Box sx={{ bgcolor: color, height: 7 }}></Box>
     </Box>

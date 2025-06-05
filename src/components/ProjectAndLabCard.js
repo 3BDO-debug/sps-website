@@ -1,26 +1,38 @@
 import React from "react";
 // next
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 // mui
 import { Box, Stack, Typography, useMediaQuery, useTheme } from "@mui/material";
 
 function ProjectAndLabCard({
+  id,
   image,
-  description,
+  name,
   width = 400,
   color = "secondary.main",
 }) {
   const theme = useTheme();
   const isMdOrLarger = useMediaQuery(theme.breakpoints.up("md"));
 
+  const { push } = useRouter();
+
   return (
-    <Box sx={{ bgcolor: color, width: isMdOrLarger ? width : 280 }}>
+    <Box
+      sx={{
+        bgcolor: color,
+        width: isMdOrLarger ? width : 280,
+        cursor: "pointer",
+      }}
+      onClick={() => push(`/project-details/${id}`)}
+    >
       <Image
         src={image}
         alt="project"
-        style={{ height: "40vh", width: isMdOrLarger ? width : 280 }}
+        height={350}
+        width={isMdOrLarger ? width : 280}
       />
-      <Box sx={{ display: "flex", justifyContent: "center", paddingY: 1 }}>
+      <Box sx={{ display: "flex", justifyContent: "flex-start", paddingY: 1 }}>
         <Stack direction="row" alignItems="center" gap={1}>
           <Box
             sx={{
@@ -35,7 +47,7 @@ function ProjectAndLabCard({
             variant="subtitle1"
             sx={{ color: "grey.0", width: "90%" }}
           >
-            {description}
+            {name}
           </Typography>
         </Stack>
       </Box>

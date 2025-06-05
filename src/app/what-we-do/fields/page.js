@@ -30,33 +30,33 @@ function page() {
   const fieldsCardsData = [
     {
       color: "secondary.main",
-      image: engineering,
-      title: "Engineering",
-      items: [
-        "Architectural & Interior Design",
-        "Urban Design",
-        "Sustainability & Environmental ",
-      ],
+      icon: "game-icons:power-lightning",
+      title: "Power Plants & Substations",
     },
     {
       color: "secondary.main",
-      image: management,
-      title: "Management",
-      items: [
-        "Structural Engineering",
-        "Mechanical & Electrical Engineering",
-        "Infrastructure & Water Systems Design",
-      ],
+      icon: "hugeicons:solar-panel-02",
+      title: "Solar Energy",
     },
     {
       color: "secondary.main",
-      image: security,
-      title: "Security",
-      items: [
-        "Procurement Strategy",
-        "Tender Evaluation",
-        "Contract Management",
-      ],
+      icon: "fa6-solid:oil-well",
+      title: "Oil & Gas",
+    },
+    {
+      color: "secondary.main",
+      icon: "mdi:transportation",
+      title: "Transportation",
+    },
+    {
+      color: "secondary.main",
+      icon: "iconoir:industry",
+      title: "Industry",
+    },
+    {
+      color: "secondary.main",
+      icon: "gis:story-map",
+      title: "Abroad",
     },
   ];
 
@@ -73,7 +73,7 @@ function page() {
             content: '""',
             position: "absolute",
             width: "100%",
-            height: isMdOrLarger ? "115vh" : "227vh",
+            height: isMdOrLarger ? "138vh" : "300vh",
             bgcolor: alpha(theme.palette.secondary.dark, 0.3),
             zIndex: 1,
           },
@@ -108,12 +108,9 @@ function page() {
             {fieldsCardsData.map((card, index) => (
               <Grid item xs={12} md={4} key={index}>
                 <InfoCard
-                  image={card.image}
+                  icon={card.icon}
                   color={card.color}
                   title={card.title}
-                  item1={card.items[0]}
-                  item2={card.items[1]}
-                  item3={card.items[2]}
                 />
               </Grid>
             ))}

@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useCallback, useEffect, useState } from "react";
 // next
 import { useRouter } from "next/navigation";
 // mui
@@ -11,11 +12,10 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
+// __apis__
+import { projectsFetcher } from "@/__apis__/projects";
 // assets
 import ourProjectsBg from "@/assets/ourProjectsBg.png";
-import project1 from "@/assets/homeProjects/project1.png";
-import project2 from "@/assets/homeProjects/project2.png";
-import project3 from "@/assets/homeProjects/project3.png";
 // components
 import ProjectAndLabCard from "@/components/ProjectAndLabCard";
 import CustomButton from "@/components/CustomButton";
@@ -26,6 +26,27 @@ function OurProjects() {
   const isMdOrLarger = useMediaQuery(theme.breakpoints.up("md"));
 
   const { push } = useRouter();
+
+  const [projects, setProjects] = useState([]);
+
+  const fetchProjects = useCallback(async () => {
+    await projectsFetcher()
+      .then((response) => {
+        setProjects(response);
+      })
+      .catch((error) => {
+        triggerAlert({
+          triggered: true,
+          type: "error",
+          message: "Error loading projects",
+        });
+      });
+  }, []);
+
+  useEffect(() => {
+    fetchProjects();
+  }, []);
+
 
   return (
     <Box>
@@ -79,18 +100,15 @@ function OurProjects() {
             </Stack>
             <Box sx={{ my: 5, display: "flex", justifyContent: "center" }}>
               <Stack direction={isMdOrLarger ? "row" : "column"} gap={3}>
-                <ProjectAndLabCard
-                  image={project1}
-                  description="Scope is Installation testing and Commissioning"
-                />
-                <ProjectAndLabCard
-                  image={project2}
-                  description="Scope is Installation testing and Commissioning"
-                />
-                <ProjectAndLabCard
-                  image={project3}
-                  description="Scope is Installation testing and Commissioning"
-                />
+                {projects.slice(0, 3).map((project) => (
+                  <ProjectAndLabCard
+                    key={project.id}
+                    id={project.id}
+                    image={project.image}
+                    name={project.name}
+                  />
+                ))}
+
                 <Box
                   sx={{
                     bgcolor: "secondary.main",

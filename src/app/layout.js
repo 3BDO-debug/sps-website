@@ -5,6 +5,7 @@ import ThemeProvider from "@/theme";
 //
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Alert from "@/components/Alert";
 
 // ----------------------------------------------------------------------------------------------------
 
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
           <ThemeProvider>
             <Header />
             {children}
+            <Alert />
             <Footer />
           </ThemeProvider>
         </AppRouterCacheProvider>

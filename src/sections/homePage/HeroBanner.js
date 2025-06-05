@@ -81,8 +81,8 @@ function HeroBanner() {
                 />
                 <CustomButton
                   color="white"
-                  label="Contact Us"
-                  onClick={() => push("/contact-us")}
+                  label="Projects"
+                  onClick={() => push("/projects")}
                 />
               </Stack>
             </Grid>
