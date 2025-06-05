@@ -119,66 +119,66 @@ function Labs() {
     fetchProjects();
   }, []);
 
-  console.log("gg", labs);
-
   return (
-    <Box sx={{ mt: 20 }}>
+    <Box sx={{ mt: 25 }}>
       <Slider {...settings}>
         {labs.map((lab, index) => (
-          <Box
-            key={index}
-            sx={{
-              bgcolor: "primary.main",
-              padding: 3,
-              height: "40vh",
-            }}
-          >
-            <Stack
-              direction={isMdOrLarger ? "row" : "column"}
-              alignItems="center"
-              gap={isMdOrLarger ? 3 : 0}
-              sx={{ display: "flex", justifyContent: "center" }}
+          <Box>
+            <Container
+              key={index}
+              sx={{
+                bgcolor: "primary.main",
+                padding: 3,
+                borderRadius: 10,
+              }}
             >
-              <Box
-                sx={{
-                  position: "relative",
-                  width: isMdOrLarger ? 400 : 300,
-                  height: 200,
-                }}
-              >
-                <Image
-                  src={lab.image}
-                  alt="device image"
-                  width={400}
-                  height={300}
-                />
-              </Box>
-              <Stack gap={1}>
-                <Typography variant="h4" sx={{ color: "grey.0" }}>
-                  {lab.name}
-                </Typography>
-                {lab.description && (
-                  <Typography
+              <Grid container spacing={3}>
+                <Grid item xs={12} md={5}>
+                  <Box
                     sx={{
-                      color: "grey.0",
-                      wordBreak: "break-word",
-                      width: "70%",
+                      display: "flex",
+                      justifyContent: "center", // horizontal center
+                      alignItems: "center", // vertical center
                     }}
                   >
-                    {lab.description}
-                  </Typography>
-                )}
-                {lab.specifications &&
-                  lab.specifications?.split(",").map((spec, index) => (
-                    <Typography
-                      key={index}
-                      sx={{ color: "grey.0", wordBreak: "break-word" }}
-                    >
-                      • {spec.trim()}
+                    <Image
+                      src={lab.image}
+                      alt="device image"
+                      width={isMdOrLarger ? 400 : 250}
+                      height={200}
+                      style={{ borderRadius: 15 }}
+                    />
+                  </Box>
+                </Grid>
+                <Grid item xs={12} md={7}>
+                  <Stack gap={1}>
+                    <Typography variant="h4" sx={{ color: "grey.0" }}>
+                      {lab.name}
                     </Typography>
-                  ))}
-              </Stack>
-            </Stack>
+                    {lab.description && (
+                      <Typography
+                        sx={{
+                          color: "grey.0",
+                          wordBreak: "break-word",
+                          width: "70%",
+                        }}
+                      >
+                        {lab.description}
+                      </Typography>
+                    )}
+                    {lab.specifications &&
+                      lab.specifications?.split(",").map((spec, index) => (
+                        <Typography
+                          key={index}
+                          sx={{ color: "grey.0", wordBreak: "break-word" }}
+                        >
+                          • {spec.trim()}
+                        </Typography>
+                      ))}
+                  </Stack>
+                </Grid>
+              </Grid>
+            </Container>
           </Box>
         ))}
       </Slider>
@@ -186,7 +186,13 @@ function Labs() {
       <Container maxWidth="xl">
         <Grid container spacing={5}>
           {projects.map((project, index) => (
-            <Grid item xs={12} md={3} key={index}>
+            <Grid
+              item
+              xs={12}
+              md={3}
+              key={index}
+              sx={{ display: "flex", justifyContent: "center" }}
+            >
               <ProjectAndLabCard
                 id={project.id}
                 image={project.image}

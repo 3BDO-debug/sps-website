@@ -67,14 +67,16 @@ function page() {
 
   return (
     <Container maxWidth="xl" sx={{ mt: 20 }}>
-      <Box sx={{ display: "flex", justifyContent: "center" }}>
-        <Image
-          // src={projectData?.image}
-          alt="image"
-          objectFit="contain"
-          style={{ width: "50%", height: "auto" }}
-        />
-      </Box>
+      {projectData.image && (
+        <Box sx={{ display: "flex", justifyContent: "center" }}>
+          <Image
+            // src={projectData.image}
+            alt="image"
+            objectFit="contain"
+            style={{ width: "50%", height: "auto" }}
+          />
+        </Box>
+      )}
       <Grid container spacing={3} sx={{ mt: 2 }}>
         <Grid item xs={12} md={9}>
           <Stack gap={3}>
@@ -209,7 +211,7 @@ function page() {
           <ProjectAndLabCard
             id={relatedProjects.id}
             width={330}
-            // image={relatedProjects.image}
+            image={relatedProjects.image}
             name={relatedProjects.name}
           />
         </Grid>
