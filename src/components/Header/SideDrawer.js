@@ -45,7 +45,7 @@ function SideDrawer({ isTriggered, closeHandler, navLinks }) {
         {/* Logo Section */}
         <Box sx={{ padding: "16px", textAlign: "center" }}>
           {/* Replace with your logo */}
-          <Image src={logo} alt="logo" />
+          <Image src={logo} alt="logo" style={{ width: 200, height: 60 }} />
         </Box>
         <Divider />
         {/* Drawer Items */}

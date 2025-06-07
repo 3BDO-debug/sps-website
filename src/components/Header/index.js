@@ -65,7 +65,7 @@ function Header() {
     >
       <Container maxWidth="xl">
         <Box sx={{ display: "flex", justifyContent: "center" }}>
-          <Image src={logo} alt="logo" style={{ width: 250, height: 80 }} />
+          <Image src={logo} alt="logo" style={{ width: 250, height: 60 }} />
         </Box>
         <Divider sx={{ my: 2 }} />
         <Stack direction="row" justifyContent="center" alignItems="center">
@@ -83,7 +83,7 @@ function Header() {
             </Stack>
           )}
           {/* Actions */}
-          <Stack direction="row" alignItems="center" gap={1}>
+          <Stack direction="row" alignItems="center">
             {!isMdOrLarger && (
               <Tooltip title="Menu">
                 <IconButton onClick={() => triggerSideDrawer(!sideDrawer)}>
