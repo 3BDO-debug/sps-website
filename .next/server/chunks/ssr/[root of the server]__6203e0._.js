@@ -1375,7 +1375,7 @@ function OurProjects() {
                 }
             }, void 0, false, {
                 fileName: "[project]/src/sections/homePage/OurProjects.js",
-                lineNumber: 53,
+                lineNumber: 52,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -1389,7 +1389,7 @@ function OurProjects() {
                         content: '""',
                         position: "absolute",
                         width: "100%",
-                        height: isMdOrLarger ? "75vh" : "180vh",
+                        height: "75vh",
                         bgcolor: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$node_modules$2f40$mui$2f$system$2f$esm$2f$colorManipulator$2f$colorManipulator$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["alpha"])(theme.palette.secondary.main, 0.3),
                         zIndex: 1
                     }
@@ -1416,7 +1416,7 @@ function OurProjects() {
                                         children: "Our Projects"
                                     }, void 0, false, {
                                         fileName: "[project]/src/sections/homePage/OurProjects.js",
-                                        lineNumber: 82,
+                                        lineNumber: 81,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -1428,7 +1428,7 @@ function OurProjects() {
                                         children: "SPS EXCELS IN DELIVERING LARGE-SCALE, MULTIDISCIPLINARY"
                                     }, void 0, false, {
                                         fileName: "[project]/src/sections/homePage/OurProjects.js",
-                                        lineNumber: 88,
+                                        lineNumber: 87,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -1440,13 +1440,13 @@ function OurProjects() {
                                         children: "PROJECTS ACROSS A WIDE RANGE OF SECTORS."
                                     }, void 0, false, {
                                         fileName: "[project]/src/sections/homePage/OurProjects.js",
-                                        lineNumber: 94,
+                                        lineNumber: 93,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/sections/homePage/OurProjects.js",
-                                lineNumber: 81,
+                                lineNumber: 80,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -1465,7 +1465,7 @@ function OurProjects() {
                                                 name: project.name
                                             }, project.id, false, {
                                                 fileName: "[project]/src/sections/homePage/OurProjects.js",
-                                                lineNumber: 104,
+                                                lineNumber: 103,
                                                 columnNumber: 19
                                             }, this)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -1487,50 +1487,50 @@ function OurProjects() {
                                                     onClick: ()=>push("./projects")
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/sections/homePage/OurProjects.js",
-                                                    lineNumber: 126,
+                                                    lineNumber: 125,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/sections/homePage/OurProjects.js",
-                                                lineNumber: 118,
+                                                lineNumber: 117,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/sections/homePage/OurProjects.js",
-                                            lineNumber: 112,
+                                            lineNumber: 111,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/sections/homePage/OurProjects.js",
-                                    lineNumber: 102,
+                                    lineNumber: 101,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/sections/homePage/OurProjects.js",
-                                lineNumber: 101,
+                                lineNumber: 100,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/sections/homePage/OurProjects.js",
-                        lineNumber: 80,
+                        lineNumber: 79,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/sections/homePage/OurProjects.js",
-                    lineNumber: 71,
+                    lineNumber: 70,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/sections/homePage/OurProjects.js",
-                lineNumber: 54,
+                lineNumber: 53,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/sections/homePage/OurProjects.js",
-        lineNumber: 52,
+        lineNumber: 51,
         columnNumber: 5
     }, this);
 }

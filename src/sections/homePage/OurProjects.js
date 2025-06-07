@@ -47,7 +47,6 @@ function OurProjects() {
     fetchProjects();
   }, []);
 
-
   return (
     <Box>
       <Box sx={{ bgcolor: "secondary.main", height: 50 }} />
@@ -62,7 +61,7 @@ function OurProjects() {
             content: '""',
             position: "absolute",
             width: "100%",
-            height: isMdOrLarger ? "75vh" : "180vh",
+            height: "75vh",
             bgcolor: alpha(theme.palette.secondary.main, 0.3),
             zIndex: 1,
           },
