@@ -1,4 +1,6 @@
 import axiosInstance from "./axios";
 
-export const labsFetcher = async () =>
-  axiosInstance.get("labs/fetch-labs").then((response) => response.data);
+export const labsFetcher = async (classification) =>
+  axiosInstance
+    .get("labs/fetch-labs", { params: { classification } })
+    .then((response) => response.data);

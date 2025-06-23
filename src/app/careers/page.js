@@ -14,11 +14,16 @@ import {
 import { vacanciesFetcher } from "@/__apis__/careers";
 // stores
 import useAlertStore from "@/stores/useAlertStore";
+import JobApplicationPopUp from "@/components/JobApplicationPopUp";
 
 function page() {
   const { triggerAlert } = useAlertStore();
 
   const [vacancies, setVacancies] = useState([]);
+
+  const [popUp, triggerPopUp] = useState(false);
+
+  const [jobId, setJobId] = useState(null);
 
   const fetchVacancies = useCallback(async () => {
     await vacanciesFetcher()
@@ -37,6 +42,8 @@ function page() {
   useEffect(() => {
     fetchVacancies();
   }, []);
+
+  console.log("vvv", vacancies);
 
   return (
     <Container sx={{ mt: 25 }}>
@@ -67,8 +74,14 @@ function page() {
                   ))}
               </ul>
             </Typography>
-
-            <Button variant="contained" sx={{ mt: 2 }}>
+            <Button
+              variant="contained"
+              sx={{ mt: 2 }}
+              onClick={() => {
+                setJobId(vacancy.id);
+                triggerPopUp(true);
+              }}
+            >
               Apply Now
             </Button>
             <Divider
@@ -77,6 +90,13 @@ function page() {
           </Stack>
         ))}
       </Stack>
+      <JobApplicationPopUp
+        isTriggered={popUp}
+        closeHandler={() => {
+          triggerPopUp(false);
+        }}
+        jobId={jobId}
+      />
     </Container>
   );
 }

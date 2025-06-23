@@ -1,7 +1,8 @@
 "use client";
-import React from "react";
+import React, { use } from "react";
 // next
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 // mui
 import {
   Box,
@@ -27,36 +28,44 @@ function page() {
 
   const isMdOrLarger = useMediaQuery(theme.breakpoints.up("md"));
 
+  const { push } = useRouter();
+
   const fieldsCardsData = [
     {
       color: "secondary.main",
       icon: "game-icons:power-lightning",
       title: "Power Plants & Substations",
+      value: "power_plants_and_substations",
     },
     {
       color: "secondary.main",
       icon: "hugeicons:solar-panel-02",
       title: "Solar Energy",
+      value: "solar_energy",
     },
     {
       color: "secondary.main",
       icon: "fa6-solid:oil-well",
       title: "Oil & Gas",
+      value: "oil_and_gas",
     },
     {
       color: "secondary.main",
       icon: "mdi:transportation",
       title: "Transportation",
+      value: "transportation",
     },
     {
       color: "secondary.main",
       icon: "iconoir:industry",
       title: "Industry",
+      value: "industry",
     },
     {
       color: "secondary.main",
       icon: "gis:story-map",
       title: "Abroad",
+      value: "abroad",
     },
   ];
 
@@ -111,6 +120,7 @@ function page() {
                   icon={card.icon}
                   color={card.color}
                   title={card.title}
+                  value={card.value}
                 />
               </Grid>
             ))}

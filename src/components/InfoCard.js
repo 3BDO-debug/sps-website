@@ -1,8 +1,9 @@
 import React from "react";
 // next
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 // mui
-import { Box, Divider, Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import Iconify from "./Iconify";
 
 function InfoCard({
@@ -16,9 +17,13 @@ function InfoCard({
   item5,
   item6,
   item7,
+  value,
 }) {
+  const { push } = useRouter();
+
   return (
     <Box
+      onClick={() => push(`/projects?category=${value}`)}
       sx={{
         bgcolor: "grey.0",
         position: "relative",

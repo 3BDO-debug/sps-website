@@ -1,5 +1,7 @@
 "use client";
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
+// next
+import { useSearchParams } from "next/navigation";
 // mui
 import { Box, Button, Container, Grid, Stack, Typography } from "@mui/material";
 // __apis__
@@ -16,14 +18,22 @@ import { Icon } from "@iconify/react";
 function Projects() {
   const { triggerAlert } = useAlertStore();
 
+  const searchParams = useSearchParams();
+
   const [projects, setProjects] = useState([]);
 
   const [category, setCategory] = useState(null);
+
+  const categoryRef = useRef(null);
 
   const fetchProjects = useCallback(async () => {
     await projectsFetcher(null, null, category)
       .then((response) => {
         setProjects(response);
+        if (searchParams.get("category")) {
+          setCategory(searchParams.get("category"));
+          categoryRef.current?.scrollIntoView({ behavior: "smooth" });
+        }
       })
       .catch((error) => {
         triggerAlert({
@@ -39,6 +49,7 @@ function Projects() {
   }, [category]);
 
   const categories = [
+    [null, "ALL"],
     ["engineering", "Engineering Projects"],
     ["construction", "Construction Projects"],
     ["testing_and_commissioning", "Testing & Commissioning Projects"],
@@ -60,7 +71,7 @@ function Projects() {
         item2="What makes the difference between a good job and an outstanding one is the relentless drive for improvement and attention to the smallest details.For us, this means blending integrity, precision, and professionalism with innovation, vision, and genuine passion."
         dividerColor="secondary.main"
       />
-      <Container maxWidth="xl" sx={{ mt: 2 }}>
+      <Container maxWidth="xl" sx={{ mt: 2 }} ref={categoryRef}>
         <Typography variant="h4" sx={{ color: "primary.main" }}>
           <Icon icon="line-md:filter-twotone" />
           Filter by

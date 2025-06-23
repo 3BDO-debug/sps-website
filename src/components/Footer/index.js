@@ -95,10 +95,16 @@ function Footer() {
                 Contact Us
               </Typography>
               <Typography sx={{ color: "primary.main" }}>
-                sps@info.com
+                info@smartpower.com.eg
               </Typography>
               <Typography sx={{ color: "primary.main", mt: 1 }}>
-                +20123129837
+                +201146624555
+              </Typography>
+              <Typography sx={{ color: "primary.main", mt: 1 }}>
+                +201102982007
+              </Typography>
+              <Typography sx={{ color: "primary.main", mt: 1 }}>
+                New Maadi, Cairo, Egypt
               </Typography>
             </Box>
           </Stack>

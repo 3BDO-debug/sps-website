@@ -5,6 +5,7 @@ import Image from "next/image";
 // mui
 import {
   Box,
+  Button,
   Container,
   Divider,
   Grid,
@@ -28,20 +29,25 @@ import labIntro from "@/assets/labIntro.png";
 import useAlertStore from "@/stores/useAlertStore";
 import { Icon } from "@iconify/react";
 import { projectsFetcher } from "@/__apis__/projects";
+import LabCard from "@/components/LabCard";
 
 function Labs() {
   const { triggerAlert } = useAlertStore();
 
   const [labs, setLabs] = useState([]);
 
+  const [labsSliderData, setLabsSliderData] = useState([]);
+
   const theme = useTheme();
 
   const isMdOrLarger = useMediaQuery(theme.breakpoints.up("md"));
 
-  const fetchLabs = useCallback(async () => {
+  const [classification, setClassification] = useState(null);
+
+  const fetchLabsSlider = useCallback(async () => {
     await labsFetcher()
       .then((response) => {
-        setLabs(response);
+        setLabsSliderData(response);
       })
       .catch((error) => {
         triggerAlert({
@@ -53,8 +59,26 @@ function Labs() {
   }, []);
 
   useEffect(() => {
-    fetchLabs();
+    fetchLabsSlider();
   }, []);
+
+  const fetchLabs = useCallback(async () => {
+    await labsFetcher(classification)
+      .then((response) => {
+        setLabs(response);
+      })
+      .catch((error) => {
+        triggerAlert({
+          triggered: true,
+          type: "error",
+          message: "Error fetching devices",
+        });
+      });
+  }, [classification]);
+
+  useEffect(() => {
+    fetchLabs();
+  }, [classification]);
 
   const settings = {
     autoplay: true,
@@ -99,30 +123,18 @@ function Labs() {
   };
 
   //-----------------------------------------
-  const [projects, setProjects] = useState([]);
 
-  const fetchProjects = useCallback(async () => {
-    await projectsFetcher()
-      .then((response) => {
-        setProjects(response);
-      })
-      .catch((error) => {
-        triggerAlert({
-          triggered: true,
-          type: "error",
-          message: "Error loading projects",
-        });
-      });
-  }, []);
-
-  useEffect(() => {
-    fetchProjects();
-  }, []);
+  const classifications = [
+    [null, "ALL"],
+    ["gis_sf6_tools", "GIS (SF6) Tools"],
+    ["electrical_testers", "Electrical Testers"],
+    ["mechanical_testers", "Mechanical Testers"],
+  ];
 
   return (
     <Box sx={{ mt: 25 }}>
       <Slider {...settings}>
-        {labs.map((lab, index) => (
+        {labsSliderData.map((lab, index) => (
           <Box>
             <Container
               key={index}
@@ -184,21 +196,55 @@ function Labs() {
       </Slider>
       <Divider sx={{ my: 3 }} />
       <Container maxWidth="xl">
-        <Grid container spacing={5}>
-          {projects.map((project, index) => (
-            <Grid
-              item
-              xs={12}
-              md={3}
-              key={index}
-              sx={{ display: "flex", justifyContent: "center" }}
-            >
-              <ProjectAndLabCard
-                id={project.id}
-                image={project.image}
-                name={project.name}
-                width={350}
-                color="primary.main"
+        <Typography variant="h4" sx={{ color: "primary.main" }}>
+          <Icon icon="line-md:filter-twotone" />
+          Filter by
+        </Typography>
+        <Box
+          sx={{
+            p: 3,
+            overflowX: "auto",
+            width: "100%",
+            /* Hide scrollbar for WebKit browsers */
+            "&::-webkit-scrollbar": {
+              display: "none",
+            },
+            /* Hide scrollbar for Firefox */
+            scrollbarWidth: "none",
+            /* Hide scrollbar for IE, Edge */
+            "-ms-overflow-style": "none",
+          }}
+        >
+          <Stack direction="row" spacing={2} flexWrap="nowrap">
+            {classifications.map(([value, label]) => (
+              <Button
+                key={value}
+                onClick={() => {
+                  setClassification(value);
+                }}
+                variant="contained"
+                sx={{
+                  whiteSpace: "nowrap",
+                  textOverflow: "ellipsis",
+                  overflow: "hidden",
+                  flexShrink: 0,
+                  bgcolor: classification === value ? "primary.main" : "grey.0",
+                  color: classification === value ? "grey.0" : "primary.main",
+                }}
+              >
+                {label}
+              </Button>
+            ))}
+          </Stack>
+        </Box>
+        <Grid container spacing={3}>
+          {labs.map((lab, index) => (
+            <Grid item xs={12} md={6} key={index}>
+              <LabCard
+                image={lab.image}
+                name={lab.name}
+                description={lab.description}
+                specifications={lab.specifications}
               />
             </Grid>
           ))}

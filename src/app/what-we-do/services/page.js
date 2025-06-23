@@ -33,21 +33,25 @@ function page() {
       color: "primary.main",
       icon: "material-symbols:engineering",
       title: "Engineering",
+      value: "engineering",
     },
     {
       color: "primary.main",
       icon: "emojione-monotone:building-construction",
       title: "Construction",
+      value: "construction",
     },
     {
       color: "primary.main",
       icon: "pajamas:rocket-launch",
       title: "Testing & Commissioning",
+      value: "testing_and_commissioning",
     },
     {
       color: "primary.main",
       icon: "fa:group",
       title: "Staffing",
+      value: "staffing",
     },
   ];
 
@@ -55,6 +59,7 @@ function page() {
     <Box sx={{ mt: 20 }}>
       <Box
         sx={{
+          cursor: "pointer",
           backgroundImage: `url(${servicesBg.src})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -100,6 +105,7 @@ function page() {
                   icon={card.icon}
                   color={card.color}
                   title={card.title}
+                  value={card.value}
                 />
               </Grid>
             ))}
