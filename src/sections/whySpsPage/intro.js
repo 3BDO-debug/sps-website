@@ -64,7 +64,7 @@ function intro() {
           sx={{ display: "flex", justifyContent: "center" }}
         >
           {infoCardData.map((card, index) => (
-            <Grid item xs={12} key={index}>
+            <Grid size={{ xs: 12 }} key={index}>
               <InfoCard
                 title={card.title}
                 item1={card.item1}
@@ -77,7 +77,7 @@ function intro() {
               />
             </Grid>
           ))}
-          <Grid item xs={12}>
+          <Grid size={{ xs: 12 }}>
             <Box sx={{ display: "flex", justifyContent: "center" }}>
               <Typography variant="h3" sx={{ my: 5, color: "primary.main" }}>
                 Certificates
@@ -85,7 +85,7 @@ function intro() {
             </Box>
           </Grid>
           {[iso1, iso2, iso3].map((src, index) => (
-            <Grid item xs={12} md={4} key={index}>
+            <Grid size={{ xs: 12, md: 4 }} key={index}>
               <Box sx={{ width: "100%", height: 650, position: "relative" }}>
                 <Image
                   src={src}

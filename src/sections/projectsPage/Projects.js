@@ -116,9 +116,7 @@ function Projects() {
         <Grid container spacing={5}>
           {projects.map((project, index) => (
             <Grid
-              item
-              xs={12}
-              sm={3}
+              size={{ xs: 12, sm: 3 }}
               key={index}
               sx={{ display: "flex", justifyContent: "center" }}
             >

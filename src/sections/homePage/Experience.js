@@ -23,7 +23,7 @@ function Experience() {
   return (
     <Box sx={{ paddingLeft: isMdOrLarger ? 10 : 0 }}>
       <Grid container>
-        <Grid item xs={12} md={5}>
+        <Grid size={{ xs: 12, md: 5 }}>
           <Stack>
             <Box sx={{ mt: 10, paddingLeft: isMdOrLarger ? 0 : 2 }}>
               <Stack direction="row" gap={1}>
@@ -89,7 +89,7 @@ function Experience() {
             </Box>
           </Stack>
         </Grid>
-        <Grid item xs={12} md={7}>
+        <Grid size={{ xs: 12, md: 7 }}>
           <Image
             src={experience}
             alt="experience"

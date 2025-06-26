@@ -1,4 +1,10 @@
 {
+  "/page": "app/page.js",
+  "/projects/page": "app/projects/page.js",
+  "/lab/page": "app/lab/page.js",
+  "/why-sps/page": "app/why-sps/page.js",
   "/careers/page": "app/careers/page.js",
-  "/_not-found/page": "app/_not-found/page.js"
+  "/what-we-do/services/page": "app/what-we-do/services/page.js",
+  "/project-details/[id]/page": "app/project-details/[id]/page.js",
+  "/what-we-do/fields/page": "app/what-we-do/fields/page.js"
 }

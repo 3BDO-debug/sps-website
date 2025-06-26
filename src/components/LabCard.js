@@ -1,5 +1,12 @@
 "use client";
-import { Box, Grid, Stack, Typography, useMediaQuery, useTheme } from "@mui/material";
+import {
+  Box,
+  Grid,
+  Stack,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import Image from "next/image";
 import React from "react";
 
@@ -10,7 +17,7 @@ function LabCard({ image, name, description, specifications }) {
   return (
     <Box sx={{ bgcolor: "primary.main", p: 2, borderRadius: 2 }}>
       <Grid container spacing={3}>
-        <Grid item xs={12} md={5}>
+        <Grid size={{ xs: 12, md: 5 }}>
           <Box
             sx={{
               display: "flex",
@@ -26,7 +33,7 @@ function LabCard({ image, name, description, specifications }) {
             />
           </Box>
         </Grid>
-        <Grid item xs={12} md={7}>
+        <Grid size={{ xs: 12, md: 7 }}>
           <Stack gap={1}>
             <Typography variant="h4" sx={{ color: "grey.0" }}>
               {name}

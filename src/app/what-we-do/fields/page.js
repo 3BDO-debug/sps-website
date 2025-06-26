@@ -90,7 +90,7 @@ function page() {
       >
         <Box sx={{ position: "relative", zIndex: 2, p: isMdOrLarger ? 10 : 2 }}>
           <Grid container spacing={5} sx={{ mb: 10 }}>
-            <Grid item xs={12} md={6} sx={{ mt: 10 }}>
+            <Grid size={{ xs: 12, md: 6 }} sx={{ mt: 10 }}>
               <Stack gap={5}>
                 <Typography variant="h3" sx={{ color: "grey.0" }}>
                   Flexibility and competitiveness are key strengths of SPS.
@@ -109,13 +109,13 @@ function page() {
                 </Typography>
               </Stack>
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid size={{ xs: 12, md: 6 }}>
               <Image src={fieldsIntro} alt="intro" layout="responsive" />
             </Grid>
           </Grid>
           <Grid container spacing={3}>
             {fieldsCardsData.map((card, index) => (
-              <Grid item xs={12} md={4} key={index}>
+              <Grid size={{ xs: 12, md: 4 }} key={index}>
                 <InfoCard
                   icon={card.icon}
                   color={card.color}

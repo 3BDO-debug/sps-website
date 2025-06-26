@@ -107,7 +107,7 @@ function OurClients() {
       >
         <Grid container spacing={3}>
           {clientImages.map((img, index) => (
-            <Grid item xs={6} md={3} key={index}>
+            <Grid item size={{ xs: 12, md: 3 }} key={index}>
               <Image
                 src={img}
                 alt={`Client ${index + 1}`}

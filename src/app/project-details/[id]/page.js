@@ -78,7 +78,7 @@ function page() {
         </Box>
       )}
       <Grid container spacing={3} sx={{ mt: 2 }}>
-        <Grid item xs={12} md={9}>
+        <Grid size={{ xs: 12, md: 9 }}>
           <Stack gap={3}>
             <Stack direction="row" gap={2}>
               <Box
@@ -194,7 +194,7 @@ function page() {
             )}
           </Stack>
         </Grid>
-        <Grid item xs={12} md={0.2}>
+        <Grid size={{ xs: 12, md: 0.2 }}>
           <Divider
             sx={{
               bgcolor: "grey.400",
@@ -204,7 +204,7 @@ function page() {
             }}
           />
         </Grid>
-        <Grid item xs={12} md={2.8}>
+        <Grid size={{ xs: 12, md: 2.8 }}>
           <Typography variant="h4" sx={{ mb: 3, color: "primary.main" }}>
             Other Projects
           </Typography>

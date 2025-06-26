@@ -40,7 +40,7 @@ function Intro({
       />
       <Container maxWidth="xl">
         <Grid container spacing={2}>
-          <Grid item xs={12} md={6}>
+          <Grid size={{ xs: 12, md: 6 }}>
             <Stack direction="row" gap={3} sx={{ mt: mt }}>
               <Box
                 sx={{
@@ -66,7 +66,7 @@ function Intro({
               </Stack>
             </Stack>
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid size={{ xs: 12, md: 6 }}>
             <Box
               sx={{
                 width: "100%",

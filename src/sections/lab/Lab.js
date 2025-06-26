@@ -145,7 +145,7 @@ function Labs() {
               }}
             >
               <Grid container spacing={3}>
-                <Grid item xs={12} md={5}>
+                <Grid size={{ xs: 12, md: 5 }}>
                   <Box
                     sx={{
                       display: "flex",
@@ -162,7 +162,7 @@ function Labs() {
                     />
                   </Box>
                 </Grid>
-                <Grid item xs={12} md={7}>
+                <Grid size={{ xs: 12, md: 7 }}>
                   <Stack gap={1}>
                     <Typography variant="h4" sx={{ color: "grey.0" }}>
                       {lab.name}
@@ -239,7 +239,7 @@ function Labs() {
         </Box>
         <Grid container spacing={3}>
           {labs.map((lab, index) => (
-            <Grid item xs={12} md={6} key={index}>
+            <Grid item size={{ xs: 12, md: 6 }} key={index}>
               <LabCard
                 image={lab.image}
                 name={lab.name}

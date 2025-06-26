@@ -49,7 +49,7 @@ function HeroBanner() {
         {/* Foreground Content */}
         <Container maxWidth="lg">
           <Grid container>
-            <Grid xs={12} md={6}>
+            <Grid size={{ xs: 12, md: 6 }}>
               <Stack
                 direction="row"
                 alignItems="center"
