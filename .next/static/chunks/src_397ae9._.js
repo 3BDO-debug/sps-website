@@ -11,7 +11,7 @@ __turbopack_esm__({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/axios/lib/axios.js [app-client] (ecmascript)");
 ;
-const mainUrl = "http://127.0.0.1:8000/";
+const mainUrl = "https://smart-power-services-d39c5decd525.herokuapp.com/";
 const axiosInstance = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].create({
     baseURL: mainUrl,
     timeout: 100000,
@@ -187,7 +187,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: __turbopack_require_real__ } = __turbopack_context__;
 {
-__turbopack_export_value__("/_next/static/media/labIntro.d2721961.png");}}),
+__turbopack_export_value__("/_next/static/media/labIntro.9fe7f5c4.png");}}),
 "[project]/src/assets/labIntro.png.mjs { IMAGE => \"[project]/src/assets/labIntro.png [app-client] (static)\" } [app-client] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -202,7 +202,7 @@ const __TURBOPACK__default__export__ = {
     src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$labIntro$2e$png__$5b$app$2d$client$5d$__$28$static$29$__["default"],
     width: 409,
     height: 239,
-    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAIAAAD38zoCAAAAiElEQVR42gF9AIL/AN3d2+Hg4+bm7Nvc5c/N1bu8wKazsevs7AC/vreLj4i+rrO+qrS8prCxoqmIkovp6ukAuLavhIiCxMPHx7rCq6WtlJWanKKi9fX1AMC9tYyOia20u6SorouNjpKUkdLT0Pb29QDZ2tOqq6SLjoujpaHKy8bl5uLs7Onu7uy9m1h5WYBc9QAAAABJRU5ErkJggg==",
+    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAIAAAD38zoCAAAAiElEQVR42gF9AIL/AN7d2+Hg4ubm69vc5M/N1Ly8waiys+vs7AC/vriMj4q+rrO+q7O8p6+xoqmJkY3p6ukAt7awhIiDxMPHxrrBq6Wsk5aanaKi9fX1AL+9toyOia20uqSprYuNjZKUkNLT0Pb29QDZ2dOqq6WLjoujpaHKy8bl5uLs7Onu7uy/y1h9JkqT1gAAAABJRU5ErkJggg==",
     blurWidth: 8,
     blurHeight: 5
 };

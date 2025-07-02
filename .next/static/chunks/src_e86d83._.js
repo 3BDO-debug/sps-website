@@ -4,7 +4,7 @@
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: __turbopack_require_real__ } = __turbopack_context__;
 {
-__turbopack_export_value__("/_next/static/media/hero.9e5cdac9.png");}}),
+__turbopack_export_value__("/_next/static/media/hero.95846bfe.png");}}),
 "[project]/src/assets/hero.png.mjs { IMAGE => \"[project]/src/assets/hero.png [app-client] (static)\" } [app-client] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -19,7 +19,7 @@ const __TURBOPACK__default__export__ = {
     src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$hero$2e$png__$5b$app$2d$client$5d$__$28$static$29$__["default"],
     width: 1919,
     height: 876,
-    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAe0lEQVR42hXKvQ6CMABF4a4SBONfGxtrMQUrQekCi0ajg5Ov4eLi+0/Hdvhyh3tEsfUkpTlS7lpkHfh8fzTDE3kYEEU8khTMYrB2Pa/7je76RncXRK4d+SaKWxrPygVsO2L6B8qPiExZJtKSqYqpril0w7IKzO2Jxf7MH7xSLVSYyBvtAAAAAElFTkSuQmCC",
+    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAIAAAA8r+mnAAAAZklEQVR42jXIuwqAIABAUddCMnoZSSWiaUnmYkuBEI19RlNL/7/lElzOcEHSqhDqxhAW9n7ewR2VdAD9N+11ye3p/bxfjd4AJBw2PIg6VXBLJ9cvHssVxDWNMA1CIhIiCmZyqjNmPsYrDWQ/wA4VAAAAAElFTkSuQmCC",
     blurWidth: 8,
     blurHeight: 4
 };
@@ -447,7 +447,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: __turbopack_require_real__ } = __turbopack_context__;
 {
-__turbopack_export_value__("/_next/static/media/servicesBg.1f3a34c3.png");}}),
+__turbopack_export_value__("/_next/static/media/servicesBg.23b1e877.png");}}),
 "[project]/src/assets/servicesBg.png.mjs { IMAGE => \"[project]/src/assets/servicesBg.png [app-client] (static)\" } [app-client] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -462,7 +462,7 @@ const __TURBOPACK__default__export__ = {
     src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$servicesBg$2e$png__$5b$app$2d$client$5d$__$28$static$29$__["default"],
     width: 1918,
     height: 877,
-    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAj0lEQVR42gGEAHv/AKSKg//OuK7/q5OM/8y8s//Ps5H/wLOv/93W0v/h2tb/AKaRi//Cq6D/p5CK/7GajP+pkHf/dmxu/354df+bmZT/AMCupv/AraT/vKuk/9zHuf+vjnb/UEBC/3poYf+LeXP/AINvav+Nb2T/nXhn/8Sqn/+bhn3/Sj1A/6KJff/lw63/0PBZIuB/hrgAAAAASUVORK5CYII=",
+    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAIAAAA8r+mnAAAAb0lEQVR42gFkAJv/AKOKg824rqqTjMy8s86zkcGzrd3W0uHa1gCmkYrCq6CnkYmwmoypkHd3bGx/d3acmJYAwK6mwaykvKuk3Me4r452UEBBemhijHlzAINvao1vZZx3aMSqn5qGfUo9QKKJfebDrd4qOT2PZXLfAAAAAElFTkSuQmCC",
     blurWidth: 8,
     blurHeight: 4
 };
@@ -474,7 +474,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: __turbopack_require_real__ } = __turbopack_context__;
 {
-__turbopack_export_value__("/_next/static/media/fieldsBg.572968c0.png");}}),
+__turbopack_export_value__("/_next/static/media/fieldsBg.2859f5fe.png");}}),
 "[project]/src/assets/fieldsBg.png.mjs { IMAGE => \"[project]/src/assets/fieldsBg.png [app-client] (static)\" } [app-client] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -489,7 +489,7 @@ const __TURBOPACK__default__export__ = {
     src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$fieldsBg$2e$png__$5b$app$2d$client$5d$__$28$static$29$__["default"],
     width: 1923,
     height: 877,
-    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAj0lEQVR42gGEAHv/ALqwopmjpZeZjqmjmY2ampmYmo+ZiX5EmT87PZleYmmZAJeCdZm7ua6Zmp+fmVJYV5l+fHuZpJB1mUszKZlKRUaZAH9qY5m3sqiZgX2BmSciIplVVliZvq2VmWdTPJk7PEKZAHFgXZmik4qZaWZqmUdAP5mRfXKZtqB6mYiHb5knMTKZ/90+8x657mwAAAAASUVORK5CYII=",
+    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAj0lEQVR42gGEAHv/ALmwopmipZmZjqmjmY2amZmYmpCZiH5HmT87PZlfYmiZAJaCdZm6ua+ZmaCemVJYVpl+fHyZpJF0mUw0KZlLRUaZAH9qY5m3saqZgH2AmSciIZlVVlaZv62VmWdTPJk8PUCZAHFhXJmhk4yZaWZpmUdAPpmQfXGZtqB6mYmHb5krMTGZACU+9IpwjbgAAAAASUVORK5CYII=",
     blurWidth: 8,
     blurHeight: 4
 };
@@ -769,7 +769,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: __turbopack_require_real__ } = __turbopack_context__;
 {
-__turbopack_export_value__("/_next/static/media/experience.0650f3c3.png");}}),
+__turbopack_export_value__("/_next/static/media/experience.f1c7af0c.png");}}),
 "[project]/src/assets/experience.png.mjs { IMAGE => \"[project]/src/assets/experience.png [app-client] (static)\" } [app-client] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -784,7 +784,7 @@ const __TURBOPACK__default__export__ = {
     src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$experience$2e$png__$5b$app$2d$client$5d$__$28$static$29$__["default"],
     width: 1058,
     height: 719,
-    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAoklEQVR42h3KywoBUQCA4fNCioWQBUkak4VIQk7CuOcexjU1M5mdF1BmoSxkxMbb/SaLb/cJbe/S9PSOLybmm4X9YW4+0G2Xw/mL0PQbcnahs70zMrxkPCk2TsimxWTnINKFBUp+hja06awdWqsrmYJOSh1QkgeEmhtTaxsU5YZkdkpE6ROM1Ql54koPkS8v6fYt1OyQcKJBIFrFF67gj8q/H/nTWkwCVn79AAAAAElFTkSuQmCC",
+    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAIAAAD38zoCAAAAiElEQVR42gF9AIL/AGZ+rmR+rmqBsHGFsnaJs3WFq3qJr3+QuABleaVfcp5ofKhwhLBxhK1YY4ZeZIVxfaEASVR3SFN1ZW6LaXmhaHifTFZ4RUtrV15/AEpScV5mhldefUVQcjtHajU/YjY/YT9IaQBTWnhma4hJUG85QmMxO14sOVwwO14wO17VVDJ3qnHGiwAAAABJRU5ErkJggg==",
     blurWidth: 8,
     blurHeight: 5
 };
@@ -1106,7 +1106,7 @@ __turbopack_esm__({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/axios/lib/axios.js [app-client] (ecmascript)");
 ;
-const mainUrl = "http://127.0.0.1:8000/";
+const mainUrl = "https://smart-power-services-d39c5decd525.herokuapp.com/";
 const axiosInstance = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].create({
     baseURL: mainUrl,
     timeout: 100000,
@@ -1145,7 +1145,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: __turbopack_require_real__ } = __turbopack_context__;
 {
-__turbopack_export_value__("/_next/static/media/ourProjectsBg.892c6f21.png");}}),
+__turbopack_export_value__("/_next/static/media/ourProjectsBg.9b17b7c1.png");}}),
 "[project]/src/assets/ourProjectsBg.png.mjs { IMAGE => \"[project]/src/assets/ourProjectsBg.png [app-client] (static)\" } [app-client] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -1160,7 +1160,7 @@ const __TURBOPACK__default__export__ = {
     src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$ourProjectsBg$2e$png__$5b$app$2d$client$5d$__$28$static$29$__["default"],
     width: 1919,
     height: 863,
-    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAj0lEQVR42gGEAHv/AOvs5//x7uf/+fbx//Lw7P/Xxaj/wrWe/6Kfmv+5vsL/AOjk3P/l28z/7eLT/+Pc0/+vlmD/sppw/52Le/+1qJj/AIF+ff+ain7/qpSC/5OIgv9zbWL/aWZd/3JlYP9wZmD/AHNxcP+Fe3X/o5OF/5WKgf9xb27/bmtq/2xsbP9cZmn/yzZbW4SmR1IAAAAASUVORK5CYII=",
+    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAIAAAA8r+mnAAAAb0lEQVR42gFkAJv/AOzr5/Hu5/n28fLw69fFqMK1nqKfm7m+wgDp49zm28zt4tPj3NKvlmKymnGdi3y1qJkAgn58mop+qZSCk4iCc2xjamZecmVfcGZgAHNxcIV7dKOThZWKgHFvbm1ramxsbF1maV8HO34uKx3WAAAAAElFTkSuQmCC",
     blurWidth: 8,
     blurHeight: 4
 };
@@ -1560,7 +1560,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: __turbopack_require_real__ } = __turbopack_context__;
 {
-__turbopack_export_value__("/_next/static/media/ourClientsBg.29815965.jpg");}}),
+__turbopack_export_value__("/_next/static/media/ourClientsBg.27256fef.jpg");}}),
 "[project]/src/assets/ourClientsBg.jpg.mjs { IMAGE => \"[project]/src/assets/ourClientsBg.jpg [app-client] (static)\" } [app-client] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -1575,7 +1575,7 @@ const __TURBOPACK__default__export__ = {
     src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$ourClientsBg$2e$jpg__$5b$app$2d$client$5d$__$28$static$29$__["default"],
     width: 4000,
     height: 2702,
-    blurDataURL: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/wAARCAAFAAgDAREAAhEBAxEB/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDXuvEMKWuxdKgCb+VDED/9dZ/Xayne5H1Gi4Wsf//Z",
+    blurDataURL: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/wAARCAAFAAgDAREAAhEBAxEB/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDXuvEEKWuxdKgCb+VDECs/rtZTvcj6jRcLWP/Z",
     blurWidth: 8,
     blurHeight: 5
 };

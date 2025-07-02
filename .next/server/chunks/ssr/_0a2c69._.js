@@ -4,7 +4,7 @@ module.exports = {
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: __turbopack_require_real__ } = __turbopack_context__;
 {
-__turbopack_export_value__("/_next/static/media/fields-intro.ceab86f0.png");}}),
+__turbopack_export_value__("/_next/static/media/fields-intro.b0b9c832.png");}}),
 "[project]/src/assets/fields-intro.png.mjs { IMAGE => \"[project]/src/assets/fields-intro.png [app-ssr] (static)\" } [app-ssr] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -17,18 +17,18 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$fields$2d$i
 ;
 const __TURBOPACK__default__export__ = {
     src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$fields$2d$intro$2e$png__$5b$app$2d$ssr$5d$__$28$static$29$__["default"],
-    width: 770,
-    height: 422,
-    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAj0lEQVR42gGEAHv/ALq+vf/Hy8z/4eXp/9vh5//O1tz/vMDB/7K5vP+8xsr/AMDExf++vrr/vry5/8fIyP+uqqP/nJiP/4WDe/91cWn/AMDAvf+zqp7/qJ+S/6Wgl/+joZn/o6Ob/4yOif9vcmz/ALOsof+rqJ7/oJ6V/6amnv+io5//lZiU/5OZl/+AhoT/xkpfymADvzkAAAAASUVORK5CYII=",
+    width: 642,
+    height: 455,
+    blurDataURL: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/wAARCAAGAAgDAREAAhEBAxEB/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwC3penW15prX8TPGEwChA55qauYNTtY2pZdFRSvuf/Z",
     blurWidth: 8,
-    blurHeight: 4
+    blurHeight: 6
 };
 }}),
 "[project]/src/assets/fieldsBg.png [app-ssr] (static)": ((__turbopack_context__) => {
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: __turbopack_require_real__ } = __turbopack_context__;
 {
-__turbopack_export_value__("/_next/static/media/fieldsBg.572968c0.png");}}),
+__turbopack_export_value__("/_next/static/media/fieldsBg.2859f5fe.png");}}),
 "[project]/src/assets/fieldsBg.png.mjs { IMAGE => \"[project]/src/assets/fieldsBg.png [app-ssr] (static)\" } [app-ssr] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -43,7 +43,7 @@ const __TURBOPACK__default__export__ = {
     src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$fieldsBg$2e$png__$5b$app$2d$ssr$5d$__$28$static$29$__["default"],
     width: 1923,
     height: 877,
-    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAj0lEQVR42gGEAHv/ALqwopmjpZeZjqmjmY2ampmYmo+ZiX5EmT87PZleYmmZAJeCdZm7ua6Zmp+fmVJYV5l+fHuZpJB1mUszKZlKRUaZAH9qY5m3sqiZgX2BmSciIplVVliZvq2VmWdTPJk7PEKZAHFgXZmik4qZaWZqmUdAP5mRfXKZtqB6mYiHb5knMTKZ/90+8x657mwAAAAASUVORK5CYII=",
+    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAj0lEQVR42gGEAHv/ALmwopmipZmZjqmjmY2amZmYmpCZiH5HmT87PZlfYmiZAJaCdZm6ua+ZmaCemVJYVpl+fHyZpJF0mUw0KZlLRUaZAH9qY5m3saqZgH2AmSciIZlVVlaZv62VmWdTPJk8PUCZAHFhXJmhk4yZaWZpmUdAPpmQfXGZtqB6mYmHb5krMTGZACU+9IpwjbgAAAAASUVORK5CYII=",
     blurWidth: 8,
     blurHeight: 4
 };
