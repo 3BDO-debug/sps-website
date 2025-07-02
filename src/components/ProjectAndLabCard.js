@@ -11,7 +11,7 @@ function ProjectAndLabCard({
   image,
   name,
   width = 400,
-  color = "secondary.main",
+  color = "primary.main",
 }) {
   const theme = useTheme();
   const isMdOrLarger = useMediaQuery(theme.breakpoints.up("md"));

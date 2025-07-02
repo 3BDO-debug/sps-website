@@ -363,37 +363,37 @@ function page() {
     const { push } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const fieldsCardsData = [
         {
-            color: "secondary.main",
+            color: "primary.main",
             icon: "game-icons:power-lightning",
             title: "Power Plants & Substations",
             value: "power_plants_and_substations"
         },
         {
-            color: "secondary.main",
+            color: "primary.main",
             icon: "hugeicons:solar-panel-02",
             title: "Solar Energy",
             value: "solar_energy"
         },
         {
-            color: "secondary.main",
+            color: "primary.main",
             icon: "fa6-solid:oil-well",
             title: "Oil & Gas",
             value: "oil_and_gas"
         },
         {
-            color: "secondary.main",
+            color: "primary.main",
             icon: "mdi:transportation",
             title: "Transportation",
             value: "transportation"
         },
         {
-            color: "secondary.main",
+            color: "primary.main",
             icon: "iconoir:industry",
             title: "Industry",
             value: "industry"
         },
         {
-            color: "secondary.main",
+            color: "primary.main",
             icon: "gis:story-map",
             title: "Abroad",
             value: "abroad"
@@ -415,7 +415,7 @@ function page() {
                     position: "absolute",
                     width: "100%",
                     height: isMdOrLarger ? "138vh" : "300vh",
-                    bgcolor: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$node_modules$2f40$mui$2f$system$2f$esm$2f$colorManipulator$2f$colorManipulator$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["alpha"])(theme.palette.secondary.dark, 0.3),
+                    bgcolor: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$node_modules$2f40$mui$2f$system$2f$esm$2f$colorManipulator$2f$colorManipulator$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["alpha"])(theme.palette.primary.dark, 0.3),
                     zIndex: 1
                 }
             },

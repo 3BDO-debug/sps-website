@@ -6,9 +6,13 @@ import {
   Typography,
   useMediaQuery,
   useTheme,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
 } from "@mui/material";
 import Image from "next/image";
 import React from "react";
+import Iconify from "./Iconify";
 
 function LabCard({ image, name, description, specifications }) {
   const theme = useTheme();
@@ -27,7 +31,7 @@ function LabCard({ image, name, description, specifications }) {
             <Image
               src={image}
               alt="device image"
-              width={isMdOrLarger ? 300 : 250}
+              width={isMdOrLarger ? 270 : 250}
               height={200}
               style={{ borderRadius: 15 }}
             />
@@ -43,21 +47,32 @@ function LabCard({ image, name, description, specifications }) {
                 sx={{
                   color: "grey.0",
                   wordBreak: "break-word",
-                  width: "70%",
                 }}
               >
                 {description}
               </Typography>
             )}
-            {specifications &&
-              specifications?.split(",").map((spec, index) => (
-                <Typography
-                  key={index}
-                  sx={{ color: "grey.0", wordBreak: "break-word" }}
+            {specifications && (
+              <Accordion
+                sx={{
+                  color: "primary.main",
+                  bgcolor: "grey.400",
+                }}
+              >
+                <AccordionSummary
+                  expandIcon={<Iconify icon="lucide:chevron-down" />}
                 >
-                  • {spec.trim()}
-                </Typography>
-              ))}
+                  <Typography fontWeight="bold">Specifications</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  {specifications.split(",").map((spec, index) => (
+                    <Typography key={index} sx={{ wordBreak: "break-word" }}>
+                      • {spec.trim()}
+                    </Typography>
+                  ))}
+                </AccordionDetails>
+              </Accordion>
+            )}
           </Stack>
         </Grid>
       </Grid>

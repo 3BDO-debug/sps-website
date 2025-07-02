@@ -59,7 +59,7 @@ function OurClients() {
           position: "absolute",
           width: "100%",
           height: "60vh",
-          bgcolor: alpha(theme.palette.secondary.main, 0.6),
+          bgcolor: alpha(theme.palette.primary.main, 0.6),
           zIndex: 1,
         },
       }}

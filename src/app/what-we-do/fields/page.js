@@ -32,37 +32,37 @@ function page() {
 
   const fieldsCardsData = [
     {
-      color: "secondary.main",
+      color: "primary.main",
       icon: "game-icons:power-lightning",
       title: "Power Plants & Substations",
       value: "power_plants_and_substations",
     },
     {
-      color: "secondary.main",
+      color: "primary.main",
       icon: "hugeicons:solar-panel-02",
       title: "Solar Energy",
       value: "solar_energy",
     },
     {
-      color: "secondary.main",
+      color: "primary.main",
       icon: "fa6-solid:oil-well",
       title: "Oil & Gas",
       value: "oil_and_gas",
     },
     {
-      color: "secondary.main",
+      color: "primary.main",
       icon: "mdi:transportation",
       title: "Transportation",
       value: "transportation",
     },
     {
-      color: "secondary.main",
+      color: "primary.main",
       icon: "iconoir:industry",
       title: "Industry",
       value: "industry",
     },
     {
-      color: "secondary.main",
+      color: "primary.main",
       icon: "gis:story-map",
       title: "Abroad",
       value: "abroad",
@@ -83,7 +83,7 @@ function page() {
             position: "absolute",
             width: "100%",
             height: isMdOrLarger ? "138vh" : "300vh",
-            bgcolor: alpha(theme.palette.secondary.dark, 0.3),
+            bgcolor: alpha(theme.palette.primary.dark, 0.3),
             zIndex: 1,
           },
         }}

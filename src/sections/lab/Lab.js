@@ -13,6 +13,9 @@ import {
   Typography,
   useMediaQuery,
   useTheme,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
 } from "@mui/material";
 // __apis__
 import { labsFetcher } from "@/__apis__/labs";
@@ -30,6 +33,7 @@ import useAlertStore from "@/stores/useAlertStore";
 import { Icon } from "@iconify/react";
 import { projectsFetcher } from "@/__apis__/projects";
 import LabCard from "@/components/LabCard";
+import Iconify from "@/components/Iconify";
 
 function Labs() {
   const { triggerAlert } = useAlertStore();
@@ -178,15 +182,33 @@ function Labs() {
                         {lab.description}
                       </Typography>
                     )}
-                    {lab.specifications &&
-                      lab.specifications?.split(",").map((spec, index) => (
-                        <Typography
-                          key={index}
-                          sx={{ color: "grey.0", wordBreak: "break-word" }}
+                    {lab.specifications && (
+                      <Accordion
+                        sx={{
+                          color: "primary.main",
+                          bgcolor: "grey.400",
+                          width: "60%",
+                        }}
+                      >
+                        <AccordionSummary
+                          expandIcon={<Iconify icon="lucide:chevron-down" />}
                         >
-                          • {spec.trim()}
-                        </Typography>
-                      ))}
+                          <Typography fontWeight="bold">
+                            Specifications
+                          </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                          {lab.specifications.split(",").map((spec, index) => (
+                            <Typography
+                              key={index}
+                              sx={{ wordBreak: "break-word" }}
+                            >
+                              • {spec.trim()}
+                            </Typography>
+                          ))}
+                        </AccordionDetails>
+                      </Accordion>
+                    )}
                   </Stack>
                 </Grid>
               </Grid>

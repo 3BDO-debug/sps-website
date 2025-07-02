@@ -80,7 +80,7 @@ function page() {
           sx={{ position: "relative", zIndex: 2, py: 10 }}
         >
           <Grid container spacing={3}>
-            <Grid size={{ xs: 12, md: 6 }}>
+            <Grid size={{ xs: 12 }}>
               <Stack gap={5} sx={{ mt: 10 }}>
                 <Typography sx={{ color: "grey.0" }} variant="h4">
                   Flexibility and competitiveness are key strengths of SPS.

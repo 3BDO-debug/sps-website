@@ -563,32 +563,32 @@ function ServicesAndFields() {
     ];
     const fieldsCardsData = [
         {
-            color: "secondary.main",
+            color: "primary.main",
             icon: "game-icons:power-lightning",
             title: "Power Plants & Substations"
         },
         {
-            color: "secondary.main",
+            color: "primary.main",
             icon: "hugeicons:solar-panel-02",
             title: "Solar Energy"
         },
         {
-            color: "secondary.main",
+            color: "primary.main",
             icon: "fa6-solid:oil-well",
             title: "Oil & Gas"
         },
         {
-            color: "secondary.main",
+            color: "primary.main",
             icon: "mdi:transportation",
             title: "Transportation"
         },
         {
-            color: "secondary.main",
+            color: "primary.main",
             icon: "iconoir:industry",
             title: "Industry"
         },
         {
-            color: "secondary.main",
+            color: "primary.main",
             icon: "gis:story-map",
             title: "Abroad"
         }
@@ -649,7 +649,7 @@ function ServicesAndFields() {
                     position: "absolute",
                     width: "100%",
                     height: "75vh",
-                    bgcolor: currentSlide === "fields" ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$node_modules$2f40$mui$2f$system$2f$esm$2f$colorManipulator$2f$colorManipulator$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["alpha"])(theme.palette.secondary.main, 0.3) : "rgba(0, 0, 0, 0.5)",
+                    bgcolor: currentSlide === "fields" ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$node_modules$2f40$mui$2f$system$2f$esm$2f$colorManipulator$2f$colorManipulator$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["alpha"])(theme.palette.primary.main, 0.3) : "rgba(0, 0, 0, 0.5)",
                     zIndex: 1
                 }
             },
@@ -692,7 +692,7 @@ function ServicesAndFields() {
                                 variant: "contained",
                                 sx: {
                                     borderRadius: 0,
-                                    bgcolor: currentSlide === "fields" ? "secondary.main" : "transparent"
+                                    bgcolor: currentSlide === "fields" ? "primary.main" : "transparent"
                                 },
                                 children: "Fields"
                             }, void 0, false, {
@@ -1106,7 +1106,7 @@ __turbopack_esm__({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/axios/lib/axios.js [app-client] (ecmascript)");
 ;
-const mainUrl = "https://smart-power-services-d39c5decd525.herokuapp.com";
+const mainUrl = "http://127.0.0.1:8000/";
 const axiosInstance = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].create({
     baseURL: mainUrl,
     timeout: 100000,
@@ -1195,7 +1195,7 @@ var _s = __turbopack_refresh__.signature();
 ;
 ;
 ;
-function ProjectAndLabCard({ id, image, name, width = 400, color = "secondary.main" }) {
+function ProjectAndLabCard({ id, image, name, width = 400, color = "primary.main" }) {
     _s();
     const theme = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$styles$2f$useTheme$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__useTheme$3e$__["useTheme"])();
     const isMdOrLarger = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$useMediaQuery$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__useMediaQuery$3e$__["useMediaQuery"])(theme.breakpoints.up("md"));
@@ -1376,7 +1376,7 @@ function OurProjects() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
-                    bgcolor: "secondary.main",
+                    bgcolor: "primary.main",
                     height: 50
                 }
             }, void 0, false, {
@@ -1396,7 +1396,7 @@ function OurProjects() {
                         position: "absolute",
                         width: "100%",
                         height: "75vh",
-                        bgcolor: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$node_modules$2f40$mui$2f$system$2f$esm$2f$colorManipulator$2f$colorManipulator$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["alpha"])(theme.palette.secondary.main, 0.3),
+                        bgcolor: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$node_modules$2f40$mui$2f$system$2f$esm$2f$colorManipulator$2f$colorManipulator$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["alpha"])(theme.palette.primary.main, 0.3),
                         zIndex: 1
                     }
                 },
@@ -1468,7 +1468,8 @@ function OurProjects() {
                                         projects.slice(0, 3).map((project)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ProjectAndLabCard$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                 id: project.id,
                                                 image: project.image,
-                                                name: project.name
+                                                name: project.name,
+                                                color: "primary.main"
                                             }, project.id, false, {
                                                 fileName: "[project]/src/sections/homePage/OurProjects.js",
                                                 lineNumber: 103,
@@ -1476,7 +1477,7 @@ function OurProjects() {
                                             }, this)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                                             sx: {
-                                                bgcolor: "secondary.main",
+                                                bgcolor: "primary.main",
                                                 width: isMdOrLarger ? 400 : 280
                                             },
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -1489,21 +1490,21 @@ function OurProjects() {
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$CustomButton$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                     label: "See more",
                                                     color: "grey.0",
-                                                    bgColor: "secondary.main",
+                                                    bgColor: "primary.main",
                                                     onClick: ()=>push("./projects")
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/sections/homePage/OurProjects.js",
-                                                    lineNumber: 125,
+                                                    lineNumber: 126,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/sections/homePage/OurProjects.js",
-                                                lineNumber: 117,
+                                                lineNumber: 118,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/sections/homePage/OurProjects.js",
-                                            lineNumber: 111,
+                                            lineNumber: 112,
                                             columnNumber: 17
                                         }, this)
                                     ]
@@ -1989,7 +1990,7 @@ function OurClients() {
                 position: "absolute",
                 width: "100%",
                 height: "60vh",
-                bgcolor: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$node_modules$2f40$mui$2f$system$2f$esm$2f$colorManipulator$2f$colorManipulator$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["alpha"])(theme.palette.secondary.main, 0.6),
+                bgcolor: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$node_modules$2f40$mui$2f$system$2f$esm$2f$colorManipulator$2f$colorManipulator$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["alpha"])(theme.palette.primary.main, 0.6),
                 zIndex: 1
             }
         },

@@ -2,8 +2,7 @@ import axios from "axios";
 
 /* http://127.0.0.1:8000 -------  https://smart-power-services-d39c5decd525.herokuapp.com*/
 
-export const mainUrl =
-  "https://smart-power-services-d39c5decd525.herokuapp.com";
+export const mainUrl = "http://127.0.0.1:8000/";
 
 const axiosInstance = axios.create({
   baseURL: mainUrl,

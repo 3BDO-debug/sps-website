@@ -33,7 +33,7 @@ function intro() {
     {
       title: "Our Vision",
       item1:
-        "At SPS Lab, we envision Becoming a trusted regional leader in electrical testing and diagnostics - Empowering our partners to deliver safe, efficient, and sustainable energy solutions.",
+        "At SPS, we envision Becoming a trusted regional leader in electrical testing and diagnostics - Empowering our partners to deliver safe, efficient, and sustainable energy solutions.",
       item2:
         "we aim to be more than a service provider - We strive to be an integrated part of our clients success story by offering reliable support, so they can focus on the core operations while we handled the critical aspects of testing, commissioning and quality assurance.",
     },

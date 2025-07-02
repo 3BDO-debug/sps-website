@@ -53,32 +53,32 @@ function ServicesAndFields() {
 
   const fieldsCardsData = [
     {
-      color: "secondary.main",
+      color: "primary.main",
       icon: "game-icons:power-lightning",
       title: "Power Plants & Substations",
     },
     {
-      color: "secondary.main",
+      color: "primary.main",
       icon: "hugeicons:solar-panel-02",
       title: "Solar Energy",
     },
     {
-      color: "secondary.main",
+      color: "primary.main",
       icon: "fa6-solid:oil-well",
       title: "Oil & Gas",
     },
     {
-      color: "secondary.main",
+      color: "primary.main",
       icon: "mdi:transportation",
       title: "Transportation",
     },
     {
-      color: "secondary.main",
+      color: "primary.main",
       icon: "iconoir:industry",
       title: "Industry",
     },
     {
-      color: "secondary.main",
+      color: "primary.main",
       icon: "gis:story-map",
       title: "Abroad",
     },
@@ -141,7 +141,7 @@ function ServicesAndFields() {
             height: "75vh",
             bgcolor:
               currentSlide === "fields"
-                ? alpha(theme.palette.secondary.main, 0.3)
+                ? alpha(theme.palette.primary.main, 0.3)
                 : "rgba(0, 0, 0, 0.5)",
             zIndex: 1,
           },
@@ -181,7 +181,7 @@ function ServicesAndFields() {
               sx={{
                 borderRadius: 0,
                 bgcolor:
-                  currentSlide === "fields" ? "secondary.main" : "transparent",
+                  currentSlide === "fields" ? "primary.main" : "transparent",
               }}
             >
               Fields

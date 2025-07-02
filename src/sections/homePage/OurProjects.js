@@ -49,7 +49,7 @@ function OurProjects() {
 
   return (
     <Box>
-      <Box sx={{ bgcolor: "secondary.main", height: 50 }} />
+      <Box sx={{ bgcolor: "primary.main", height: 50 }} />
       <Box
         sx={{
           backgroundImage: `url(${ourProjectsBg.src})`,
@@ -62,7 +62,7 @@ function OurProjects() {
             position: "absolute",
             width: "100%",
             height: "75vh",
-            bgcolor: alpha(theme.palette.secondary.main, 0.3),
+            bgcolor: alpha(theme.palette.primary.main, 0.3),
             zIndex: 1,
           },
         }}
@@ -105,12 +105,13 @@ function OurProjects() {
                     id={project.id}
                     image={project.image}
                     name={project.name}
+                    color="primary.main"
                   />
                 ))}
 
                 <Box
                   sx={{
-                    bgcolor: "secondary.main",
+                    bgcolor: "primary.main",
                     width: isMdOrLarger ? 400 : 280,
                   }}
                 >
@@ -125,7 +126,7 @@ function OurProjects() {
                     <CustomButton
                       label="See more"
                       color="grey.0"
-                      bgColor="secondary.main"
+                      bgColor="primary.main"
                       onClick={() => push("./projects")}
                     />
                   </Box>
