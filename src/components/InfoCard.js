@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 // next
 import Image from "next/image";
@@ -23,16 +23,18 @@ function InfoCard({
   const { push } = useRouter();
 
   return (
-    <Box
+    <Stack
+      justifyContent="space-between"
       onClick={() => push(`/projects?category=${value}`)}
       sx={{
         bgcolor: "grey.0",
         position: "relative",
         mx: 1,
         boxShadow: 3,
+        height: 350,
       }}
     >
-      <Box sx={{ paddingY: 10 }}>
+      <Box sx={{ paddingTop: 10 }}>
         <Box
           sx={{
             display: "flex",
@@ -80,7 +82,7 @@ function InfoCard({
         </Box>
       </Box>
       <Box sx={{ bgcolor: color, height: 7 }}></Box>
-    </Box>
+    </Stack>
   );
 }
 

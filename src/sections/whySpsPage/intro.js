@@ -11,6 +11,22 @@ import WhySpsIntro from "@/assets/projectsIntro.jpg";
 import iso1 from "@/assets/certificates/ISO 1.jpg";
 import iso2 from "@/assets/certificates/ISO 2.jpg";
 import iso3 from "@/assets/certificates/ISO 3.jpg";
+import letter1 from "@/assets/letters/letter1.jpg";
+import letter2 from "@/assets/letters/letter2.jpg";
+import letter3 from "@/assets/letters/letter3.jpg";
+import letter4 from "@/assets/letters/letter4.jpg";
+import letter5 from "@/assets/letters/letter5.jpg";
+import letter6 from "@/assets/letters/letter6.jpg";
+import letter7 from "@/assets/letters/letter7.jpg";
+import letter8 from "@/assets/letters/letter8.jpg";
+import letter9 from "@/assets/letters/letter9.jpg";
+import letter10 from "@/assets/letters/letter10.jpg";
+import letter11 from "@/assets/letters/letter11.jpg";
+import letter12 from "@/assets/letters/letter12.jpg";
+import letter13 from "@/assets/letters/letter13.jpg";
+import letter14 from "@/assets/letters/letter14.jpg";
+import letter15 from "@/assets/letters/letter15.jpg";
+import letter16 from "@/assets/letters/letter16.jpg";
 
 function intro() {
   const infoCardData = [
@@ -90,6 +106,42 @@ function intro() {
                 <Image
                   src={src}
                   alt={`ISO ${index + 1}`}
+                  layout="fill"
+                  objectFit="contain"
+                />
+              </Box>
+            </Grid>
+          ))}
+          <Grid size={{ xs: 12 }}>
+            <Box sx={{ display: "flex", justifyContent: "center" }}>
+              <Typography variant="h3" sx={{ my: 5, color: "primary.main" }}>
+                Satisfaction letters
+              </Typography>
+            </Box>
+          </Grid>
+          {[
+            letter1,
+            letter2,
+            letter3,
+            letter4,
+            letter5,
+            letter6,
+            letter7,
+            letter8,
+            letter9,
+            letter10,
+            letter1,
+            letter12,
+            letter13,
+            letter14,
+            letter15,
+            letter16,
+          ].map((src, index) => (
+            <Grid size={{ xs: 12, md: 4 }} key={index}>
+              <Box sx={{ width: "100%", height: 650, position: "relative" }}>
+                <Image
+                  src={src}
+                  alt={`letter ${index + 1}`}
                   layout="fill"
                   objectFit="contain"
                 />
