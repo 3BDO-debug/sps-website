@@ -26,6 +26,14 @@ import client9 from "@/assets/clientsLogos/9.png";
 import client10 from "@/assets/clientsLogos/10.png";
 import client11 from "@/assets/clientsLogos/11.png";
 import client12 from "@/assets/clientsLogos/12.png";
+import client13 from "@/assets/clientsLogos/13.png";
+import client14 from "@/assets/clientsLogos/14.png";
+import client15 from "@/assets/clientsLogos/15.png";
+import client16 from "@/assets/clientsLogos/16.png";
+import client17 from "@/assets/clientsLogos/17.png";
+import client18 from "@/assets/clientsLogos/18.png";
+import client19 from "@/assets/clientsLogos/19.png";
+import client20 from "@/assets/clientsLogos/20.png";
 
 function OurClients() {
   const theme = useTheme();
@@ -45,6 +53,14 @@ function OurClients() {
     client10,
     client11,
     client12,
+    client13,
+    client14,
+    client15,
+    client16,
+    client17,
+    client18,
+    client19,
+    client20,
   ];
   return (
     <Box
