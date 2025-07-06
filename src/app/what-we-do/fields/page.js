@@ -9,26 +9,27 @@ import {
   useMediaQuery,
   useTheme,
   alpha,
-  Container,
   Grid,
   Typography,
   Stack,
+  Container,
 } from "@mui/material";
+// react-slick
+import Slider from "react-slick";
+// Slick Carousel
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 // assets
 import fieldsIntro from "@/assets/fields-intro.png";
 import fieldsBg from "@/assets/fieldsBg.png";
-import engineering from "@/assets/icons/engineering.png";
-import management from "@/assets/icons/management.png";
-import security from "@/assets/icons/security.png";
 // components
 import InfoCard from "@/components/InfoCard";
+import { Icon } from "@iconify/react";
 
 function page() {
   const theme = useTheme();
 
   const isMdOrLarger = useMediaQuery(theme.breakpoints.up("md"));
-
-  const { push } = useRouter();
 
   const fieldsCardsData = [
     {
@@ -69,6 +70,32 @@ function page() {
     },
   ];
 
+  const settings = {
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    nextArrow: <Icon color="white" icon="line-md:chevron-right" />,
+    prevArrow: <Icon color="white" icon="line-md:chevron-left" />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+    ],
+  };
+
   return (
     <Box sx={{ mt: 20 }}>
       <Box
@@ -82,7 +109,7 @@ function page() {
             content: '""',
             position: "absolute",
             width: "100%",
-            height: isMdOrLarger ? "138vh" : "300vh",
+            height: isMdOrLarger ? "121vh" : "145vh",
             bgcolor: alpha(theme.palette.primary.dark, 0.3),
             zIndex: 1,
           },
@@ -114,16 +141,25 @@ function page() {
             </Grid>
           </Grid>
           <Grid container spacing={3}>
-            {fieldsCardsData.map((card, index) => (
-              <Grid size={{ xs: 12, md: 4 }} key={index}>
-                <InfoCard
-                  icon={card.icon}
-                  color={card.color}
-                  title={card.title}
-                  value={card.value}
-                />
-              </Grid>
-            ))}
+            <Container
+              maxWidth="xl"
+              sx={{
+                position: "relative",
+                zIndex: 2,
+                paddingX: 3,
+              }}
+            >
+              <Slider {...settings}>
+                {fieldsCardsData.map((card, index) => (
+                  <InfoCard
+                    icon={card.icon}
+                    color={card.color}
+                    title={card.title}
+                    value={card.value}
+                  />
+                ))}
+              </Slider>
+            </Container>
           </Grid>
         </Box>
       </Box>

@@ -222,6 +222,7 @@ function InfoCard({ icon, color = "primary.main", title, item1, item2, item3, it
         justifyContent: "space-between",
         onClick: ()=>push(`/projects?category=${value}`),
         sx: {
+            cursor: "pointer",
             bgcolor: "grey.0",
             position: "relative",
             mx: 1,
@@ -255,12 +256,12 @@ function InfoCard({ icon, color = "primary.main", title, item1, item2, item3, it
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/InfoCard.js",
-                                        lineNumber: 47,
+                                        lineNumber: 48,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/InfoCard.js",
-                                    lineNumber: 46,
+                                    lineNumber: 47,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -277,23 +278,23 @@ function InfoCard({ icon, color = "primary.main", title, item1, item2, item3, it
                                         children: title
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/InfoCard.js",
-                                        lineNumber: 51,
+                                        lineNumber: 52,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/InfoCard.js",
-                                    lineNumber: 50,
+                                    lineNumber: 51,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/InfoCard.js",
-                            lineNumber: 44,
+                            lineNumber: 45,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/InfoCard.js",
-                        lineNumber: 38,
+                        lineNumber: 39,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -321,23 +322,23 @@ function InfoCard({ icon, color = "primary.main", title, item1, item2, item3, it
                                     children: item
                                 }, index, false, {
                                     fileName: "[project]/src/components/InfoCard.js",
-                                    lineNumber: 72,
+                                    lineNumber: 73,
                                     columnNumber: 19
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/components/InfoCard.js",
-                            lineNumber: 68,
+                            lineNumber: 69,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/InfoCard.js",
-                        lineNumber: 60,
+                        lineNumber: 61,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/InfoCard.js",
-                lineNumber: 37,
+                lineNumber: 38,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -347,7 +348,7 @@ function InfoCard({ icon, color = "primary.main", title, item1, item2, item3, it
                 }
             }, void 0, false, {
                 fileName: "[project]/src/components/InfoCard.js",
-                lineNumber: 84,
+                lineNumber: 85,
                 columnNumber: 7
             }, this)
         ]
@@ -450,7 +451,6 @@ function page() {
         },
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
             sx: {
-                cursor: "pointer",
                 backgroundImage: `url(${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$servicesBg$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$servicesBg$2e$png__$5b$app$2d$client$5d$__$28$static$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"].src})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
@@ -494,7 +494,7 @@ function page() {
                                         children: "Flexibility and competitiveness are key strengths of SPS."
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/what-we-do/services/page.js",
-                                        lineNumber: 85,
+                                        lineNumber: 84,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -505,7 +505,7 @@ function page() {
                                         children: "Thanks to its international corporate structure, SPS is fully equipped to manage large-scale, multidisciplinary projects with efficiency and precision.We continuously integrate our expertise and knowledge to develop innovative solutions tailored to each phase of the project."
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/what-we-do/services/page.js",
-                                        lineNumber: 88,
+                                        lineNumber: 87,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -516,18 +516,18 @@ function page() {
                                         children: "Our team-oriented approach, problem-solving mindset, and the ongoing evolution of our professional practices enable us to deliver a wide range of services across various sectors."
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/what-we-do/services/page.js",
-                                        lineNumber: 95,
+                                        lineNumber: 94,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/what-we-do/services/page.js",
-                                lineNumber: 84,
+                                lineNumber: 83,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/what-we-do/services/page.js",
-                            lineNumber: 83,
+                            lineNumber: 82,
                             columnNumber: 13
                         }, this),
                         servicesCardsData.map((card, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Grid$2f$Grid$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Grid$3e$__["Grid"], {
@@ -542,23 +542,23 @@ function page() {
                                     value: card.value
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/what-we-do/services/page.js",
-                                    lineNumber: 104,
+                                    lineNumber: 103,
                                     columnNumber: 17
                                 }, this)
                             }, index, false, {
                                 fileName: "[project]/src/app/what-we-do/services/page.js",
-                                lineNumber: 103,
+                                lineNumber: 102,
                                 columnNumber: 15
                             }, this))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/what-we-do/services/page.js",
-                    lineNumber: 82,
+                    lineNumber: 81,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/what-we-do/services/page.js",
-                lineNumber: 78,
+                lineNumber: 77,
                 columnNumber: 9
             }, this)
         }, void 0, false, {

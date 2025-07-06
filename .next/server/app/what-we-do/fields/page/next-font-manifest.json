@@ -1,6 +1,8 @@
 {
   "pages": {},
-  "app": {},
+  "app": {
+    "[project]/src/app/what-we-do/fields/page": []
+  },
   "appUsingSizeAdjust": false,
   "pagesUsingSizeAdjust": false
 }

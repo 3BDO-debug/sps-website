@@ -27,6 +27,7 @@ function InfoCard({
       justifyContent="space-between"
       onClick={() => push(`/projects?category=${value}`)}
       sx={{
+        cursor: "pointer",
         bgcolor: "grey.0",
         position: "relative",
         mx: 1,

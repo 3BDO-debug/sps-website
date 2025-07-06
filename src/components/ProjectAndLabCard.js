@@ -4,7 +4,8 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 // mui
 import { Box, Stack, Typography, useMediaQuery, useTheme } from "@mui/material";
-import { Icon } from "@iconify/react";
+// assets
+import logo from "@/assets/logo.png";
 
 function ProjectAndLabCard({
   id,
@@ -37,17 +38,14 @@ function ProjectAndLabCard({
       ) : (
         <Box
           sx={{
+            bgcolor: "grey.0",
+            height: 350,
             display: "flex",
-            justifyContent: "center", // horizontal center
-            alignItems: "center", // vertical center
-            height: "37vh", // full viewport height (or any fixed height)
+            alignItems: "center",
+            justifyContent: "center",
           }}
         >
-          <Icon
-            icon="material-symbols-light:hide-image-outline"
-            fontSize={100}
-            color="grey.0"
-          />
+          <Image src={logo} alt="project" width={isMdOrLarger ? width : 280} />
         </Box>
       )}
       <Box sx={{ display: "flex", justifyContent: "flex-start", paddingY: 1 }}>

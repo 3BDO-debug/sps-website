@@ -115,7 +115,7 @@ __turbopack_esm__({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/axios/lib/axios.js [app-ssr] (ecmascript)");
 ;
-const mainUrl = "http://127.0.0.1:8000";
+const mainUrl = "http://127.0.0.1:8000/";
 const axiosInstance = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].create({
     baseURL: mainUrl,
     timeout: 100000,
@@ -1453,8 +1453,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$mat
 ;
 function JobApplicationPopUp({ isTriggered, closeHandler, jobId }) {
     const { triggerAlert } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$stores$2f$useAlertStore$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])();
-    const [personalImage, setPersonalImage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
-    const [cv, setCv] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
+    // const [personalImage, setPersonalImage] = useState(null);
+    // const [cv, setCv] = useState(null);
     const formik = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$formik$2f$dist$2f$formik$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useFormik"])({
         initialValues: {
             vacancyId: "",
@@ -1473,9 +1473,7 @@ function JobApplicationPopUp({ isTriggered, closeHandler, jobId }) {
             university: "",
             graduationGrade: "",
             graduationYear: "",
-            graduationProject: "",
-            image: null,
-            cv: null
+            graduationProject: ""
         },
         validationSchema: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$yup$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.object().shape({
             name: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$yup$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.string().required("Name is required"),
@@ -1493,9 +1491,7 @@ function JobApplicationPopUp({ isTriggered, closeHandler, jobId }) {
             university: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$yup$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.string().required("University is required"),
             graduationGrade: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$yup$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.string().required("Graduation grade is required"),
             graduationYear: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$yup$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.string().required("Graduation year is required"),
-            graduationProject: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$yup$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.string().required("Graduation project title is required"),
-            image: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$yup$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.mixed().required("Image is required"),
-            cv: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$yup$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.mixed().required("CV is required")
+            graduationProject: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$yup$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.string().required("Graduation project title is required")
         }),
         onSubmit: async (values, { resetForm })=>{
             await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$_$5f$apis_$5f2f$careers$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["applicationSubmissionRequest"])(values).then((response)=>{
@@ -1506,8 +1502,8 @@ function JobApplicationPopUp({ isTriggered, closeHandler, jobId }) {
                 });
                 resetForm();
                 closeHandler();
-                setCv(null);
-                setPersonalImage(null);
+            // setCv(null);
+            // setPersonalImage(null);
             }).catch((error)=>{
                 console.log("Error while trying to submit", error.response);
                 triggerAlert({
@@ -1526,28 +1522,34 @@ function JobApplicationPopUp({ isTriggered, closeHandler, jobId }) {
     }, [
         jobId
     ]);
-    const handleImageFileDrop = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])((acceptedFiles)=>{
-        const file = acceptedFiles[0];
-        if (file) {
-            setPersonalImage(Object.assign(file, {
-                preview: URL.createObjectURL(file)
-            }));
-            setFieldValue("image", file);
-        }
-    }, [
-        setFieldValue
-    ]);
-    const handleCvFileDrop = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])((acceptedFiles)=>{
-        const file = acceptedFiles[0];
-        if (file) {
-            setCv(Object.assign(file, {
-                preview: URL.createObjectURL(file)
-            }));
-            setFieldValue("cv", file);
-        }
-    }, [
-        setFieldValue
-    ]);
+    // const handleImageFileDrop = useCallback(
+    //   (acceptedFiles) => {
+    //     const file = acceptedFiles[0];
+    //     if (file) {
+    //       setPersonalImage(
+    //         Object.assign(file, {
+    //           preview: URL.createObjectURL(file),
+    //         })
+    //       );
+    //       setFieldValue("image", file);
+    //     }
+    //   },
+    //   [setFieldValue]
+    // );
+    // const handleCvFileDrop = useCallback(
+    //   (acceptedFiles) => {
+    //     const file = acceptedFiles[0];
+    //     if (file) {
+    //       setCv(
+    //         Object.assign(file, {
+    //           preview: URL.createObjectURL(file),
+    //         })
+    //       );
+    //       setFieldValue("cv", file);
+    //     }
+    //   },
+    //   [setFieldValue]
+    // );
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Dialog$2f$Dialog$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Dialog$3e$__["Dialog"], {
         open: isTriggered,
         onClose: closeHandler,
@@ -2080,7 +2082,7 @@ function JobApplicationPopUp({ isTriggered, closeHandler, jobId }) {
                         children: "Cancel"
                     }, void 0, false, {
                         fileName: "[project]/src/components/JobApplicationPopUp.js",
-                        lineNumber: 415,
+                        lineNumber: 439,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Button$2f$Button$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
@@ -2092,19 +2094,19 @@ function JobApplicationPopUp({ isTriggered, closeHandler, jobId }) {
                             icon: "picon:send"
                         }, void 0, false, {
                             fileName: "[project]/src/components/JobApplicationPopUp.js",
-                            lineNumber: 429,
+                            lineNumber: 453,
                             columnNumber: 20
                         }, void 0),
                         children: "Submit"
                     }, void 0, false, {
                         fileName: "[project]/src/components/JobApplicationPopUp.js",
-                        lineNumber: 424,
+                        lineNumber: 448,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/JobApplicationPopUp.js",
-                lineNumber: 414,
+                lineNumber: 438,
                 columnNumber: 7
             }, this)
         ]

@@ -29,9 +29,9 @@ import { UploadSingleFile } from "./upload";
 function JobApplicationPopUp({ isTriggered, closeHandler, jobId }) {
   const { triggerAlert } = useAlertStore();
 
-  const [personalImage, setPersonalImage] = useState(null);
+  // const [personalImage, setPersonalImage] = useState(null);
 
-  const [cv, setCv] = useState(null);
+  // const [cv, setCv] = useState(null);
 
   const formik = useFormik({
     initialValues: {
@@ -52,8 +52,8 @@ function JobApplicationPopUp({ isTriggered, closeHandler, jobId }) {
       graduationGrade: "",
       graduationYear: "",
       graduationProject: "",
-      image: null,
-      cv: null,
+      // image: null,
+      // cv: null,
     },
     validationSchema: Yup.object().shape({
       name: Yup.string().required("Name is required"),
@@ -76,8 +76,8 @@ function JobApplicationPopUp({ isTriggered, closeHandler, jobId }) {
       graduationProject: Yup.string().required(
         "Graduation project title is required"
       ),
-      image: Yup.mixed().required("Image is required"),
-      cv: Yup.mixed().required("CV is required"),
+      // image: Yup.mixed().required("Image is required"),
+      // cv: Yup.mixed().required("CV is required"),
     }),
     onSubmit: async (values, { resetForm }) => {
       await applicationSubmissionRequest(values)
@@ -89,8 +89,8 @@ function JobApplicationPopUp({ isTriggered, closeHandler, jobId }) {
           });
           resetForm();
           closeHandler();
-          setCv(null);
-          setPersonalImage(null);
+          // setCv(null);
+          // setPersonalImage(null);
         })
         .catch((error) => {
           console.log("Error while trying to submit", error.response);
@@ -120,35 +120,35 @@ function JobApplicationPopUp({ isTriggered, closeHandler, jobId }) {
     }
   }, [jobId]);
 
-  const handleImageFileDrop = useCallback(
-    (acceptedFiles) => {
-      const file = acceptedFiles[0];
-      if (file) {
-        setPersonalImage(
-          Object.assign(file, {
-            preview: URL.createObjectURL(file),
-          })
-        );
-        setFieldValue("image", file);
-      }
-    },
-    [setFieldValue]
-  );
+  // const handleImageFileDrop = useCallback(
+  //   (acceptedFiles) => {
+  //     const file = acceptedFiles[0];
+  //     if (file) {
+  //       setPersonalImage(
+  //         Object.assign(file, {
+  //           preview: URL.createObjectURL(file),
+  //         })
+  //       );
+  //       setFieldValue("image", file);
+  //     }
+  //   },
+  //   [setFieldValue]
+  // );
 
-  const handleCvFileDrop = useCallback(
-    (acceptedFiles) => {
-      const file = acceptedFiles[0];
-      if (file) {
-        setCv(
-          Object.assign(file, {
-            preview: URL.createObjectURL(file),
-          })
-        );
-        setFieldValue("cv", file);
-      }
-    },
-    [setFieldValue]
-  );
+  // const handleCvFileDrop = useCallback(
+  //   (acceptedFiles) => {
+  //     const file = acceptedFiles[0];
+  //     if (file) {
+  //       setCv(
+  //         Object.assign(file, {
+  //           preview: URL.createObjectURL(file),
+  //         })
+  //       );
+  //       setFieldValue("cv", file);
+  //     }
+  //   },
+  //   [setFieldValue]
+  // );
 
   return (
     <Dialog
@@ -409,7 +409,7 @@ function JobApplicationPopUp({ isTriggered, closeHandler, jobId }) {
               helperText={touched.graduationProject && errors.graduationProject}
             />
           </Grid>
-          <Grid size={{ xs: 12, md: 6 }}>
+          {/* <Grid size={{ xs: 12, md: 6 }}>
             <UploadSingleFile
               title="Upload your personal picture"
               file={personalImage}
@@ -432,7 +432,7 @@ function JobApplicationPopUp({ isTriggered, closeHandler, jobId }) {
                 {errors.cv}
               </Typography>
             )}
-          </Grid>
+          </Grid> */}
         </Grid>
       </DialogContent>
       <DialogActions>

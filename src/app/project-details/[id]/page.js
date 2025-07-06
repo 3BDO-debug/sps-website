@@ -11,6 +11,8 @@ import {
   Grid,
   Stack,
   Typography,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
 // __apis__
 import { projectsFetcher } from "@/__apis__/projects";
@@ -23,6 +25,10 @@ import ProjectAndLabCard from "@/components/ProjectAndLabCard";
 
 function page() {
   const { triggerAlert } = useAlertStore();
+
+  const theme = useTheme();
+
+  const isMdOrLarger = useMediaQuery(theme.breakpoints.up("md"));
 
   const { id } = useParams();
 
@@ -70,10 +76,12 @@ function page() {
       {projectData.image && (
         <Box sx={{ display: "flex", justifyContent: "center" }}>
           <Image
-            // src={projectData.image}
+            src={projectData.image}
             alt="image"
             objectFit="contain"
-            style={{ width: "50%", height: "auto" }}
+            width={isMdOrLarger ? 1000 : 300}
+            height={isMdOrLarger ? 500 : 150}
+            style={{ borderRadius: 15 }}
           />
         </Box>
       )}

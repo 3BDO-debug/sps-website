@@ -297,6 +297,7 @@ function InfoCard({ icon, color = "primary.main", title, item1, item2, item3, it
         justifyContent: "space-between",
         onClick: ()=>push(`/projects?category=${value}`),
         sx: {
+            cursor: "pointer",
             bgcolor: "grey.0",
             position: "relative",
             mx: 1,
@@ -330,12 +331,12 @@ function InfoCard({ icon, color = "primary.main", title, item1, item2, item3, it
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/InfoCard.js",
-                                        lineNumber: 47,
+                                        lineNumber: 48,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/InfoCard.js",
-                                    lineNumber: 46,
+                                    lineNumber: 47,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -352,23 +353,23 @@ function InfoCard({ icon, color = "primary.main", title, item1, item2, item3, it
                                         children: title
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/InfoCard.js",
-                                        lineNumber: 51,
+                                        lineNumber: 52,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/InfoCard.js",
-                                    lineNumber: 50,
+                                    lineNumber: 51,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/InfoCard.js",
-                            lineNumber: 44,
+                            lineNumber: 45,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/InfoCard.js",
-                        lineNumber: 38,
+                        lineNumber: 39,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -396,23 +397,23 @@ function InfoCard({ icon, color = "primary.main", title, item1, item2, item3, it
                                     children: item
                                 }, index, false, {
                                     fileName: "[project]/src/components/InfoCard.js",
-                                    lineNumber: 72,
+                                    lineNumber: 73,
                                     columnNumber: 19
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/components/InfoCard.js",
-                            lineNumber: 68,
+                            lineNumber: 69,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/InfoCard.js",
-                        lineNumber: 60,
+                        lineNumber: 61,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/InfoCard.js",
-                lineNumber: 37,
+                lineNumber: 38,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -422,7 +423,7 @@ function InfoCard({ icon, color = "primary.main", title, item1, item2, item3, it
                 }
             }, void 0, false, {
                 fileName: "[project]/src/components/InfoCard.js",
-                lineNumber: 84,
+                lineNumber: 85,
                 columnNumber: 7
             }, this)
         ]
@@ -953,7 +954,7 @@ function Experience() {
                                         sx: {
                                             color: "grey.0"
                                         },
-                                        children: "6* 500 KV"
+                                        children: "6* 500 KV, 8* 220 KV, 5* 66 KV Substations Projects (Installation, Testing and Start-up)."
                                     }, void 0, false, {
                                         fileName: "[project]/src/sections/homePage/Experience.js",
                                         lineNumber: 87,
@@ -964,32 +965,10 @@ function Experience() {
                                         sx: {
                                             color: "grey.0"
                                         },
-                                        children: "8* 220KV"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/sections/homePage/Experience.js",
-                                        lineNumber: 90,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
-                                        variant: "subtitle2",
-                                        sx: {
-                                            color: "grey.0"
-                                        },
-                                        children: "5* 66 KV"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/sections/homePage/Experience.js",
-                                        lineNumber: 93,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
-                                        variant: "subtitle2",
-                                        sx: {
-                                            color: "grey.0"
-                                        },
                                         children: "+ 50 Power transformers various rating levels from 125 MVA up to 750 MVA (Erection, Testing & Commissioning)."
                                     }, void 0, false, {
                                         fileName: "[project]/src/sections/homePage/Experience.js",
-                                        lineNumber: 96,
+                                        lineNumber: 91,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -1000,7 +979,7 @@ function Experience() {
                                         children: "+275 MW of photovoltaic (Erection, Testing & Commissioning)."
                                     }, void 0, false, {
                                         fileName: "[project]/src/sections/homePage/Experience.js",
-                                        lineNumber: 100,
+                                        lineNumber: 95,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -1011,7 +990,7 @@ function Experience() {
                                         children: "+9 Power Plants (Engineering, Erection, Testing & Commissioning)."
                                     }, void 0, false, {
                                         fileName: "[project]/src/sections/homePage/Experience.js",
-                                        lineNumber: 103,
+                                        lineNumber: 98,
                                         columnNumber: 15
                                     }, this)
                                 ]
@@ -1045,12 +1024,12 @@ function Experience() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/sections/homePage/Experience.js",
-                        lineNumber: 111,
+                        lineNumber: 106,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/sections/homePage/Experience.js",
-                    lineNumber: 110,
+                    lineNumber: 105,
                     columnNumber: 9
                 }, this)
             ]
@@ -1165,7 +1144,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 // next
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$iconify$2f$react$2f$dist$2f$iconify$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@iconify/react/dist/iconify.js [app-client] (ecmascript)");
+// assets
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$logo$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$logo$2e$png__$5b$app$2d$client$5d$__$28$static$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_import__('[project]/src/assets/logo.png.mjs { IMAGE => "[project]/src/assets/logo.png [app-client] (static)" } [app-client] (structured image object, ecmascript)');
 // mui
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$styles$2f$useTheme$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__useTheme$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/esm/styles/useTheme.js [app-client] (ecmascript) <export default as useTheme>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$useMediaQuery$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__useMediaQuery$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/esm/useMediaQuery/index.js [app-client] (ecmascript) <export default as useMediaQuery>");
@@ -1199,27 +1179,28 @@ function ProjectAndLabCard({ id, image, name, width = 400, color = "primary.main
                 width: isMdOrLarger ? width : 280
             }, void 0, false, {
                 fileName: "[project]/src/components/ProjectAndLabCard.js",
-                lineNumber: 31,
+                lineNumber: 32,
                 columnNumber: 9
             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
+                    bgcolor: "grey.0",
+                    height: 350,
                     display: "flex",
-                    justifyContent: "center",
                     alignItems: "center",
-                    height: "37vh"
+                    justifyContent: "center"
                 },
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$iconify$2f$react$2f$dist$2f$iconify$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Icon"], {
-                    icon: "material-symbols-light:hide-image-outline",
-                    fontSize: 100,
-                    color: "grey.0"
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$logo$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$logo$2e$png__$5b$app$2d$client$5d$__$28$static$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
+                    alt: "project",
+                    width: isMdOrLarger ? width : 280
                 }, void 0, false, {
                     fileName: "[project]/src/components/ProjectAndLabCard.js",
-                    lineNumber: 46,
+                    lineNumber: 48,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/ProjectAndLabCard.js",
-                lineNumber: 38,
+                lineNumber: 39,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -1243,7 +1224,7 @@ function ProjectAndLabCard({ id, image, name, width = 400, color = "primary.main
                             }
                         }, void 0, false, {
                             fileName: "[project]/src/components/ProjectAndLabCard.js",
-                            lineNumber: 55,
+                            lineNumber: 53,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -1255,24 +1236,24 @@ function ProjectAndLabCard({ id, image, name, width = 400, color = "primary.main
                             children: name
                         }, void 0, false, {
                             fileName: "[project]/src/components/ProjectAndLabCard.js",
-                            lineNumber: 64,
+                            lineNumber: 62,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/ProjectAndLabCard.js",
-                    lineNumber: 54,
+                    lineNumber: 52,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/ProjectAndLabCard.js",
-                lineNumber: 53,
+                lineNumber: 51,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/ProjectAndLabCard.js",
-        lineNumber: 22,
+        lineNumber: 23,
         columnNumber: 5
     }, this);
 }

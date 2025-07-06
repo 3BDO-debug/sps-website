@@ -59,7 +59,6 @@ function page() {
     <Box sx={{ mt: 20 }}>
       <Box
         sx={{
-          cursor: "pointer",
           backgroundImage: `url(${servicesBg.src})`,
           backgroundSize: "cover",
           backgroundPosition: "center",

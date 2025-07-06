@@ -85,13 +85,8 @@ function Experience() {
               }}
             >
               <Typography variant="subtitle2" sx={{ color: "grey.0" }}>
-                6* 500 KV
-              </Typography>
-              <Typography variant="subtitle2" sx={{ color: "grey.0" }}>
-                8* 220KV
-              </Typography>
-              <Typography variant="subtitle2" sx={{ color: "grey.0" }}>
-                5* 66 KV
+                6* 500 KV, 8* 220 KV, 5* 66 KV Substations Projects
+                (Installation, Testing and Start-up).
               </Typography>
               <Typography variant="subtitle2" sx={{ color: "grey.0" }}>
                 + 50 Power transformers various rating levels from 125 MVA up to
