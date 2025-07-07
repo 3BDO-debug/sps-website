@@ -109,8 +109,8 @@ function page() {
             content: '""',
             position: "absolute",
             width: "100%",
-            height: isMdOrLarger ? "121vh" : "145vh",
-            bgcolor: alpha(theme.palette.primary.dark, 0.3),
+            height: isMdOrLarger ? "110vh" : "145vh",
+            bgcolor: alpha(theme.palette.primary.main, 0.7),
             zIndex: 1,
           },
         }}
@@ -137,7 +137,35 @@ function page() {
               </Stack>
             </Grid>
             <Grid size={{ xs: 12, md: 6 }}>
-              <Image src={fieldsIntro} alt="intro" layout="responsive" />
+              <Box
+                sx={{
+                  position: "relative",
+                  width: "100%",
+                  height: 0,
+                  paddingTop: "56.25%",
+                }}
+              >
+                {/* Image */}
+                <Image
+                  src={fieldsIntro}
+                  alt="intro"
+                  layout="fill"
+                  objectFit="cover"
+                />
+
+                {/* Tint overlay */}
+                <Box
+                  sx={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    bgcolor: alpha(theme.palette.primary.main, 0.5),
+                    zIndex: 1,
+                  }}
+                />
+              </Box>
             </Grid>
           </Grid>
           <Grid container spacing={3}>
