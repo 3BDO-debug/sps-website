@@ -79,8 +79,8 @@ function page() {
             src={projectData.image}
             alt="image"
             objectFit="contain"
-            width={isMdOrLarger ? 1000 : 300}
-            height={isMdOrLarger ? 500 : 150}
+            width={isMdOrLarger ? 500 : 300}
+            height={isMdOrLarger ? 250 : 150}
             style={{ borderRadius: 15 }}
           />
         </Box>

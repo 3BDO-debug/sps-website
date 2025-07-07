@@ -11,7 +11,7 @@ __turbopack_esm__({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/axios/lib/axios.js [app-client] (ecmascript)");
 ;
-const mainUrl = "http://127.0.0.1:8000/";
+const mainUrl = "https://smart-power-services-d39c5decd525.herokuapp.com/";
 const axiosInstance = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].create({
     baseURL: mainUrl,
     timeout: 100000,
@@ -329,8 +329,8 @@ function page() {
                     src: projectData.image,
                     alt: "image",
                     objectFit: "contain",
-                    width: isMdOrLarger ? 1000 : 300,
-                    height: isMdOrLarger ? 500 : 150,
+                    width: isMdOrLarger ? 500 : 300,
+                    height: isMdOrLarger ? 250 : 150,
                     style: {
                         borderRadius: 15
                     }
